@@ -5,9 +5,9 @@ use Illuminate\Support\Str;
 return [
     'baseUrl' => '',
     'production' => false,
-    'siteName' => 'Blog Starter Template',
-    'siteDescription' => 'Generate an elegant blog with Jigsaw',
-    'siteAuthor' => 'Author Name',
+    'siteName' => 'Mastercode',
+    'siteDescription' => 'Blog com a finalidade de compartilhar experiências e ajudar outros desenvolvedores.',
+    'siteAuthor' => 'Mastercode Web LTDA',
 
     // collections
     'collections' => [
