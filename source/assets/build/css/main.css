@@ -741,10 +741,6 @@ a {
   color: #3182ce;
 }
 
-a:hover {
-  color: #2c5282;
-}
-
 blockquote {
   border-color: #63b3ed;
   border-left-width: 4px;
@@ -1001,6 +997,22 @@ pre code {
   #mc-embedded-subscribe {
     width: 25%;
   }
+}
+
+.cube-palette-1 {
+  color: #ef5742;
+}
+
+.cube-palette-2 {
+  color: #3a001e;
+}
+
+.cube-palette-3 {
+  color: #855858;
+}
+
+a.cube-palette-2:hover {
+  color: #855858;
 }
 
 .sr-only{
