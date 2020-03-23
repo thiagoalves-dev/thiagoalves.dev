@@ -7,7 +7,9 @@
 
     @foreach ($posts->where('featured', true) as $featuredPost)
         <div class="w-full mb-6">
-            <img src="{{ $featuredPost->cover_image ?? '/assets/images/banner-1.jpg' }}" alt="Home page cover image" class="mb-6">
+            @if($loop->first)
+                <img src="{{ $featuredPost->cover_image ?? '/assets/images/banner-1.jpg' }}" alt="Home page cover image" class="mb-6">
+            @endif
 
             <p class="text-gray-700 font-medium my-2">
                 {{ $featuredPost->getDate()->format('F j, Y') }}
