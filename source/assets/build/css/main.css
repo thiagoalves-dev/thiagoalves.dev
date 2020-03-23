@@ -738,7 +738,6 @@ body {
 a {
   font-weight: 600;
   text-decoration: none;
-  color: #3182ce;
 }
 
 blockquote {
@@ -828,7 +827,6 @@ h6 {
 
 hr {
   border-bottom-width: 1px;
-  border-color: #bee3f8;
   margin-top: 3rem;
   margin-bottom: 3rem;
   border-radius: 9999px;
@@ -1011,12 +1009,20 @@ pre code {
   color: #855858;
 }
 
+a.simple.cube-palette-1 {
+  color: #ef5742;
+}
+
 a.cube-palette-2:hover {
   color: #855858;
 }
 
 .bg-cube-palette-1 {
   background: #ef5742;
+}
+
+.bg-cube-palette-1-100 {
+  background: rgba(239, 87, 66, 0);
 }
 
 .bg-cube-palette-2 {

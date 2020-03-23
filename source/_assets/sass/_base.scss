@@ -5,7 +5,6 @@ body {
 a {
     @apply .font-semibold;
     @apply .no-underline;
-    @apply .text-blue-600;
 }
 
 blockquote {
@@ -87,7 +86,6 @@ h6 {
 
 hr {
     @apply .border-b;
-    @apply .border-blue-200;
     @apply .my-12;
     @apply .rounded-full;
 }

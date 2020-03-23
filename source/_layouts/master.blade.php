@@ -27,7 +27,7 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 
-    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
+    <body class="flex flex-col justify-between min-h-screen bg-cube-palette-1-100 text-gray-800 leading-normal font-sans">
         <header class="flex items-center shadow bg-white border-b h-24 py-4" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
@@ -57,8 +57,8 @@
                 </li>
 
                 <li>
-                    Built with <a href="http://jigsaw.tighten.co" target="_blank" title="Jigsaw by Tighten">Jigsaw</a>
-                    and <a href="https://tailwindcss.com" target="_blank" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
+                    Built with <a href="http://jigsaw.tighten.co" class="simple cube-palette-1" target="_blank" title="Jigsaw by Tighten">Jigsaw</a>
+                    and <a href="https://tailwindcss.com" class="simple cube-palette-1" target="_blank" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
                 </li>
             </ul>
         </footer>
