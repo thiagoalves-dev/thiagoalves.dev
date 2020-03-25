@@ -28,10 +28,18 @@ a.cube-palette-2:hover{
     background: rgba(239, 87, 66, 0.02);
 }
 
+.bg-cube-palette-1-200 {
+    background: rgba(239, 87, 66, 0.04);
+}
+
 .bg-cube-palette-2 {
     background: #3a001e;
 }
 
 .bg-cube-palette-3 {
     background: #855858;
+}
+
+code {
+    background: rgba(239, 87, 66, 0.1);
 }
