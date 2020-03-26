@@ -1,10 +1,14 @@
 @extends('_layouts.master')
 
 @section('body')
+    <div class="w-full mb-6">
+
+    </div>
+
     @foreach ($posts->where('featured', true) as $featuredPost)
         <div class="w-full mb-6">
-            @if ($featuredPost->cover_image)
-                <img src="{{ $featuredPost->cover_image }}" alt="{{ $featuredPost->title }} cover image" class="mb-6">
+            @if($loop->first)
+                <img src="{{ $featuredPost->cover_image ?? '/assets/images/banner-1.jpg' }}" alt="Home page cover image" class="mb-6">
             @endif
 
             <p class="text-gray-700 font-medium my-2">
@@ -19,17 +23,13 @@
 
             <p class="mt-0 mb-4">{!! $featuredPost->getExcerpt() !!}</p>
 
-            <a href="{{ $featuredPost->getUrl() }}" title="Read - {{ $featuredPost->title }}" class="uppercase tracking-wide mb-4">
-                Read
+            <a href="{{ $featuredPost->getUrl() }}" title="Read - {{ $featuredPost->title }}" class="simple cube-palette-1 tracking-wide mb-4">
+                Ler +
             </a>
         </div>
 
-        @if (! $loop->last)
-            <hr class="border-b my-6">
-        @endif
+        <hr class="border-b my-6">
     @endforeach
-
-    @include('_components.newsletter-signup')
 
     @foreach ($posts->where('featured', false)->take(6)->chunk(2) as $row)
         <div class="flex flex-col md:flex-row md:-mx-6">
