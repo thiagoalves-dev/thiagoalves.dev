@@ -10,10 +10,5 @@
                 About
             </a>
         </li>
-        <li class="pl-4">
-            <a title="{{ $page->siteName }} Contact" href="/contact" class="nav-menu__item cube-palette-2 hover:cube-palette-3 {{ $page->isActive('/contact') ? 'active cube-palette-3' : '' }}">
-                Contact
-            </a>
-        </li>
     </ul>
 </nav>

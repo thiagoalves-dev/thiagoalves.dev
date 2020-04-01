@@ -741,7 +741,6 @@ a {
 }
 
 blockquote {
-  border-color: #63b3ed;
   border-left-width: 4px;
   font-weight: 400;
   font-style: italic;
@@ -1042,6 +1041,10 @@ pre {
 
 code {
   background: rgba(239, 87, 66, 0.1);
+}
+
+hr {
+  border-color: #f0e2e2;
 }
 
 .sr-only{
