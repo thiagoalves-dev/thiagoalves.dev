@@ -865,7 +865,6 @@ p {
 }
 
 pre {
-  background-color: #edf2f7;
   line-height: 1.75;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -1035,6 +1034,10 @@ a.cube-palette-2:hover {
 
 .bg-cube-palette-3 {
   background: #855858;
+}
+
+pre {
+  background: rgba(239, 87, 66, 0.03);
 }
 
 code {

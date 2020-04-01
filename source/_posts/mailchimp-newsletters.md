@@ -5,7 +5,7 @@ title: Mailchimp Newsletters
 date: 2018-11-21
 categories: [feature]
 description: Mailchimp newsletter signups, just add a url.
-cover_image: /assets/img/post-cover-image-1.png
+cover_image: /assets/images/post-cover-image-1.png
 ---
 
 [Mailchimp](https://mailchimp.com/) is a fantastic marketing platform, and takes the pain out of managing email lists and campaigns. The blog starter template comes with a beautiful pre-built newsletter form, that only needs a Mailchimp list URL to send to.
@@ -37,6 +37,6 @@ To begin accepting subscribers, simply add your list URL to the form `action` in
 
 ### Example
 
-<img src="/assets/img/newsletter.png">
+<img src="/assets/images/newsletter.png">
 
 [See how to get your Mailchimp list URL.](https://mailchimp.com/help/host-your-own-signup-forms/#Edit_your_Custom_Signup_Form)
