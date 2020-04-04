@@ -32,6 +32,10 @@ a.cube-palette-2:hover{
     background: rgba(239, 87, 66, 0.04);
 }
 
+.border-cube-palette-1-200 {
+    border-color: rgba(239, 87, 66, 0.2);
+}
+
 .bg-cube-palette-2 {
     background: #3a001e;
 }
@@ -40,6 +44,16 @@ a.cube-palette-2:hover{
     background: #855858;
 }
 
+pre {
+    //background: rgba(239, 87, 66, 0.04);
+    background: rgba(204, 204, 204, 0.1);
+}
+
 code {
-    background: rgba(239, 87, 66, 0.1);
+    //background: rgba(239, 87, 66, 0.1);
+    background: rgba(204, 204, 204, 0.3);
+}
+
+hr, blockquote {
+    border-color: #f0e2e2;
 }

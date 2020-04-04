@@ -4,7 +4,6 @@ section: content
 title: Getting Started
 date: 2018-12-25
 description: Getting started with the Jigsaw blog starter template
-cover_image: /assets/images/post-cover-image-1.png
 featured: true
 categories: [configuration]
 ---
