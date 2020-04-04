@@ -20,7 +20,7 @@
         @yield('content')
     </div>
 
-    <nav class="flex justify-between text-sm md:text-base">
+    <nav class="flex justify-between text-sm md:text-base mb-10">
         <div>
             @if ($next = $page->getNext())
                 <a href="{{ $next->getUrl() }}" class="cube-palette-2" title="Older Post: {{ $next->title }}">
@@ -37,4 +37,7 @@
             @endif
         </div>
     </nav>
+
+    @include('_components.disqus-comments')
+    @include('_components.hyvor-comments')
 @endsection
