@@ -39,5 +39,4 @@
     </nav>
 
     @include('_components.disqus-comments')
-    @include('_components.hyvor-comments')
 @endsection
