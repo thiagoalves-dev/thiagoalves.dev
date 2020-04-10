@@ -9,7 +9,7 @@ return [
     'siteAuthor' => 'Mastercode Web LTDA',
     'siteImage' => 'http://localhost:3000/assets/images/mastercode.png',
     'siteDescription' => 'Site com a finalidade de compartilhar experiências e ajudar outros desenvolvedores.',
-    'siteKeywords' => 'Full Stack, Web, Developer, Laravel, Vue.js, PHP, Vue, Sass, Front-end, Back-end, Javascript',
+    'siteKeywords' => 'Full Stack, Web, Development, Desenvolvimento, Programação, Laravel, Vue.js, PHP, Vue, Sass, Front-end, Back-end, Javascript',
 
     // collections
     'collections' => [

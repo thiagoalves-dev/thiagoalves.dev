@@ -2,14 +2,15 @@
 pagination:
     collection: posts
     perPage: 4
+
+title: Blog
+keywords: Blog
+description: Postagens frequentes e dicas práticas para ajudar desenvolvedores de diferentes níveis.
 ---
 @extends('_layouts.master')
 
 @push('meta')
-    <meta property="og:title" content="{{ $page->siteName }} Blog" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="The list of blog posts for {{ $page->siteName }}" />
+    @include('_layouts.partials.meta-tags-to-share')
 @endpush
 
 @section('body')
