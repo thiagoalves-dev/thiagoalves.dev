@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        @include('_layouts.partials.google-tag-manager-head')
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -19,15 +20,12 @@
 
         @stack('meta')
 
-        @if ($page->production)
-            <!-- Insert analytics code here -->
-        @endif
-
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 
     <body class="flex flex-col justify-between min-h-screen bg-cube-palette-1-100 text-gray-800 leading-normal font-sans">
+        @include('_layouts.partials.google-tag-manager-body')
         <header class="flex items-center shadow bg-white border-b h-24 py-4" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">

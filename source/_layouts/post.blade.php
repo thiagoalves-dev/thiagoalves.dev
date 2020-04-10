@@ -38,5 +38,5 @@
         </div>
     </nav>
 
-    @include('_components.disqus-comments')
+    @include('_layouts.partials.disqus-comments')
 @endsection
