@@ -3,11 +3,13 @@
 use Illuminate\Support\Str;
 
 return [
-    'baseUrl' => '',
     'production' => false,
-    'siteName' => 'Mastercode',
-    'siteDescription' => 'Blog com a finalidade de compartilhar experiências e ajudar outros desenvolvedores.',
+    'siteName' => 'Mastercode.dev',
+    'baseUrl' => 'http://localhost:3000',
     'siteAuthor' => 'Mastercode Web LTDA',
+    'siteImage' => 'http://localhost:3000/assets/images/mastercode.png',
+    'siteDescription' => 'Site com a finalidade de compartilhar experiências e ajudar outros desenvolvedores.',
+    'siteKeywords' => 'Full Stack, Web, Developer, Laravel, Vue.js, PHP, Vue, Sass, Front-end, Back-end, Javascript',
 
     // collections
     'collections' => [

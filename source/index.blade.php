@@ -1,5 +1,9 @@
 @extends('_layouts.master')
 
+@push('meta')
+    @include('_layouts.partials.meta-tags-to-share', ['type' => 'website'])
+@endpush
+
 @section('body')
     <div class="w-full mb-6">
 
