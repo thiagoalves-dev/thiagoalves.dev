@@ -15,16 +15,16 @@ keywords: Blog
 
 A empresa foi fundada em 2017, por [mim](https://linkedin.com/in/thiagomcw) e meu sócio [Vanderlei](https://linkedin.com/in/vanderleiamancio), com a finalidade de prestar serviços de Desenvolvimento de Sistemas para outras empresas. Atividade que se mantém até hoje.
 
-Com pelo menos dez anos de experiência (cada um), nossa especialidade é o desenvolvimento web usando a linguagem PHP e o framework Laravel. Mas também temos um bom conhecimento em HTML, CSS, Javascript e VueJS.
+Ambos com pelo menos dez anos de experiência, nossa especialidade é o desenvolvimento web usando a linguagem PHP e o framework Laravel. Mas também temos um bom conhecimento em HTML, CSS, Javascript e VueJS.
 
 ### Por que resolvemos criar um blog?
-Durante a carreira, acumulamos uma base de conhecimento considerável que muitas vezes acaba ficando escondida na nossa mente. 
+Durante a carreira acumulamos uma base de conhecimento considerável que muitas vezes acaba ficando escondida na nossa mente. 
 
-Então decidimos que chegou a hora de expôr esse conhecimento e ajudar, não só pessoas que já atua na área, mas também aquelas que estão pensando em começar a escrever códigos malucos (rs).
+Então decidimos que chegou a hora de expor esse conhecimento e ajudar, não só pessoas que já atuam na área, mas também aquelas que estão pensando em começar a escrever códigos malucos (risos).
 
 ### O que está por vir?
-Vamos abordar bastante as tecnologias que já dominamos. Mas também queremos aprofundar em alguns assuntos mais conceituais da profissão como: rotina, comportamento, produtividade e etc.
+Vamos abordar bastante as tecnologias que já dominamos e também aprofundar em alguns assuntos mais conceituais da profissão como: rotina, comportamento, produtividade e muito mais.
 
-A ideia é ter uma frequência alta de postagens. Sem muita enrolação. Direto ao ponto do que queremos ensinar.
+A ideia é ter uma frequência alta de postagens e sem muita enrolação, ou seja, vamos direto ao que interessa.
 
 Nos vemos muito em breve!
