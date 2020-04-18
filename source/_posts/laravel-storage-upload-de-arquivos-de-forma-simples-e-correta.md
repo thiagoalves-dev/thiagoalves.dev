@@ -20,6 +20,8 @@ Criei um projeto para usarmos como exemplo. Segue o _link_ do repositório: [thi
 Fiz um HTML bem simples para simular um formulário onde será feito o _upload_ de uma foto de perfil de usuário.
 
 ```html
+<!-- home.blade.php -->
+
 <form action="/store" method="post" enctype="multipart/form-data">
     @csrf
     <input name="profile_image" type="file">
@@ -27,22 +29,26 @@ Fiz um HTML bem simples para simular um formulário onde será feito o _upload_ 
 </form>
 ```
 
-#### Salvando o arquivo privado
+#### Salvando o arquivo como privado
 
 Neste caso a imagem só ficará acessível implementando uma funcionalidade que permita isso. Seja de exibição ou _download_.
 
 ```php
+// HomeController
+
 public function store(Request $request)
 {
     $request->file('profile_image')->store('/');
 }
 ```
 
-#### Salvando o arquivo público
+#### Salvando o arquivo como público
 
 Neste caso a imagem ficará acessível a qualquer um, basta saber como acessá-la.
 
 ```php
+// HomeController
+
 public function store(Request $request)
 {
     $request->file('profile_image')->store('/', 'public');
