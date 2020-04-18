@@ -35,5 +35,7 @@
         </div>
     </nav>
 
+    <p class="text-gray-700 text-xs">Comente abaixo o que você achou deste post, se ficou com alguma dúvida ou se gostaria de sugerir algum assunto.</p>
+
     @include('_layouts.partials.disqus-comments')
 @endsection
