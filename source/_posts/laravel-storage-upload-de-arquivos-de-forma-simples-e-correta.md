@@ -62,11 +62,13 @@ O Laravel já vem com a pasta `storage/app/public` configurada.
 ]
 ``` 
 
-Você só precisa criar a pasta `storage` dentro da `public`. Para isso, use o seguinte comando no terminal: `php artisan storage:link`.
+É preciso criar um _symlink_ dentro do diretório público do Laravel para tornar seus arquivos públicos acessíveis pela URL do navegador.
+ 
+Use o seguinte comando: `php artisan storage:link`.
 
 <img src="/assets/images/post-laravel-storage/storage-on-public-folder.png" alt="Resultado do comando anterior.">
 
-Pronto, a imagem já pode ser vista no navegador.
+Resultado final:
 
 <img src="/assets/images/post-laravel-storage/image-public-access.png" alt="Visualização de uma imagem pública pelo navegador.">
 
