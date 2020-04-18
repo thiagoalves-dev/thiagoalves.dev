@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="apple-mobile-web-app-title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}">
         <meta name="keywords" content="{{ $page->siteKeywords }}{{ $page->keywords ? ', '. $page->keywords : '' }}">
-        <meta name="description" content="{{ $page->meta_description ?? $page->siteDescription }}">
+        <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">
 
         @stack('meta')
 
