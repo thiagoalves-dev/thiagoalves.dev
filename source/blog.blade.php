@@ -10,7 +10,7 @@ description: Postagens frequentes e dicas práticas para ajudar desenvolvedores 
 @extends('_layouts.master')
 
 @push('meta')
-    @include('_layouts.partials.meta-tags-to-share', ['type' => 'website'])
+    @include('_third_party_tags.meta-tags-to-share', ['type' => 'website'])
 @endpush
 
 @section('body')

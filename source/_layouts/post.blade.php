@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @push('meta')
-    @include('_layouts.partials.meta-tags-to-share', ['type' => 'article'])
+    @include('_third_party_tags.meta-tags-to-share', ['type' => 'article'])
 @endpush
 
 @section('body')
@@ -37,5 +37,5 @@
 
     <p class="text-gray-700 text-xs">Comente abaixo o que você achou deste post, se ficou com alguma dúvida ou se gostaria de sugerir algum assunto.</p>
 
-    @include('_layouts.partials.disqus-comments')
+    @include('_third_party_tags.disqus-comments')
 @endsection
