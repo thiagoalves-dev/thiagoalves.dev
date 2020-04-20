@@ -8,10 +8,10 @@ author: Vanderlei Sbaraini Amancio
 date_txt: 20 de Abril de 2020
 title: "Custom Casts do Laravel: convertendo atributos de um Model"
 description: Uso de custom casts para transformações avançadas de atributos em modelos do Eloquent.
-keywords: Laravel, Casts, Model, Eloquent
+keywords: Casts, Model, Eloquent
 ---
 
-O Laravel nos fornece diversos tipos de _cast_ em um modelo do Eloquent, Porém, até a versão 6, estávamos limitados a utilizar Mutators e Accessors para transformar tipos de dados mais específicos, como JSON, por exemplo.
+O Laravel nos fornece diversos tipos de _cast_ em um modelo do Eloquent. Porém, até a versão 6, estávamos limitados a utilizar Mutators e Accessors para transformar tipos de dados mais específicos, como JSON, por exemplo.
 
 Tenhamos como exemplo um modelo _Booking_ contendo informações de pagamento:
 
