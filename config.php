@@ -13,18 +13,22 @@ return [
 
     // collections
     'collections' => [
-        'posts' => [
+        'posts'      => [
             'author' => 'Author Name', // Default author, if not provided in a post
-            'sort' => '-date',
-            'path' => 'blog/{filename}',
+            'sort'   => '-date',
+            'path'   => 'blog/{filename}',
         ],
         'categories' => [
-            'path' => '/blog/categories/{filename}',
+            'path'  => '/blog/categories/{filename}',
             'posts' => function ($page, $allPosts) {
                 return $allPosts->filter(function ($post) use ($page) {
                     return $post->categories ? in_array($page->getFilename(), $post->categories, true) : false;
                 });
             },
+        ],
+        'founders'   => [
+            'path' => 'founders',
+            'sort' => 'sort',
         ],
     ],
 
