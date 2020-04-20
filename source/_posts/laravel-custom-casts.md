@@ -137,7 +137,7 @@ E agora temos uma melhor separação do código, além do benefício de podermos
 
 Notou o `\Webmozart\Assert\Assert::isInstanceOf($value, BillingInfo::class, 'Value must be an instance of BillingInfo');` ?
 
-Utilizo muito  o pacote [webmozart/assert](https://github.com/webmozart/assert) para verificar dados quando não é possível fazê-lo com o PHP de forma trivial. No nosso exemplo,  a interface `CastsAttributes` não nos permite definir o tipo para os parâmetros, especialmente `$value`. `Assert::isInstanceOf` vai verificar o tipo do valor recebido, e caso não seja o indicado, vai disparar uma excessão com a `string` indicada.
+Utilizo muito  o pacote [webmozart/assert](https://github.com/webmozart/assert) para verificar dados quando não é possível fazê-lo com o PHP de forma trivial. No nosso exemplo,  a interface `CastsAttributes` não nos permite definir o tipo para os parâmetros, especialmente `$value`. `Assert::isInstanceOf` vai verificar o tipo do valor recebido, e caso não seja o indicado, vai disparar uma exceção com a `string` indicada.
 
 
 E aí, o que achou?
