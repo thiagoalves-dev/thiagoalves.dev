@@ -7,8 +7,8 @@ date: 2020-04-25
 author: Thiago Alves
 date_txt: 25 de Abril de 2020
 title: "Laravel Storage: salvando arquivos no S3 da Amazon"
-description: Exemplificando como fazer upload de arquivos usando a Storage do Laravel e a diferença de arquivos públicos e privados.
-keywords: Storage, Upload, Arquivos, S3, Amazon
+description: Exemplo de como salvar arquivos no s3 da Amazon usando a classe Storage do Laravel.
+keywords: Storage, Upload, Arquivos, S3, Amazon, AWS
 ---
 
 Dias atrás demonstrei de forma simples como fazer [upload de arquivos usando a classe Storage do Laravel](/blog/laravel-storage-upload-de-arquivos-de-forma-simples-e-correta).
