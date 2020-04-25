@@ -53,9 +53,9 @@
                 </li>
 
                 <li>
-                    Built with <a href="http://jigsaw.tighten.co" class="simple cube-palette-1" target="_blank"
+                    Desenvolvido com <a href="http://jigsaw.tighten.co" class="simple cube-palette-1" target="_blank"
                                   title="Jigsaw by Tighten">Jigsaw</a>
-                    and <a href="https://tailwindcss.com" class="simple cube-palette-1" target="_blank"
+                    e <a href="https://tailwindcss.com" class="simple cube-palette-1" target="_blank"
                            title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
                 </li>
             </ul>
