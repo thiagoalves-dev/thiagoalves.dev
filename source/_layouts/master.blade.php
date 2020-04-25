@@ -46,17 +46,22 @@
             @yield('body')
         </main>
 
-        <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
+        <footer class="text-center text-sm mt-12 py-4" role="contentinfo">
             <ul class="flex flex-col md:flex-row justify-center list-none">
                 <li class="md:mr-2">
                     &copy; Mastercode Web LTDA {{ date('Y') }}.
                 </li>
 
                 <li>
-                    Built with <a href="http://jigsaw.tighten.co" class="simple cube-palette-1" target="_blank" title="Jigsaw by Tighten">Jigsaw</a>
-                    and <a href="https://tailwindcss.com" class="simple cube-palette-1" target="_blank" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
+                    Built with <a href="http://jigsaw.tighten.co" class="simple cube-palette-1" target="_blank"
+                                  title="Jigsaw by Tighten">Jigsaw</a>
+                    and <a href="https://tailwindcss.com" class="simple cube-palette-1" target="_blank"
+                           title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
                 </li>
             </ul>
+            <a href="https://github.com/mastercode-dev" target="_blank">
+                <img src="/assets/images/social/github.min.svg" alt="Github" class="inline"/>
+            </a>
         </footer>
 
         <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
