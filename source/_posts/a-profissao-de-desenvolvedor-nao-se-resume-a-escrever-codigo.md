@@ -55,6 +55,6 @@ O momento chave da minha carreira foi quando entendi esse processo.
 
 Eu simplesmente parei de escrever um livro de códigos por dia para trabalhar muito mais na parte estratégica do desenvolvimento.
 
-Gosto de pensar que escrever códigos é uma arte. Sem dúvidas o momento mais gratificando do dia é quando faço a revisão final do que implementei e vejo um código bem escrito e que funciona.
+Gosto de pensar que escrever códigos é uma arte. Sem dúvidas o momento mais gratificante do dia é quando faço a revisão final do que implementei e vejo um código bem escrito e que funciona.
 
 Nos vemos em breve!
