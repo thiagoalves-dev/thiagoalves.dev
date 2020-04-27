@@ -1,6 +1,7 @@
 ---
 extends: _layouts.post
 section: content
+published: true
 
 date: 2020-04-16
 author: Thiago Alves
