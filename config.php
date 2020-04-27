@@ -17,8 +17,8 @@ return [
             'author' => 'Author Name', // Default author, if not provided in a post
             'sort'   => '-date',
             'path'   => 'blog/{filename}',
-            'filter' => function ($post, $page) {
-                return $post->published || !$page->production;
+            'filter' => function ($post) {
+                return $post->published;
             },
         ],
         'categories' => [
