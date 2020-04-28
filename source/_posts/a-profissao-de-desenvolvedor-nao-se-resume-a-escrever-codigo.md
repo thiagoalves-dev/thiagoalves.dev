@@ -30,7 +30,7 @@ Não se trata de uma etapa que acaba para que uma nova comece, mas sim do núcle
 
 ### Estudar
 
-Eu nunca fiz a conta de quantas vezes uso o google durante o horário de trabalho para aprender algo que eu ainda não sei fazer ou para relembrar alguma coisa. 
+Perco a conta de quantas vezes uso o google durante o horário de trabalho para aprender algo que eu ainda não sei fazer ou para relembrar alguma coisa. 
 
 Documentações de linguagens e ferramentas que uso também são acessadas quase que diariamente.
 
