@@ -1,11 +1,13 @@
 ---
 extends: _layouts.post
 section: content
+published: true
+featured: true
 
-date: 2020-05-02
+date: 2020-04-30
 author: Thiago Alves
-date_txt: 02 de Maio de 2020
-title: A forma mais simples e barata de começar a carreira de Desenvolvedor
+date_txt: 30 de Abril de 2020
+title: O caminho mais simples e barato para iniciar a carreira de Desenvolvedor
 description: Uma das principais portas de entrada no mundo da programação. HTML e CSS são as linguagens mais intuitivas do mercado.
 keywords: Carreira, Desenvolvedor
 ---
