@@ -39,7 +39,7 @@ Pois é, e ele seguiu o caminho que sugiro abaixo.
 
 Basicamente, se trata da programação visual de um site ou sistema web. 
 
-Quando você acessa um site, tudo que vê nada mais é do que um código que foi interpretado pelo navegador. As cores, o tamanho dos elementos, as imagens, os _links_. Tudo passou por um desenvolvedor, de alguma forma e faz parte do que chamamos de _front-end_.
+Quando você acessa um site, tudo que vê nada mais é do que um código que foi interpretado pelo navegador. As cores, o tamanho dos elementos, as imagens, os _links_. De alguma forma, tudo passou por um desenvolvedor e faz parte do que chamamos de _front-end_.
 
 O código se divide em duas linguagens:   
 **HTML** - estruturação: é o que uso para definir o que deve aparecer na tela, como: um botão.  
