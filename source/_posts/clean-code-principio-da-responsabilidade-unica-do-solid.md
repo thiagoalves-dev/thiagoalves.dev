@@ -1,11 +1,10 @@
 ---
 extends: _layouts.post
 section: content
-featured: true
 
-date: 2020-04-26
+date: 2020-05-02
 author: Thiago Alves
-date_txt: 26 de Abril de 2020
+date_txt: 2 de Maio de 2020
 title: "Clean Code: princípio da responsabilidade única do SOLID"
 description: A base para o Clean Code é o SOLID. Então vou exemplificar o que a primeira letra do acrônimo ensina.
 keywords: Clean Code, Código Limpo, SOLID, Classe
@@ -59,29 +58,13 @@ class Produto {
 }
 ```
 
-Note que, na mesma classe, temos as informações do produto e conseguimos obter o seu preço final.
+À primeira vista, está tudo certo, né!? **Não!**
 
-À primeira vista, está tudo certo, já que se tratam de poucas linhas de código. 
+Essa classe está claramente infringindo o princípio da responsabilidade única.
 
-**O problema começa quando o sistema cresce.** Agora, imagine que ele possui também: gerenciamento de estoque e de entrega, emissão de notas, leitura de código de barras e por aí vai.
+Note que temos a representação do produto e um método para calcular o seu preço final. Ou seja, se eu precisasse adicionar uma nova propriedade ou mudar a regra de cálculo de preço, teria dois motivos diferentes para modificar a mesma classe.
 
-Imagine também precisamos calcular o valor do frete considerando a distância em quilômetros. Tranquilo, né!? 
-
-```php
-class Frete {
-    public $endereco;
-
-    public $precoPorKm;
-
-    public function calculaPrecoFrete(float $quilometros) {
-        return $this->precoPorKm * $quilometros;
-    }
-}
-```
-
-Percebe que fizemos a mesma coisa, só que em lugares e com nomes diferentes?
-
-Como eu faria esse código aplicando o princípio da responsabilidade única:
+Como seria correto fazer essa implementação:
 
 ```php
 class Produto {
@@ -90,21 +73,23 @@ class Produto {
     public $precoPorKg;
 }
 
-class Frete {
-    public $endereco;
-
-    public $precoPorKm;
-}
-
-class Calculadora {
-    public function multiplica(float $multiplicando, float $multiplicador) {
-        return $multiplicando * $multiplicador;
+class CalculadoraDePreco {
+    public function calculaPrecoPorQuilo(float $precoPorQuilo, float $quilos) {
+        return $precoPorQuilo * $quilos;
     }
 }
 ```
 
-Pronto! Agora temos três classes totalmente independentes onde uma delas é reaproveitável.
+Pronto! Agora temos duas classes e com responsabilidades bem definidas.
 
-Esse tema será muito abordado aqui no blog. Estamos só começando.
+### Ficou vago?
+
+De fato, esse princípio não é tão simples de entender a primeira vista. Principalmente porque o resultado que ele gera é mais indireto. 
+
+O principal benefício aqui é evitar a existência de classes muito grandes e com muita complexidade, simplificando a manutenção e o entendimento. 
+
+Conforme avançamos na filosofia do Clean Code, ele faz cada vez mais sentido. 
+
+Esse tema ainda será muito abordado aqui no blog. Estamos só começando.
 
 Nos vemos em breve!
