@@ -1,6 +1,8 @@
 ---
 extends: _layouts.post
 section: content
+published: true
+featured: true
 
 date: 2020-05-02
 author: Thiago Alves
@@ -38,7 +40,8 @@ Introdução feita. Vamos ao assunto que intitula este post:
 
 ### Princípio da Responsabilidade Única
 
-Na minha opinião, o que a primeira letra do acrônimo SOLID nos ensina é o princípio mais importante da programação. Sem a sua aplicação, não existe código limpo.
+Na minha opinião, o que a primeira letra do 
+acrônimo SOLID nos ensina é o princípio mais importante da programação. Sem a sua aplicação, não existe código limpo.
 
 **Uma classe deve ter apenas uma responsabilidade, uma razão de existir, resolver um problema e, não menos importante, um motivo para ser alterada.**
 
@@ -88,7 +91,7 @@ De fato, esse princípio não é tão simples de entender a primeira vista. Prin
 
 O principal benefício aqui é evitar a existência de classes muito grandes e com muita complexidade, simplificando a manutenção e o entendimento. 
 
-Conforme avançamos na filosofia do Clean Code, ele faz cada vez mais sentido. 
+Conforme avançamos na filosofia do _Clean Code_, ele faz cada vez mais sentido. 
 
 Esse tema ainda será muito abordado aqui no blog. Estamos só começando.
 
