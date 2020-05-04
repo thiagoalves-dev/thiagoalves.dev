@@ -1,10 +1,12 @@
 ---
 extends: _layouts.post
 section: content
+published: true
+featured: true
 
-date: 2020-05-06
+date: 2020-05-04
 author: Thiago Alves
-date_txt: 6 de Maio de 2020
+date_txt: 4 de Maio de 2020
 title: Minhas primeiras experiências como Desenvolvedor
 description: Contando um pouco do começo da minha história na programação e desmistificando algumas crenças.
 keywords: Carreira
@@ -18,9 +20,9 @@ Para exemplificar, vou compartilhar um pouco do início da minha jornada com voc
 
 ### Início dos estudos
 
-Eu caí de paraquedas na área. Nunca fui muito ligado à tecnologia. Até os 18 anos, a única coisa que eu tinha de tecnológico era um celular.
+Eu caí de paraquedas na área. Nunca fui muito ligado à tecnologia. Até os 18 anos, a única coisa que eu tinha de tecnológico era um celular sem camera.
 
-Quando terminei o ensino médio, ainda não sabia que carreira seguir. Então resolvi fazer um curso técnico em informática, simplesmente por entender que teriam mais ofertas de emprego.
+Quando terminei o ensino médio, ainda não sabia que carreira seguir. Então resolvi fazer um curso técnico em informática, simplesmente por entender que haveriam mais ofertas de emprego.
 
 No primeiro semestre já vieram as aulas de manutenção, redes e programação. Nem preciso dizer qual me chamou mais atenção, né!? Sou bom em matemática e sempre tive um raciocínio lógico razoável, o que me ajudou bastante.
 

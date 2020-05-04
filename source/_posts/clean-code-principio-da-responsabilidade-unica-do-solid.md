@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 published: true
-featured: true
+home_block: true
 
 date: 2020-05-02
 author: Thiago Alves
