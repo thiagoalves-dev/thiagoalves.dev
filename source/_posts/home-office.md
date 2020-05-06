@@ -5,9 +5,9 @@ section: content
 date: 2020-05-08
 author: Thiago Alves
 date_txt: 8 de Maio de 2020
-title: Home office
-description: ho
-keywords: ho
+title: 5 dicas para turbinar a sua produtividade no home office
+description: É totalmente possível ser produtivo trabalhando de casa, mas é preciso dar a atenção adequada para isso.
+keywords: Home Office, Produtividade, Foco
 ---
 
 Com a evolução das ferramentas de comunicação, trabalhar de casa está cada dia mais comum. Infelizmente, potencializado pelo nosso contexto atual.
@@ -18,7 +18,7 @@ Trabalho em casa há mais de três anos. Passei por uma curva de aprendizado, no
 
 Dias atrás, eu abri uma caixa de perguntas no meu [instagram](https://instagram.com/thiagomcw), e surgiram alguns questionamentos bem interessantes. Como o espaço lá é menor, resolvi trazer o assunto para cá e aprofundar um poucos mais. 
 
-Separei 5 dicas para você melhorar a sua performance e ter mais tempo para fazer as coisas que gosta.
+Separei 5 dicas para ajudar você a melhorar a sua performance e ter mais tempo para fazer as coisas que gosta.
 
 ### 1 - Aprenda a dizer "não"
 
@@ -28,7 +28,7 @@ Se isso acontece com você, certamente a sua produtividade está comprometida. �
 
 Faça um alinhamento com as pessoas mais próximas de você. Peça a elas que não o interrompam durante o seu horário de trabalho. Diga que você conta com aquela pessoa para te ajudar nisso. Isso elimina metade do problema, vai por mim.
 
-**Lembre-se: as pessoas pedem favores para quem tem tempo livre, mas sim para quem resolve.**
+**Lembre-se: as pessoas não pedem favores a quem tem tempo livre, mas sim para quem resolve o problema.**
 
 ### 2 - Tenha horário para começar e parar
 
@@ -62,16 +62,16 @@ Esse método já é bastante antigo e conheço muitas pessoas que usam. Funciona
 
 ### 5 - Respire fundo
 
-Umas das desvantagens do home office é não tem com quem contar pessoalmente na hora de resolver um problema. Claro, tem as plataformas de discussão e tudo mais, mas convenhamos que não é a mesma coisa.
+Sabe aqueles momentos em que a sua mente simplesmente trava? 
 
-Naqueles momentos em que sua mente simplesmente trava, faça um exercício de respiração profunda, de preferência saia da frente do computador. Concentre-se apenas em respirar por dois ou três minutos. Isso já é o suficiente pra que você mude completamente seu estado emocional e que sua mente esvazie.
+Faça um exercício de respiração profunda. De preferência, saia da frente do computador. Concentre-se apenas em respirar por dois ou três minutos. Isso já é o suficiente para que você mude completamente o seu estado emocional e que a sua mente esvazie.
 
-Finalizando
+### Finalizando
 
-Essa lista poderia ter mais de 50 dicas, mas optei por pontuar poucas que geraram muito resultado pra mim.
+Essa lista poderia ter mais de 50 dicas, mas optei por pontuar as poucas que geraram mais resultado para mim.
 
-Há quem diga que é impossível render em casa o mesmo que no escritório. Eu discordo completamente e estou sempre me aperfeiçoando para provar a mim mesmo disso.
+Há quem diga que é impossível render em casa o mesmo que no escritório. Discordo completamente!
 
-Se você gostaria que eu abordasse mais esse assunto ou ficou com alguma dúvida, escreve nos comentários que eu responderei assim que possível.
+Esse assunto está entre as minhas especialidades. Então, se você ficou com alguma dúvida, escreve nos comentários que responderei assim que possível.
 
 Nos vemos em breve!
