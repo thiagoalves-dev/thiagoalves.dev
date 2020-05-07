@@ -17,5 +17,9 @@ return [
                 return $post->published;
             },
         ],
+        'founders'   => [
+            'path' => 'founders',
+            'sort' => 'sort',
+        ],
     ],
 ];
