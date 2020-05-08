@@ -16,7 +16,7 @@ Com a evolução das ferramentas de comunicação, trabalhar de casa está cada 
 
 Obviamente que as áreas ligadas à tecnologia, como o desenvolvimento de sistemas, são as pioneiras neste quesito e obtêm resultados muito satisfatórios.
 
-Trabalho em casa há mais de três anos. Passei por uma curva de aprendizado, normal, mas de um bom tempo para cá consigo afirmar que consigo ser bastante produtivo.
+Trabalho em casa há mais de três anos. Passei por uma curva de aprendizado, normal, mas de um bom tempo para cá consigo afirmar que sou bastante produtivo.
 
 Dias atrás, eu abri uma caixa de perguntas no meu [instagram](https://instagram.com/thiagomcw), e surgiram alguns questionamentos bem interessantes. Como o espaço lá é menor, resolvi trazer o assunto para cá e aprofundar um poucos mais. 
 
