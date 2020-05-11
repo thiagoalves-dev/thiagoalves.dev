@@ -1,10 +1,12 @@
 ---
 extends: _layouts.post
 section: content
+published: true
+featured: true
 
-date: 2020-05-10
+date: 2020-05-11
 author: Thiago Alves
-date_txt: 10 de Maio de 2020
+date_txt: 11 de Maio de 2020
 title: Um dos maiores erros que os desenvolvedores cometem
 description: Trabalhe para ser um especialista de mente aberta e não um defensor de tecnologia e, muito menos, um generalista. 
 keywords: Tecnologias, Generalista, Especialista
@@ -14,7 +16,7 @@ Durante a carreira de um programador, é muito comum que ele crie preferências 
 
 O erro acontece quando isso evolui para o próximo nível, quando o profissional deixa de usar a tecnologia como uma ferramenta para alcançar determinado resultado e se torna um defensor religioso da mesma, onde tudo que vem dela é perfeito e o resto não passa de "linguagem de amador".
 
-**Costumo dizer que não existe tecnologia ruim, mas programador sim.** 
+**A verdade é que não se trata de qual tecnologia você usa, mas sim o resultado que consegue gerar com ela.** 
 
 ### O generalista
 
@@ -45,5 +47,3 @@ Mesmo assim, as vezes ainda me pego dizendo coisas como: "isso aqui eu não gost
 Não há nada de errado em ter preferências. Pelo contrário! Certamente você será mais produtivo trabalhando com o que mais gosta. 
 
 Apenas deixe portas abertas para outras possibilidades.
-
-Nos vemos em breve!
