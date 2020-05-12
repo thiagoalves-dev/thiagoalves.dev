@@ -5,9 +5,9 @@ section: content
 date: 2020-05-13
 author: Thiago Alves
 date_txt: 13 de Maio de 2020
-title: Laravel Resource
-description:  
-keywords: 
+title: "Deveria usar API Resources do Laravel? Sim!"
+description: Se você trabalha com APIs na sua aplicação Laravel e ainda não usa API Resources, é bem provável que o seu código não esteja lá essas coisas.
+keywords: Api, Resources, JSON
 ---
 
 Dias atrás eu navegava pelo [reddit](reddit.com) quando me deparei com a seguinte pergunta de um usuário: "deveria usar _API Resources_?". Muitas respostas surgiram, com bons argumentos, o convencendo que sim. 
@@ -82,7 +82,7 @@ Resposta:
 }
 ```
 
-Bem simples, né!? Mesmo não concordando muito com a ideia, num caso como esse, de fato não há uma necessidade de usar _API Resource_. 
+Mesmo não concordando muito com a ideia, num caso como esse, de fato não há uma necessidade de usar _API Resource_. 
 
 Ao elevarmos um pouco o nível de exigência, é possível perceber que o nosso método vai precisar de melhorias. Imagine que junto ao produto, precisamos retornar os dados da categoria do mesmo. 
 
@@ -122,7 +122,7 @@ Resposta:
 
 ### Vamos ao que interessa
 
-É hora de ser mais exigente com o nosso método. Agora, o produto precisa ter uma opção de preço já formatada em reais, e as datas precisam vir no formato de leitura do Brasil. Além disso, a categoria do produto deve ser opcional.
+É hora de ser mais exigente com o nosso método. Agora, o produto precisa ter uma opção de preço já formatada em reais, as datas precisam vir no formato de leitura do Brasil e a categoria deve ser opcional.
 
 **É hora de colocar o _API Resource_ para trabalhar a nosso favor:**
 
@@ -156,8 +156,6 @@ class Product extends JsonResource
 }
 ```
 
-P.S.: O `include_category` é um parâmetro `GET`. Exemplo: `/products/2?include_category=1`.
-
 ```php
 // app/Http/Resources/Category.php
 
@@ -172,6 +170,8 @@ class Category extends JsonResource
     }
 }
 ```
+
+URL: `localhost:8000/products/2?include_category=1`.
 
 Resposta:
 ```json
@@ -190,13 +190,15 @@ Resposta:
 }
 ```
 
-Simples, né!? 
+Simples, né!?  
 
 Agora temos um retorno mais completo e que podemos modificar de acordo com a demanda do sistema no momento. 
 
-### Bônus
+Para mim, o maior benefício está em não ter que manipular os dados dentro do controller e ainda poder acrescentar outras informações sempre que eu precisar. Por exemplo, além da categoria, eu poderia retornar o usuário que cadastrou o produto no sistema.
 
-**Buscar uma categoria listando todos os seus produtos:** 
+### Outro exemplo
+
+Buscar uma categoria, listando todos os seus produtos: 
 
 ```php
 // routes/web.php
@@ -234,6 +236,8 @@ class Category extends JsonResource
 }
 ```
 
+URL: `localhost:8000/categories/2?include_products=1`.
+
 Resposta:
 ```json
 {
@@ -260,12 +264,14 @@ Resposta:
 }
 ```
 
-Enfim, mesmo que eu use um exemplo bastante simples como esse, possibilidades realmente não faltam.
+Enfim, mesmo que eu use um exemplo bastante simples como esse, possibilidades realmente não faltam. 
 
 ### Finalizando
 
 Uso esse recurso há pelo menos dois anos ininterruptos e nunca mais parei. Por mais simples que seja o método de _API_ que eu precise implementar, acabo sempre por usar _Resources_.
 
-Todo o código acima está no meu [repositório no github](https://github.com/thiagomcw/laravel-storage-example) para te ajudar nos testes.
+É importante deixar claro que no código acima, é possível fazer uma série de otimizações, mas optei por tentar ser mais didático.
+
+Todo so códigos dos exemplos estão no meu [repositório no github](https://github.com/thiagomcw/laravel-storage-example), caso queira usá-lo nos seus testes.
 
 Nos vemos em breve!
