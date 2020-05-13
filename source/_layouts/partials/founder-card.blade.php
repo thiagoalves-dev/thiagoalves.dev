@@ -2,8 +2,10 @@
     <img class="h-16 w-16 rounded-full mx-auto md:h-24 md:w-24 md:mx-0 md:mr-6"
          src="/assets/images/founders/{{ $founder->photo }}">
     <div class="text-center md:text-left">
-        <h2 class="text-lg mb-3">{{ $founder->name }}</h2>
-        <div class="cube-palette-1">{{ $founder->profession }}</div>
+        <h2 class="text-lg mb-1">{{ $founder->name }}</h2>
+        <div class="text-gray-600">{{ $founder->profession }}</div>
+        <a href="{{ $founder->personal_page }}" class="cube-palette-1 font-medium hover:underline"
+           target="_blank">{{ $founder->personal_page_label }}</a>
         <div class="mt-2">
             @if($founder->instagram)
                 <a href="https://instagram.com/{{ $founder->instagram }}" target="_blank"

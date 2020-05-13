@@ -5,5 +5,6 @@ name: Vanderlei Sbaraini Amancio
 profession: Engenheiro de Software
 linkedin: vanderleiamancio
 twitter: vander_dev
-
+personal_page: https://vanderleis.me
+personal_page_label: Página Pessoal
 ---
