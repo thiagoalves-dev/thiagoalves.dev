@@ -45,7 +45,7 @@ Image você passando 3.200 horas, sentado(a) numa cadeira dentro de uma sala de 
 
 Em muitas áreas, como medicina, é impensável que haja um profissional atuando sem diploma. Na programação, isso definitivamente não acontece.
 
-Mesmo que você tenha um belo diploma pendurado na parede, sem experiência prática, é muito provável que perca uma vaga para outro profissional que trabalha na área há alguns poucos meses e só tem o ensino médio completo. O que é o que você sabe na prática, os problemas que já resolveu, os projetos que já participou.
+Mesmo que você tenha um belo diploma pendurado na parede, sem experiência prática, é muito provável que perca uma vaga para outro profissional que trabalha na área há alguns poucos meses e só tem o ensino médio completo. O importante é o que você sabe na prática, os problemas que já resolveu, os projetos que já participou.
 
 ### Não se aproveita nada da faculdade?
 
@@ -57,15 +57,15 @@ Por outro lado, é imprescindível que esses ensinamentos sejam colocados em pr�
 
 Eu já escrevi a aqui no blog sobre as [minhas primeiras experiências na programação](/blog/minhas-primeiras-experiencias-como-desenvolvedor). 
 
-Contradizendo a minha opinião, fiz dois cursos: técnico e tecnólogo. Há 13 anos, ainda não se tinha tanto acesso à informação e a verdade é que eu nem sabia o que um programador fazia, muito menos como se tornar um. 
+Contradizendo a minha opinião, fiz dois cursos: técnico e tecnólogo. Há 13 anos, ainda não se tinha tanto acesso à informação e a verdade é que eu nem sabia o que um programador faz, muito menos como se tornar um. 
 
 Mesmo estudando, tratei de pôr em prática muito cedo e isso foi o que fez a diferença de verdade. 
 
-Pude conviver com algumas dezenas de profissionais da minha área e, sempre que tocávamos no assunto, chegávamos à mesma conclusão na maioria das vezes. Muitos abandonaram os seus cursos pela metade, pois, com algum tempo no mercado já não fazia mais sentido investir tempo e dinheiro com isso.
+Pude conviver com algumas dezenas de profissionais da minha área e, sempre que tocávamos no assunto, chegávamos à mesma conclusão na maioria das vezes. Muitos abandonaram os seus cursos pela metade, pois, com algum tempo no mercado já não fazia mais sentido gastar tempo e dinheiro com isso.
 
 ### Finalizando
 
-Se o seu sonho e fazer uma faculdade, faça, de verdade! O meu intuito com esse texto não é desmotivar ninguém, é fazer com que entenda que não precisa, apenas. 
+Se o seu sonho é fazer uma faculdade, faça, de verdade! O meu intuito com esse texto não é desmotivar ninguém, é fazer com que entenda que não precisa e que não vale a pena, apenas. 
 
 O mais importante é que você coloque em prática o que estuda. Comece um projeto próprio, sobre qualquer coisa e simplesmente escreva. A cada desafio que encontrar, novos ensinamentos serão aprendidos. É assim que aprendemos até hoje.
 
