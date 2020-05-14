@@ -6,8 +6,8 @@ date: 2020-05-15
 author: Thiago Alves
 date_txt: 15 de Maio de 2020
 title: Vale a pena fazer faculdade de programação?
-description: desc 
-keywords: keys
+description: A programação é uma atividade extremamente técnica e prática. É como na profissão de mecânico, não importa se você leu cinquenta livros sobre o tema, isso não te faz um profissional. 
+keywords: Faculdade, Graduação, Prática, Técnica
 ---
 
 
@@ -21,50 +21,56 @@ Não. Existem uma série de fatores a serem avaliados como qualidade do curso, n
 
 Sim. Quando colocamos numa balança os prós e contras, o segundo sempre vence. Ironicamente isso fica mais claro depois que você e forma.
 
-Dentro da minha experiência, pude conviver com algumas dezenas de profissionais da minha área e sempre que tocávamos no assunto, chegávamos à mesma conclusão na maioria das vezes.
+### Os meus critérios de avaliação
 
-Tive muitos colegas que abandonaram os seus cursos pela metade, pois, com algum tempo no mercado já não fazia mais sentido investir tempo e dinheiro com isso.
+**A dinâmica da profissão**
 
-### Os fatores que levo em consideração
+A programação é uma atividade extremamente técnica e prática. É como na profissão de mecânico, não importa se você leu cinquenta livros sobre o tema, isso não te faz um profissional. A teoria precisa ser aplicada para se transformar em conhecimento de fato. 
 
-A dinâmica da profissão
+**Conteúdos inúteis dos cursos**
 
-A programação possui duas características muito claras, se trata de uma atividade extremamente técnica e prática. É como na profissão de mecânico, não importa se você leu cinquenta livros sobre o tema, isso não te faz um profissional. Você precisa aplicar para maturar as informações e solidificá-las em conhecimento. 
+Durante a minha graduação, tive aulas sobre administração, contabilidade, português, inglês, estatística, entre outras. Uma quantidade gigantesca de horas dedicadas a disciplinas que não serviram para nada. Pelo que eu já vi de outras faculdades, é muito comum que essas disciplinas estejam presentes nas grades curriculares apenas para aumentarem a carga horária. 
 
-Conteúdos inúteis dos cursos
+**O preço**
 
-Durante meu curso, tive aulas sobre administração, contabilidade, português, inglês, estatística, entre outras. Uma quantidade gigantesca de horas dedicadas a disciplinas que não serviram para nada. Pelo que eu já vi de outras faculdades, é muito comum haverem essas disciplinas que estão lá só para aumentarem a carga horária do curso. 
+Não é difícil encontrar, no Brasil, uma graduação que custe mais de R$ 1.000,00 por mês. A quantidade de conteúdo que é possível ter acesso usando metade desse valor e sem sair de casa, é imensurável.
 
-O preço
+Nas universidades federais, onde não há custo, os cursos possuem grades curriculares ultrapassadas, muitas vezes. A burocracia estatal impede que o conteúdo evolua com mais agilidade, deixando ainda maior o abismo que existe entre o que se aprende na faculdade e o que se aplica no mercado.
 
-Não é difícil entrar no Brasil uma graduação que custe mais de R$ 1.000,00 por mês. A quantidade de conteúdo que é possível ter acesso usando metade desse valor e a internet é imensurável.
+**O tempo**
 
-Nas universidades federais, onde não tem custo, os cursos possuem grades curriculares inferiores. A burocracia estatal impede que os cursos evoluam com mais agilidade, ainda mais se tratando de uma área em constante evolução como essa.
+Image você passando 3.200 horas, sentado(a) numa cadeira dentro de uma sala de aula. Esse é um número aproximado de horas de um curso superior na área de tecnologia. Agora, imagine usar esse tempo para estudar apenas o que você quer focar, como desenvolver aplicativos, por exemplo. Um pouco de imaginação é o suficiente para perceber o óbvio, não é mesmo!?
 
-O tempo
+**O diploma não importa muito**
 
-Image você passando 3.200 horas sentado(a) numa cadeira dentro de uma sala de aula. Esse é um número aproximada de horas de uma faculdade na área de tecnologia, mas pode ser mais. Agora imagine usar esse tempo para estudar apenas o que você quer focar, como desenvolver aplicativos, por exemplo. Não precisa exercitar muito a mente para perceber o óbvio, não é mesmo!?
+Em muitas áreas, como medicina, é impensável que haja um profissional atuando sem diploma. Na programação, isso definitivamente não acontece.
 
-Diploma não te ajuda
+Mesmo que você tenha um belo diploma pendurado na parede, sem experiência prática, é muito provável que perca uma vaga para outro profissional que trabalha na área há alguns poucos meses e só tem o ensino médio completo. O que é o que você sabe na prática, os problemas que já resolveu, os projetos que já participou.
 
-Mesmo que você tenha um belo diploma pendurado na parede, se não tiver experiência prática, e bem provável que perca uma vaga para outro profissional que trabalha na área há seis meses e só tem o ensino médio. O que manda nessa área, são os problemas que já resolveu, os projetos que já participou.
+### Não se aproveita nada da faculdade?
 
-Não se aproveita nada da faculdade?
+Não é bem assim. Existem uma série de conceitos que trabalhamos na programação que são aprendidos nos cursos de graduação, principalmente para quem está começando - praticamente - do zero.  Algoritmos, estrutura de dados, orientação a objetos, arquitetura de sistemas, normas.
 
-Não é bem assim. Existem uma série de conceitos que trabalhamos na programação que são aprendidos nos cursos de graduação, principalmente pra quem tá começando - praticamente - do zero.  Algoritmos, estrutura de dados, orientação a objetos, arquitetura de sistemas, normas, fazem parte do dia a dia da nossa profissão. 
+Por outro lado, é imprescindível que esses ensinamentos sejam colocados em prática ainda durante o curso. Caso contrário, muito pouco será aproveitado. Também é importante dizer que é totalmente possível aprendê-los de outra maneira.
 
-Por outro lado, é possível aprender esses conceitos de forma muito mais rápida e barata, como em cursos online, livros e até vídeos.
+### Na minha experiência
 
-Na minha experiência
+Eu já escrevi a aqui no blog sobre as [minhas primeiras experiências na programação](/blog/minhas-primeiras-experiencias-como-desenvolvedor). 
 
-Eu já escrevi a aqui no blog sobre as minhas primeiras experiências na programação. Contradizendo a minha opinião, eu fiz dois cursos, técnico e tecnólogo. Há 13 anos atrás, ainda não se tinha tanto acesso a informação e a verdade é que eu nem sabia o que um programador fazia, muito menos como se tornar um. Mesmo estudando, eu tratei de pôr em prática muito cedo e isso foi o que fez a diferença de verdade. 
+Contradizendo a minha opinião, fiz dois cursos: técnico e tecnólogo. Há 13 anos, ainda não se tinha tanto acesso à informação e a verdade é que eu nem sabia o que um programador fazia, muito menos como se tornar um. 
 
-Finalizando
+Mesmo estudando, tratei de pôr em prática muito cedo e isso foi o que fez a diferença de verdade. 
 
-Se você se interessa pela área e não sabe por onde começar, minha recomendação é que procure por profissionais experientes que possam de indicar alguns caminhos. 
+Pude conviver com algumas dezenas de profissionais da minha área e, sempre que tocávamos no assunto, chegávamos à mesma conclusão na maioria das vezes. Muitos abandonaram os seus cursos pela metade, pois, com algum tempo no mercado já não fazia mais sentido investir tempo e dinheiro com isso.
 
-O mais importante é que você coloque em prática o que está estudando. Comece um projeto próprio, sobre qualquer coisa e simplesmente escreva. A cada coisa que perceber que não sabe, aparecerão mais dez e isso é totalmente normal.
+### Finalizando
 
-Minha dica final é que leia o post em que eu falo sobre o caminho mais simples e barato para iniciar a carreira de desenvolvedor. Já seria um belo ponto de partida.
+Se o seu sonho e fazer uma faculdade, faça, de verdade! O meu intuito com esse texto não é desmotivar ninguém, é fazer com que entenda que não precisa, apenas. 
+
+O mais importante é que você coloque em prática o que estuda. Comece um projeto próprio, sobre qualquer coisa e simplesmente escreva. A cada desafio que encontrar, novos ensinamentos serão aprendidos. É assim que aprendemos até hoje.
+
+A minha dica final é que leia o post em que falo sobre [o caminho mais simples e barato para iniciar a carreira de desenvolvedor](/blog/o-caminho-mais-simples-e-barato-para-iniciar-a-carreira-de-desenvolvedor). Já seria um belo ponto de partida.
+
+Se precisar de alguma ajuda é só entrar em contato. 
 
 Nos vemos em breve!
