@@ -19,7 +19,7 @@ Se você está com pressa e entrou nesse post atrás de uma resposta rápida, j�
 
 Não. Existem uma série de fatores a serem avaliados como qualidade do curso, nível de conhecimento ou desejo pessoal, por exemplo.
 
-Sim. Quando colocamos numa balança os prós e contras, o segundo sempre vence. Ironicamente isso fica mais claro depois que você e forma.
+Sim. Quando colocamos numa balança os prós e contras, o segundo sempre vence. Ironicamente isso fica mais claro depois que você se forma.
 
 ### Os meus critérios de avaliação
 
@@ -29,13 +29,13 @@ A programação é uma atividade extremamente técnica e prática. É como na pr
 
 **Conteúdos inúteis dos cursos**
 
-Durante a minha graduação, tive aulas sobre administração, contabilidade, português, inglês, estatística, entre outras. Uma quantidade gigantesca de horas dedicadas a disciplinas que não serviram para nada. Pelo que eu já vi de outras faculdades, é muito comum que essas disciplinas estejam presentes nas grades curriculares apenas para aumentarem a carga horária. 
+Durante a minha graduação, tive aulas sobre administração, contabilidade, português, inglês, direito, entre outras. Uma quantidade gigantesca de horas dedicadas a disciplinas que não serviram para nada. Pelo que eu já vi de outras faculdades, é muito comum que essas disciplinas estejam presentes nas grades curriculares apenas para aumentarem a carga horária. 
 
 **O preço**
 
-Não é difícil encontrar, no Brasil, uma graduação que custe mais de R$ 1.000,00 por mês. A quantidade de conteúdo que é possível ter acesso usando metade desse valor e sem sair de casa, é imensurável.
+Não é difícil encontrar, no Brasil, uma graduação que custe mais de R$ 1.000,00 por mês. A quantidade de conteúdo que é possível ter acesso usando metade desse valor e sem sair de casa, é imensurável. 
 
-Nas universidades federais, onde não há custo, os cursos possuem grades curriculares ultrapassadas, muitas vezes. A burocracia estatal impede que o conteúdo evolua com mais agilidade, deixando ainda maior o abismo que existe entre o que se aprende na faculdade e o que se aplica no mercado.
+Você pode fazer investimentos muito menores para aprender coisas mais específicas. Isso sem falar na quantidade de conteúdo gratuito e de qualidade disponível na _internet_.
 
 **O tempo**
 
