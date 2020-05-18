@@ -27,7 +27,6 @@ return [
             },
         ],
         'founders'   => [
-            'path' => 'founders',
             'sort' => 'sort',
         ],
     ],

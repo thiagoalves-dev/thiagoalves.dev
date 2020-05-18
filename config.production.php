@@ -9,7 +9,7 @@ return [
     'siteDescription' => 'Site com a finalidade de compartilhar experiências e ajudar outros desenvolvedores.',
     'siteKeywords'    => 'Full Stack, Web, Development, Desenvolvimento, Programação, Laravel, Vue.js, PHP, Vue, Sass, Front-end, Back-end, Javascript',
     'collections'     => [
-        'posts' => [
+        'posts'    => [
             'author' => 'Author Name', // Default author, if not provided in a post
             'sort'   => '-date',
             'path'   => 'blog/{filename}',
@@ -17,8 +17,7 @@ return [
                 return $post->published;
             },
         ],
-        'founders'   => [
-            'path' => 'founders',
+        'founders' => [
             'sort' => 'sort',
         ],
     ],
