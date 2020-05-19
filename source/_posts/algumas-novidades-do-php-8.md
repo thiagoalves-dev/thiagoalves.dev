@@ -46,7 +46,7 @@ try {
 
 ### Função `str_contains`
 
-No _Laravel Framework_, esta função já existem há algum tempo. No _PHP_ era possível obter um resultado semelhante usando a função `strpos`, de uma forma menos elegante, digamos assim.
+No _Laravel Framework_, esta função já existe há algum tempo. No _PHP_ era possível obter um resultado semelhante usando a função `strpos`, de uma forma menos elegante, digamos assim.
 
 ```php
 // ANTES
