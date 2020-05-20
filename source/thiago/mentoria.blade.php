@@ -20,7 +20,9 @@ description: Alguns serviços que ofereço para ajudar outras pessoas a se desen
             Aulas 100% personalizadas e agendadas conforme a disponibilidade do aluno e de horários.
         </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            @include('thiago._layouts.mentory.beginner-hourly')
+            @include('thiago._layouts.mentory.advanced-hourly')
             @include('thiago._layouts.mentory.beginner-monthly')
             @include('thiago._layouts.mentory.advanced-monthly')
         </div>
