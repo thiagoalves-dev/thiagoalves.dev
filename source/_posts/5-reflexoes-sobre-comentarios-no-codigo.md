@@ -1,6 +1,8 @@
 ---
 extends: _layouts.post
 section: content
+published: true
+featured: true
 
 date: 2020-05-22
 author: Thiago Alves
@@ -12,7 +14,7 @@ keywords: Código, Comentários, Legibilidade, Bugs, Configurações
 
 Qualquer programador com alguma experiência, principalmente que já tenha trabalhado em equipe, deve ter se deparado com algum comentário do tipo: "não mexer", "aqui é que a mágica acontece" ou "não sei o que isso faz". Já é quase uma tradição.
 
-Por trás dessa prática inofensiva e até engraçada, à primeira vista, uma série de problemas podem estar se escondendo no código. Neste _post_ trago algumas reflexões carregadas de conceitos e da minha opinião sobre o tema.
+Por trás dessa prática inofensiva e até engraçada, à primeira vista, uma série de problemas podem estar se escondendo no código. Neste _post_, trago algumas reflexões carregadas de conceitos e da minha opinião sobre o tema.
 
 ### Legibilidade do código
 
@@ -31,13 +33,13 @@ public function getCurrentMonth() {
 }
 ```
 
-Pode parecer bobo, mas imagine você corrigindo um erro que acontece em produção, a lógica em questão consome o método acima e nem foi você que o implementou. Basicamente, isso pode definir se o problema vai afetar alguns poucos usuários ou algumas centenas.
+Pode parecer bobo, mas imagine você corrigindo um erro que acontece em produção, a lógica em questão consome o método acima e nem foi você que o implementou. Basicamente, isso pode definir se o problema vai afetar alguns poucos usuários ou algumas centenas por causa do tempo perdido durante a correção.
 
 ### Comentários desatualizados
 
 Para mim, apenas esse tópico já basta para defender que comentários não devem ser usados. 
 
-Durante o meu razoável tempo de experiência, eu jamais fui ajudado por um comentário. Seja meu ou de outro desenvolvedor.
+Na minha experiência, eu jamais fui ajudado por um comentário e, o principal motivo, era que ele já não estava condizente com a lógica implementada, por ela ter mudado em algum momento.
 
 É sempre a mesma história: o camarada escreve aquele método com dezenas de linhas e outras dezenas de linhas para explicar o que aquilo tudo faz, uma correção é necessária, é feita, mas o comentário não é atualizado. O resto é história (risos).
 
