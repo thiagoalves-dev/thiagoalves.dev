@@ -5,7 +5,7 @@
         <h2 class="text-lg mb-1">{{ $founder->name }}</h2>
         <div class="text-gray-600">{{ $founder->profession }}</div>
         <a href="{{ $founder->personal_page }}" class="cube-palette-1 font-medium hover:underline"
-           target="_blank">{{ $founder->personal_page_label }}</a>
+           target="{{ $founder->personal_page_target }}">{{ $founder->personal_page_label }}</a>
         <div class="mt-2">
             @if($founder->instagram)
                 <a href="https://instagram.com/{{ $founder->instagram }}" target="_blank"
