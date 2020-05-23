@@ -1051,6 +1051,17 @@ hr, blockquote {
   border-color: #f0e2e2;
 }
 
+.thiago-mentory.calendly-inline-widget {
+  min-width: 320px;
+  height: 1010px;
+}
+
+@media screen and (max-width: 712px) {
+  .thiago-mentory.calendly-inline-widget {
+    margin-top: 30px;
+  }
+}
+
 .sr-only{
   position: absolute;
   width: 1px;

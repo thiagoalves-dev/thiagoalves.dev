@@ -16,7 +16,7 @@
         </div>
         <hr class="mt-0 mb-3">
         <div class="text-gray-600">
-            <strong>6 horas</strong>
+            <strong title="6 aulas por mês de uma hora cada.">6x 1 hora</strong>
             <br>
             <strong>Valor: R$ 376,00</strong>
         </div>
