@@ -1,8 +1,8 @@
 # Mastercode Blog
 
-Repositório do nosso blog, onde compartilhamos o nosso conhecimento com a intenção de ajudar outras pessoas.
+Repositório do blog que criamos para compartilhar o nosso conhecimento e ajudar desenvolvedores de todos os níveis.
 
-Qualquer um pode compartilhar o seu conhecimento aqui, basta criar um _Pull Request_.
+Qualquer pessoa pode contribuir aqui, basta criar um _Pull Request_.
 
 Veja abaixo como funciona.
 
@@ -32,7 +32,7 @@ $ npm install
 
 ## Visualização com _Browsersync_
 
-Para executar o projeto e fazer modificações, execute o comando abaixo. 
+Para executar o projeto, execute o comando abaixo no seu terminal. 
 
 ```shell script
 $ npm run watch
