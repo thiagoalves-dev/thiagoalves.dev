@@ -1,5 +1,9 @@
-.cube-palette-1 {
+a.cube-palette-1 {
     color: #ef5742;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .cube-palette-2 {
@@ -64,5 +68,14 @@ hr, blockquote {
         @media screen and (max-width: 712px) {
             margin-top: 30px;
         }
+    }
+}
+
+main p a {
+    color: #ef5742;
+    font-weight: normal;
+
+    &:hover {
+        text-decoration: underline;
     }
 }

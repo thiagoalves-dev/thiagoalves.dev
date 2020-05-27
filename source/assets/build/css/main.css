@@ -995,8 +995,12 @@ pre code {
   }
 }
 
-.cube-palette-1 {
+a.cube-palette-1 {
   color: #ef5742;
+}
+
+a.cube-palette-1:hover {
+  text-decoration: underline;
 }
 
 .cube-palette-2 {
@@ -1060,6 +1064,15 @@ hr, blockquote {
   .thiago-mentory.calendly-inline-widget {
     margin-top: 30px;
   }
+}
+
+main p a {
+  color: #ef5742;
+  font-weight: normal;
+}
+
+main p a:hover {
+  text-decoration: underline;
 }
 
 .sr-only{
