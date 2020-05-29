@@ -8,8 +8,6 @@ date: 2020-05-29
 author: Thiago Alves
 date_txt: 29 de Maio de 2020
 title: Ser programador é frustrante
-description: desc
-keywords: keys
 ---
 
 
