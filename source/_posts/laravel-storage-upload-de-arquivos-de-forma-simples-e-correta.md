@@ -5,7 +5,6 @@ published: true
 
 date: 2020-04-18
 author: Thiago Alves
-date_txt: 18 de Abril de 2020
 title: "Laravel Storage: upload de arquivos de forma simples e correta"
 description: Exemplificando como fazer upload de arquivos usando a Storage do Laravel e a diferença de arquivos públicos e privados.
 keywords: Storage, Upload, Arquivos

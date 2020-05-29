@@ -5,7 +5,6 @@ published: true
 
 date: 2020-05-22
 author: Thiago Alves
-date_txt: 22 de Maio de 2020
 title: 5 reflexões sobre comentários no código
 description: 'Qualquer programador com alguma experiência, principalmente que já tenha trabalhado em equipe, deve ter se deparado com algum comentário do tipo: "não mexer", "aqui é que a mágica acontece" ou "não sei o que isso faz".'
 keywords: Código, Comentários, Legibilidade, Bugs, Configurações

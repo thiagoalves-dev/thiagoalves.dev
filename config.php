@@ -32,10 +32,16 @@ return [
     ],
 
     // helpers
-    'getDate' => function ($page) {
+    'getDate'     => function ($page) {
         return Datetime::createFromFormat('U', $page->date);
     },
-    'getExcerpt' => function ($page, $length = 255) {
+    'getDateText' => function ($page) {
+        setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'portuguese');
+        date_default_timezone_set('UTC');
+
+        return strftime('%d de %B de %Y', $page->date);
+    },
+    'getExcerpt'  => function ($page, $length = 255) {
         if ($page->excerpt) {
             return $page->excerpt;
         }

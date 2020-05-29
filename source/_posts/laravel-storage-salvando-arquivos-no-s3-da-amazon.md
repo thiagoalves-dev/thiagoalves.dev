@@ -5,7 +5,6 @@ published: true
 
 date: 2020-04-25
 author: Thiago Alves
-date_txt: 25 de Abril de 2020
 title: "Laravel Storage: salvando arquivos no S3 da Amazon"
 description: Exemplo de como salvar arquivos no s3 da Amazon usando a classe Storage do Laravel.
 keywords: Storage, Upload, Arquivos, S3, Amazon, AWS

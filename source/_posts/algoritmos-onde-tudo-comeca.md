@@ -5,7 +5,6 @@ published: true
 
 date: 2020-04-21
 author: Thiago Alves
-date_txt: 21 de Abril de 2020
 title: "Algoritmos: onde tudo começa"
 description: Algoritmo nada mais é do que um dos pilares de desenvolvimento de sistemas.
 keywords: Algoritmos

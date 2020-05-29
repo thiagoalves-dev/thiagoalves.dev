@@ -6,10 +6,8 @@ featured: true
 
 date: 2020-05-29
 author: Thiago Alves
-date_txt: 29 de Maio de 2020
 title: Ser programador é frustrante
 ---
-
 
 Já fazem quatro horas que eu tô batendo cabeça com esse maldito erro. Porque eu tinha que dizer que essa tarefa era simples!? Cara, mas o código tá certo, não faz sentido esse erro. Putz! Precisava reiniciar o serviço. Funcionou!
 

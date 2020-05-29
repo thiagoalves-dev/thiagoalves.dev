@@ -6,7 +6,6 @@ featured: true
 
 date: 2020-05-25
 author: Thiago Alves
-date_txt: 25 de Maio de 2020
 title: Compartilhe o seu conhecimento no nosso blog
 description: Antes mesmo de colocar esse blog no ar, eu já pensava que deveria haver uma forma simples para que outros desenvolvedores pudessem contribuir com o seu conhecimento, sem que houvessem muitas travas no meio do caminho.
 keywords: Blog, Conteúdo, Compartilhamento

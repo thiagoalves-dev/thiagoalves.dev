@@ -5,7 +5,6 @@ published: true
 
 date: 2020-05-15
 author: Thiago Alves
-date_txt: 15 de Maio de 2020
 title: Vale a pena fazer faculdade de programação?
 description: A programação é uma atividade extremamente técnica e prática. É como na profissão de mecânico, não importa se você leu cinquenta livros sobre o tema, isso não te faz um profissional. 
 keywords: Faculdade, Graduação, Prática, Técnica

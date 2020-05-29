@@ -5,7 +5,6 @@ published: true
 
 date: 2020-04-20
 author: Vanderlei Sbaraini Amancio
-date_txt: 20 de Abril de 2020
 title: "Custom Casts do Laravel: convertendo atributos de um Model"
 description: Uso de custom casts para transformações avançadas de atributos em modelos do Eloquent.
 keywords: Casts, Model, Eloquent

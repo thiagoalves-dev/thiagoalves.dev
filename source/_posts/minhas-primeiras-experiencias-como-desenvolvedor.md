@@ -5,7 +5,6 @@ published: true
 
 date: 2020-05-04
 author: Thiago Alves
-date_txt: 4 de Maio de 2020
 title: Minhas primeiras experiências como Desenvolvedor
 description: Contando um pouco do começo da minha história na programação e desmistificando algumas crenças.
 keywords: Carreira

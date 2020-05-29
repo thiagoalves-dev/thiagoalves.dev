@@ -5,7 +5,6 @@ published: true
 
 date: 2020-05-20
 author: Thiago Alves
-date_txt: 20 de Maio de 2020
 title: Algumas novidades do PHP 8
 description: Ao contrário do que muitos "especialistas" pregavam, o PHP mostra que tem um grande futuro pela frente. Com uma comunidade bastante numerosa, frameworks robustos e constantes melhorias, a linguagem está mais viva do que nunca.
 keywords: PHP 8, JIT, Exception, str_contains, Union Types, Throw, Traits

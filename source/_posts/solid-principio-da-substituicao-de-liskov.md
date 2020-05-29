@@ -5,7 +5,6 @@ published: true
 
 date: 2020-05-18
 author: Thiago Alves
-date_txt: 18 de Maio de 2020
 title: 'SOLID: Princípio da substituição de Liskov'
 description: A base para o Clean Code é o SOLID. Então vou exemplificar o que a terceira letra do acrônimo ensina.
 keywords: Clean Code, Código Limpo, SOLID, Liskov

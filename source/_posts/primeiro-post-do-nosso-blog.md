@@ -5,7 +5,6 @@ published: true
 
 date: 2020-04-16
 author: Thiago Alves
-date_txt: 16 de Abril de 2020
 title: Primeiro post do nosso blog
 description: Falando um pouco sobre a nossa empresa, sobre a criação do blog e o que esperar dele.
 keywords: Blog

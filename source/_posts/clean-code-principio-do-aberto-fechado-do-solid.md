@@ -5,7 +5,6 @@ published: true
 
 date: 2020-05-06
 author: Thiago Alves
-date_txt: 6 de Maio de 2020
 title: "Clean Code: princípio do aberto/fechado do SOLID"
 description: A base para o Clean Code é o SOLID. Então vou exemplificar o que a segunda letra do acrônimo ensina.
 keywords: Clean Code, Código Limpo, SOLID, Classe

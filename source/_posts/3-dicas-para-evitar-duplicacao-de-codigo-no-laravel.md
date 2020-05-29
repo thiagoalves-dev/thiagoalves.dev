@@ -6,7 +6,6 @@ featured: true
 
 date: 2020-05-27
 author: Thiago Alves
-date_txt: 27 de Maio de 2020
 title: 3 dicas para evitar duplicação de código no Laravel
 description: 'Uma das regras não oficiais da programação diz que: a quantidade de código escrito está diretamente ligada a quantidade de erros gerados.' 
 keywords: Dry, Clean Code, Route, Resource, Repository, Duplicação

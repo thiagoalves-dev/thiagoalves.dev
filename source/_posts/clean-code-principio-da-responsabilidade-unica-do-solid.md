@@ -5,7 +5,6 @@ published: true
 
 date: 2020-05-02
 author: Thiago Alves
-date_txt: 2 de Maio de 2020
 title: "Clean Code: princípio da responsabilidade única do SOLID"
 description: A base para o Clean Code é o SOLID. Então vou exemplificar o que a primeira letra do acrônimo ensina.
 keywords: Clean Code, Código Limpo, SOLID, Classe

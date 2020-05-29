@@ -16,7 +16,7 @@
             @endif
 
             <p class="text-gray-700 font-medium my-2">
-                {{ $featuredPost->date_txt }}
+                {{ $featuredPost->getDateText() }}
             </p>
 
             <h2 class="text-3xl mt-0">

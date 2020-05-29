@@ -5,7 +5,6 @@ published: true
 
 date: 2020-04-26
 author: Thiago Alves
-date_txt: 26 de Abril de 2020
 title: A profissão de Desenvolvedor não se resume a escrever código
 description: Uma breve reflexão sobre o dia a dia de um Desenvolvedor e as suas atividades.
 keywords: Desenvolvedor, Arquitetura, Estudos, Rotina, Carreira

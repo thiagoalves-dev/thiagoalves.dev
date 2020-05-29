@@ -5,7 +5,6 @@ published: true
 
 date: 2020-05-11
 author: Thiago Alves
-date_txt: 11 de Maio de 2020
 title: Um dos maiores erros que os desenvolvedores cometem
 description: Trabalhe para ser um especialista de mente aberta e não um defensor de tecnologia e, muito menos, um generalista. 
 keywords: Tecnologias, Generalista, Especialista
