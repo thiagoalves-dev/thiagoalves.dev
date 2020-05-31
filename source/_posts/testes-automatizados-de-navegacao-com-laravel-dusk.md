@@ -1,8 +1,10 @@
 ---
 extends: _layouts.post
 section: content
+published: true
+featured: true
 
-date: 2020-05-30
+date: 2020-05-31
 author: Thiago Alves
 title: Testes automatizados de navegação com Laravel Dusk
 description: Por mais iniciante que você possa ser, é bem provável que, em algum momento, tenha ouvido falar no tal de teste automatizado, da sua importância no desenvolvimento de sistemas e tudo mais.
