@@ -5,8 +5,8 @@ section: content
 date: 2020-06-01
 author: Thiago Alves
 title: Testes automatizados de navegação com Laravel Dusk
-description: 
-keywords: 
+description: Por mais iniciante que você possa ser, é bem provável que, em algum momento, tenha ouvido falar no tal de teste automatizado, da sua importância no desenvolvimento de sistemas e tudo mais.
+keywords: Testes, Navegação, Dusk
 ---
 
 Por mais iniciante que você possa ser, é bem provável que, em algum momento, tenha ouvido falar no _tal_ de teste automatizado, da sua importância no desenvolvimento de sistemas e tudo mais.
@@ -53,55 +53,62 @@ P.S. 2: Antes de partirmos para a prática, verifique se a variável `APP_URL` n
 
 #### O contexto
 
-Implementei uma tela de cadastro bem básica, onde é preciso preencher apenas nome e email. Ao clicar em salvar, redireciono para uma segunda tela onde listo todos os cadastros feitos. Prints abaixo.
+Implementei uma tela de cadastro bem básica, onde é preciso preencher apenas nome e email. Ao clicar em "Salvar", redireciono para uma segunda tela onde listo todos os cadastros feitos. Prints abaixo.
 
-// imagens
+<img src="/assets/images/post-laravel-dusk/form.png" alt="Formulário para adicionar registro" />
 
-Teste 1
+<img src="/assets/images/post-laravel-dusk/list.png" alt="Lista de registros cadastrados" />
 
-Preciso criar um teste automatizado para validar que esse comportamento está acontecendo corretamente. Então criei o seguinte teste para tal:
+### Teste 1
+
+Preciso criar um teste automatizado para garantir que esse comportamento acontece corretamente. Então criei o seguinte teste para tal:
 
 ```
 // tests/Browser/RegistersTest
 
 public function testAddRegisterSuccess()
 {
+    // Gerador de dados falsos
     $faker = Factory::create('pt_BR');
 
     $this->browse(function (Browser $browser) use ($faker) {
         $name = $faker->name;
         $email = $faker->email;
 
-        $browser->visit('/registers/create')
-            ->type('name', $name)
-            ->type('email', $email)
-            ->press('Salvar')
-            ->assertPathIs('/registers')
-            ->assertSee($name)
-            ->assertSee($email);
+        $browser->visit('/registers/create') // Acessa a rota que de cadastro
+            ->type('name', $name) // Preenche nome
+            ->type('email', $email) // Preenche email
+            ->press('Salvar') // Clica em "Salvar"
+            ->assertPathIs('/registers') // Testa se fui redirecionado para a rota da lista
+            ->assertSee($name) // Testa se o nome preenchido está na lista
+            ->assertSee($email); // Testa se o email preenchido está na lista
     });
 }
 ```
 
-Execução
+#### Execução
 
 Para rodar todos os testes implementados com o Dusk, basta executar o comando abaixo:
 
-php artisan dusk
+```shell
+$ php artisan dusk
+```
 
-Para executar um teste específico, execute o comando da seguinte forma:
+Para rodar um teste específico, execute o comando da seguinte forma:
 
-php artisan dusk tests/Browser/RegistersTest.php
+```shell
+$ php artisan dusk tests/Browser/RegistersTest.php
+```
 
 Resultado:
 
-// print terminal
+<img src="/assets/images/post-laravel-dusk/run-all.png" alt="Resulta do teste executado" />
 
-Teste 2
+### Teste 2
 
-Agora, eu preciso me certificar de que a validação do formulário está funcionando corretamente.
+Agora, quero garantir de que a validação do formulário funciona corretamente.
 
-// print
+<img src="/assets/images/post-laravel-dusk/form-validation.png" alt="Formulário para adicionar registro com mensagens de validação" />
 
 Para isso, escrevi o seguinte teste:
 
@@ -111,25 +118,25 @@ Para isso, escrevi o seguinte teste:
 public function testAddRegisterValidation()
 {
     $this->browse(function (Browser $browser) {
-        $browser->visit('/registers/create')
-            ->press('Salvar')
-            ->assertPathIs('/registers/create')
-            ->assertSee('The name field is required.')
-            ->assertSee('The email field is required.');
+        $browser->visit('/registers/create') // Acessa a rota que de cadastro
+            ->press('Salvar') // Clica em "Salvar" sem preencher nada
+            ->assertPathIs('/registers/create') // Testa se continuo na mesma tela
+            ->assertSee('The name field is required.') // Testa se o erro referente ao nome foi exibido
+            ->assertSee('The email field is required.'); // Testa se o erro referente ao email foi exibido
     });
 }
 ```
 
 Resultado:
 
-// print do terminal
+<img src="/assets/images/post-laravel-dusk/run-all-2.png" alt="Resulta dos testes executados" />
 
-Concluindo
+### Concluindo
 
-As possibilidades são infinitas. A primeira vista, esse processo parece trabalhoso, mas, como tudo na programação, a prática vai tornar isso cada vez mais fácil. 
+As possibilidades são infinitas. A primeira vista, esse processo parece trabalhoso, mas, como tudo na programação, a prática vai tornar isso cada vez mais fácil e rápido. 
 
-Conforme o tempo passa, você não se preocupa mais em ter que escrever testes, mas sim, quais testes escrever para garantir que o maior número de comportamentos estão cobertos.
+Conforme o tempo passa, você não se preocupa mais em ter que escrever testes, mas sim, quais vai escrever para garantir que os mais variáveis comportamentos estão cobertos.
 
-Todo o código acima está disponível no meu repositório, caso queira baixar e testar.
+Todo o código acima está disponível no meu [repositório](https://github.com/thiagomcw/laravel-storage-example), caso queira baixar e testar.
 
 Nos vemos em breve!
