@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 
-date: 2020-06-01
+date: 2020-05-30
 author: Thiago Alves
 title: Testes automatizados de navegação com Laravel Dusk
 description: Por mais iniciante que você possa ser, é bem provável que, em algum momento, tenha ouvido falar no tal de teste automatizado, da sua importância no desenvolvimento de sistemas e tudo mais.
@@ -133,7 +133,9 @@ Resultado:
 
 ### Concluindo
 
-As possibilidades são infinitas. A primeira vista, esse processo parece trabalhoso, mas, como tudo na programação, a prática vai tornar isso cada vez mais fácil e rápido. 
+As possibilidades são infinitas. Futuramente, farei um segundo _post_ explorando mais recursos. 
+
+A primeira vista, esse processo parece trabalhoso, mas, como tudo na programação, a prática vai tornar isso cada vez mais fácil e rápido. 
 
 Conforme o tempo passa, você não se preocupa mais em ter que escrever testes, mas sim, quais vai escrever para garantir que os mais variáveis comportamentos estão cobertos.
 
