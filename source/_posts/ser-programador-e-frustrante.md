@@ -9,7 +9,7 @@ author: Thiago Alves
 title: Ser programador é frustrante
 ---
 
-Já fazem quatro horas que eu tô batendo cabeça com esse maldito erro. Porque eu tinha que dizer que essa tarefa era simples!? Cara, mas o código tá certo, não faz sentido esse erro. Putz! Precisava reiniciar o serviço. Funcionou!
+Já faz quatro horas que eu tô batendo cabeça com esse maldito erro. Porque eu tinha que dizer que essa tarefa era simples!? Cara, mas o código tá certo, não faz sentido esse erro. Putz! Precisava reiniciar o serviço. Funcionou!
 
 \- Thiago, erro em produção, cliente falando que não consegue mudar a senha.
 
