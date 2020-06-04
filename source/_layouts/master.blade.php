@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        @include('_third_party_tags.google-tag-manager-head')
+        @include('_layouts.third-party-tags.google-tag-manager-head')
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,7 +23,7 @@
     </head>
 
     <body class="flex flex-col justify-between min-h-screen bg-cube-palette-1-100 text-gray-800 leading-normal font-sans">
-        @include('_third_party_tags.google-tag-manager-body')
+        @include('_layouts.third-party-tags.google-tag-manager-body')
         <header class="flex items-center shadow bg-white border-b h-24 py-4" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">

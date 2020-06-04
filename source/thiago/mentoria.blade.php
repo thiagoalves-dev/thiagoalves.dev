@@ -7,7 +7,7 @@ description: Alguns serviços que ofereço para ajudar outras pessoas a se desen
 @extends('_layouts.master')
 
 @push('meta')
-    @include('_third_party_tags.meta-tags-to-share', ['type' => 'website'])
+    @include('_layouts.third-party-tags.meta-tags-to-share', ['type' => 'website'])
 @endpush
 
 @section('body')

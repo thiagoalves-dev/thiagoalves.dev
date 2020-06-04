@@ -7,7 +7,7 @@ description: Um resumo breve sobre a empresa e os profissionais a idealizaram.
 @extends('_layouts.master')
 
 @push('meta')
-    @include('_third_party_tags.meta-tags-to-share', ['type' => 'website'])
+    @include('_layouts.third-party-tags.meta-tags-to-share', ['type' => 'website'])
 @endpush
 
 @section('body')
@@ -21,7 +21,7 @@ description: Um resumo breve sobre a empresa e os profissionais a idealizaram.
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             @foreach($founders as $founder)
-                @include('_layouts.partials.founder-card', compact('founder'))
+                @include('_components.founders.founder-card')
             @endforeach
         </div>
     </div>
