@@ -1,12 +1,14 @@
 ---
 extends: _layouts.post
 section: content
+published: true
+featured: true
 
-date: 2020-06-03
+date: 2020-06-04
 author: Thiago Alves
 title: 5 dicas para iniciantes na programação
-description: 
-keywords: 
+description: Não importa quem seja, a tecnologia usada, se está numa empresa grande ou pequena, todo o programador já viveu a experiência de ser um iniciante, de não saber direito o que está fazendo e ter aquela sensação de estar completamente perdido. 
+keywords: Iniciante, Junior, Conceitos, Hype 
 ---
 
 Não importa quem seja, a tecnologia usada, se está numa empresa grande ou pequena, todo o programador já viveu a experiência de ser um iniciante, de não saber direito o que está fazendo e ter aquela sensação de estar completamente perdido. 
