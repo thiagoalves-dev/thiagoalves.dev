@@ -35,7 +35,19 @@
         </div>
     </nav>
 
-    <p class="text-gray-700 text-xs">Comente abaixo o que você achou deste post, se ficou com alguma dúvida ou se gostaria de sugerir algum assunto.</p>
+    <div class="flex items-center">
+        @foreach($founders as $founder)
+            @if($founder->name === $page->author)
+                <div class="w-full md:w-1/2 mx-auto">
+                    @include('_components.founders.founder-card')
+                </div>
+            @endif
+        @endforeach
+    </div>
+
+    <p class="text-gray-700 text-xs text-center">
+        Comente abaixo o que você achou deste post, se ficou com alguma dúvida ou se gostaria de sugerir algum assunto.
+    </p>
 
     @include('_layouts.third-party-tags.disqus-comments')
 @endsection
