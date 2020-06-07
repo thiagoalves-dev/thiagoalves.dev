@@ -1,10 +1,12 @@
 ---
 extends: _layouts.post
 section: content
+published: true
+featured: true
 
 date: 2020-06-07
 author: Thiago Alves
-title: 5 fatores importantes para estruturação do código
+title: 5 fatores importantes na estruturação do código
 description: Atualmente, acredito que o momento mais complexo é sempre o início de um projeto. A hora de escolher o que e como será usado, como organizar, que estrutura seguir, diretrizes, padrões.
 keywords: Estrutura, UML, MER, Fluxograma, Testes, Design Patterns, SOLID
 ---
