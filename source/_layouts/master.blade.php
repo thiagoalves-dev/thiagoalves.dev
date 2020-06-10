@@ -59,6 +59,10 @@
                            title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
                 </li>
             </ul>
+            <a href="mailto:hello@mastercode.dev">
+                hello@mastercode.dev
+            </a>
+            <br><br>
             <a href="https://github.com/mastercode-dev" target="_blank">
                 <img src="/assets/images/social/github.min.svg" alt="Github" class="inline"/>
             </a>
