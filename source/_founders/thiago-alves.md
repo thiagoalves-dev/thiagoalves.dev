@@ -6,6 +6,6 @@ profession: Analista de Sistemas
 instagram: thiagomcw
 linkedin: thiagomcw
 twitter: thiagomcw
-personal_page: /thiago/mentoria
-personal_page_label: Mentoria
+personal_page: /thiago/consultoria-individual
+personal_page_label: Consultoria Individual
 ---

@@ -6,7 +6,7 @@
         </h2>
         <hr class="mt-3 mb-3">
         <div class="text-gray-600">
-            Uma hora de mentoria para quem já é programador e quer tirar dúvidas.
+            Uma hora de consultoria para quem já é programador e quer tirar dúvidas.
             <ul class="list-none mb-0">
                 <li class="border-t py-2">Carreira</li>
                 <li class="border-t py-2">Análise de currículo</li>

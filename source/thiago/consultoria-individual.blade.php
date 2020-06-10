@@ -12,7 +12,7 @@ description: Alguns serviços que ofereço para ajudar outras pessoas a se desen
 
 @section('body')
     <div class="text-center">
-        <h1>Mentoria</h1>
+        <h1>Consultoria Individual</h1>
 
         <p>
             Escolha um serviço abaixo, veja os detalhes e agende um horário comigo.
@@ -36,7 +36,7 @@ description: Alguns serviços que ofereço para ajudar outras pessoas a se desen
         </p>
 
         <h2 class="mt-12">Agendamento</h2>
-        <p>Após o pagamento, escolha abaixo uma data e um horário para nossa mentoria.</p>
+        <p>Após o pagamento, escolha abaixo uma data e um horário para nossa consultoria.</p>
         <p class="mb-0">
             <strong>Formas de pagamento:</strong>
             Picpay (@thiagomcw), NuConta (Ag. 0001 Cc. 2466279-0) e Boleto
@@ -48,12 +48,11 @@ description: Alguns serviços que ofereço para ajudar outras pessoas a se desen
 
         <h2 id="mais-informacoes">Mais informações</h2>
         <p>
-            No plano mensal, antes de iniciarmos a mentoria de fato, faremos uma conversa para que eu possa entender
-            melhor de que forma posso ajudar. <br>
-        </p>
-        <p>
-            No plano mensal, ao final primeira aula, o aluno pode solicitar reembolso e o mesmo é providenciado em até
-            24hs.
+            No plano mensal, faremos uma entrevista para que eu possa entender quais são suas necessidades técnicas.
+            <br>
+            A entrevista não é cobrada.
+            <br>
+            Ao final da primeira aula, o aluno pode solicitar reembolso e o mesmo é providenciado em no máximo 24hs.
         </p>
         <p>
             Para esclarecer qualquer dúvida, basta entrar em contato através do meu
