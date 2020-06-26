@@ -6,7 +6,7 @@ featured: true
 
 date: 2020-06-26
 author: Thiago Alves
-title: Automatizando teste de Mailable no Laravel
+title: Teste automatizado de e-mail no Laravel
 description: Dias atrás, deparei-me com uma questão que quebrei a cabeça para testar. Eu precisava enviar um e-mail para um cliente e queria validar se a montagem dele acontecia da forma correta.
 keywords: Testes, Tests, Mailable, Email, View, Markdown
 ---
