@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  php:
+    build: .docker/php
+    container_name: 'Mastercode-Blog-Application'
+    volumes:
+      - .:/var/www/html/blog
+    ports:
+    - 3000:3000
+
+volumes:
+  npm-cache:
