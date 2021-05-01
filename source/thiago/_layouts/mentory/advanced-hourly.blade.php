@@ -2,7 +2,7 @@
     <div class="text-center">
         <span class="w-3 h-3 inline-block bg-green-300 align-middle rounded-full mx-auto"></span>
         <h2 class="text-lg text-xl mt-0 mb-1">
-            Horário <br> Avançado
+            Horário
         </h2>
         <hr class="mt-3 mb-3">
         <div class="text-gray-600">
