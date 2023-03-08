@@ -3,13 +3,13 @@ version: '3'
 services:
   php:
     build: .docker/php
-    container_name: 'Mastercode-Blog-Application'
+    container_name: 'thiagoalves.dev'
     volumes:
-      - .:/var/www/html/blog
+      - .:/var/www/html/thiagoalves.dev
     ports:
       - 3000:3000
-    command: >
-      bash -c "composer update && yarn && yarn watch"
+#    command: >
+#      bash -c "composer update && yarn && yarn watch"
 
 volumes:
   npm-cache:

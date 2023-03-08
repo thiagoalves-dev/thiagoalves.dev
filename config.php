@@ -3,16 +3,16 @@
 use Illuminate\Support\Str;
 
 return [
-    'production' => false,
-    'siteName' => 'Mastercode.dev',
-    'baseUrl' => 'http://localhost:3000',
-    'siteAuthor' => 'Mastercode Web LTDA',
-    'siteImage' => 'http://localhost:3000/assets/images/mastercode.png',
+    'production'      => false,
+    'siteName'        => 'Mastercode.dev',
+    'baseUrl'         => 'http://localhost:3000',
+    'siteAuthor'      => 'Mastercode Web LTDA',
+    'siteImage'       => 'http://localhost:3000/assets/images/mastercode.png',
     'siteDescription' => 'Site com a finalidade de compartilhar experiências e ajudar outros desenvolvedores.',
-    'siteKeywords' => 'Full Stack, Web, Development, Desenvolvimento, Programação, Laravel, Vue.js, PHP, Vue, Sass, Front-end, Back-end, Javascript',
+    'siteKeywords'    => 'Full Stack, Web, Development, Desenvolvimento, Programação, Laravel, Vue.js, PHP, Vue, Sass, Front-end, Back-end, Javascript',
 
     // collections
-    'collections' => [
+    'collections'     => [
         'posts'      => [
             'author' => 'Author Name', // Default author, if not provided in a post
             'sort'   => '-date',
@@ -32,16 +32,13 @@ return [
     ],
 
     // helpers
-    'getDate'     => function ($page) {
+    'getDate'         => function ($page) {
         return Datetime::createFromFormat('U', $page->date);
     },
-    'getDateText' => function ($page) {
-        setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'portuguese');
-        date_default_timezone_set('UTC');
-
-        return strftime('%d de %B de %Y', $page->date);
+    'getDateText'     => function ($page) {
+        return date('d \d\e F \d\e Y', $page->date);
     },
-    'getExcerpt'  => function ($page, $length = 255) {
+    'getExcerpt'      => function ($page, $length = 255) {
         if ($page->excerpt) {
             return $page->excerpt;
         }
@@ -68,7 +65,7 @@ return [
             ? preg_replace('/\s+?(\S+)?$/', '', $truncated) . '...'
             : $cleaned;
     },
-    'isActive' => function ($page, $path) {
+    'isActive'        => function ($page, $path) {
         return Str::endsWith(trimPath($page->getPath()), trimPath($path));
     },
 ];

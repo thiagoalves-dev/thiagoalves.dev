@@ -1,4 +1,4 @@
-FROM php:7.4-fpm-alpine
+FROM php:8.1-fpm-alpine
 
 #Install application dependencies
 RUN apk add --no-cache libzip-dev zip bash curl && docker-php-ext-install zip
@@ -20,9 +20,9 @@ RUN addgroup -S dev &&\
 USER dev
 
 # Setup document root
-RUN mkdir -p /var/www/html/blog
+RUN mkdir -p /var/www/html/thiagoalves.dev
 
 # Set root dir
-WORKDIR /var/www/html/blog
+WORKDIR /var/www/html/thiagoalves.dev
 
 EXPOSE 3000

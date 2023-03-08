@@ -6,15 +6,19 @@ published: true
 date: 2020-04-18
 author: Thiago Alves
 title: "Laravel Storage: upload de arquivos de forma simples e correta"
-description: Exemplificando como fazer upload de arquivos usando a Storage do Laravel e a diferença de arquivos públicos e privados.
+description: "Exemplificando como fazer upload de arquivos usando a Storage do Laravel e a diferença de arquivos
+públicos e privados."
 keywords: Storage, Upload, Arquivos
 ---
 
-Em qualquer sistema é muito comum que haja alguma manipulação de arquivos. Desde fotos para um site até relatórios confidenciais em PDF.
- 
-A forma como o Laravel trabalha essa questão é incrivelmente simples. Basicamente, se você usar a estrutura que o _framework_ disponibiliza, dificilmente terá problemas com isso.
+Em qualquer sistema é muito comum que haja alguma manipulação de arquivos. Desde fotos para um site até relatórios
+confidenciais em PDF.
 
-Criei um projeto para usarmos como exemplo. Segue o _link_ do repositório: [thiagomcw/laravel-storage-example](https://github.com/thiagomcw/laravel-storage-example).
+A forma como o Laravel trabalha essa questão é incrivelmente simples. Basicamente, se você usar a estrutura que o
+_framework_ disponibiliza, dificilmente terá problemas com isso.
+
+Criei um projeto para usarmos como exemplo. Segue o _link_ do
+repositório: [thiagomcw/laravel-storage-example](https://github.com/thiagomcw/laravel-storage-example).
 
 Fiz um HTML bem simples para simular um formulário onde será feito o _upload_ de uma foto de perfil de usuário.
 
@@ -30,7 +34,8 @@ Fiz um HTML bem simples para simular um formulário onde será feito o _upload_ 
 
 #### Salvando o arquivo como privado
 
-Neste caso a imagem só ficará acessível implementando uma funcionalidade que permita isso. Seja de exibição ou _download_.
+Neste caso a imagem só ficará acessível implementando uma funcionalidade que permita isso. Seja de exibição ou
+_download_.
 
 ```php
 // HomeController
@@ -67,8 +72,9 @@ O Laravel já vem com a pasta `storage/app/public` configurada.
 ]
 ``` 
 
-É preciso criar um _symlink_ dentro do diretório público do Laravel para tornar seus arquivos públicos acessíveis pela URL do navegador.
- 
+É preciso criar um _symlink_ dentro do diretório público do Laravel para tornar seus arquivos públicos acessíveis pela
+URL do navegador.
+
 Use o seguinte comando: `php artisan storage:link`.
 
 <img src="/assets/images/post-laravel-storage/storage-on-public-folder.png" alt="Resultado do comando anterior.">

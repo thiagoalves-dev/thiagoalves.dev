@@ -1,34 +1,22 @@
-let mix = require('laravel-mix');
-let build = require('./tasks/build.js');
-let tailwindcss = require('tailwindcss');
-require('laravel-mix-purgecss');
+const mix = require('laravel-mix');
+require('laravel-mix-jigsaw');
 
 mix.disableSuccessNotifications();
-mix.setPublicPath('source/assets/build/');
-mix.webpackConfig({
-    plugins: [
-        build.jigsaw,
-        build.browserSync(),
-        build.watch([
-            'config.php',
-            'source/**/*.md',
-            'source/**/*.php',
-            'source/**/*.scss',
-        ]),
-    ],
-});
+mix.setPublicPath('source/assets/build');
 
-mix.js('source/_assets/js/main.js', 'js')
-    .sourceMaps()
-    .sass('source/_assets/sass/main.scss', 'css/main.css')
-    .sourceMaps()
+mix.jigsaw()
+    .js('source/assets/js/main.js', 'js').vue()
+    .sass('source/assets/sass/main.scss', 'css/main.css', [], [
+        require('postcss-import'),
+        require('tailwindcss/nesting'),
+        require('tailwindcss'),
+    ])
     .options({
-        processCssUrls: false,
-        postCss: [tailwindcss()],
+        processCssUrls: false
     })
-    .purgeCss({
-        extensions: ['html', 'md', 'js', 'php', 'vue'],
-        folders: ['source'],
-        whitelistPatterns: [/language/, /hljs/, /mce/],
+    .browserSync({
+        server: 'build_local',
+        files: ['build_local/**'],
     })
+    .sourceMaps()
     .version();
