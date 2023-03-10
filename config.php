@@ -36,7 +36,7 @@ return [
         return Datetime::createFromFormat('U', $page->date);
     },
     'getDateText'     => function ($page) {
-        return date('d \d\e F \d\e Y', $page->date);
+        return date('d/m/Y', $page->date);
     },
     'getExcerpt'      => function ($page, $length = 255) {
         if ($page->excerpt) {
