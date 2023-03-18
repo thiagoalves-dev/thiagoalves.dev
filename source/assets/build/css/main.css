@@ -763,17 +763,11 @@ pre code {
 a.cube-palette-1 {
   color: #ef5742;
 }
-a.cube-palette-1:hover {
-  text-decoration: underline;
-}
 .cube-palette-2 {
   color: #3a001e;
 }
 .cube-palette-3 {
   color: #855858;
-}
-a.simple.cube-palette-1 {
-  color: #ef5742;
 }
 a.cube-palette-2:hover {
   color: #855858;

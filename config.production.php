@@ -2,10 +2,10 @@
 
 return [
     'production'      => true,
-    'siteName'        => 'Mastercode.dev',
-    'baseUrl'         => 'https://mastercode.dev',
+    'siteName'        => 'Thiagoalves.dev',
+    'baseUrl'         => 'https://thiagoalves.dev',
     'siteAuthor'      => 'Mastercode Web LTDA',
-    'siteImage'       => 'https://mastercode.dev/_assets/images/mastercode.png',
+    'siteImage'       => 'https://thiagoalves.dev/_assets/images/programming-logo-800.png',
     'siteDescription' => 'Site com a finalidade de compartilhar experiências e ajudar outros desenvolvedores.',
     'siteKeywords'    => 'Full Stack, Web, Development, Desenvolvimento, Programação, Laravel, Vue.js, PHP, Vue, Sass, Front-end, Back-end, Javascript',
     'collections'     => [

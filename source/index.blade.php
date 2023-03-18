@@ -30,7 +30,7 @@
             <p class="mt-0 mb-4">{!! $featuredPost->getExcerpt() !!}</p>
 
             <a href="{{ $featuredPost->getUrl() }}" title="Read - {{ $featuredPost->title }}"
-               class="simple cube-palette-1 tracking-wide mb-4">
+               class="simple cube-palette-1 tracking-wide mb-4 hover:underline">
                 Ler +
             </a>
         </div>

@@ -1,9 +1,5 @@
 a.cube-palette-1 {
     color: #ef5742;
-
-    &:hover {
-        text-decoration: underline;
-    }
 }
 
 .cube-palette-2 {
@@ -14,13 +10,7 @@ a.cube-palette-1 {
     color: #855858;
 }
 
-a.simple {
-    &.cube-palette-1 {
-        color: #ef5742;
-    }
-}
-
-a.cube-palette-2:hover{
+a.cube-palette-2:hover {
     color: #855858;
 }
 

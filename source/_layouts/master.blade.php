@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {{--    @include('_layouts.third-party-tags.google-tag-manager-head')--}}
+    @include('_layouts.third-party-tags.google-tag-manager-head')
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="apple-mobile-web-app-title"
-    {{--          content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}">--}}
-    {{--    <meta name="keywords" content="{{ $page->siteKeywords }}{{ $page->keywords ? ', '. $page->keywords : '' }}">--}}
-    {{--    <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">--}}
+          content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}">
+    <meta name="keywords" content="{{ $page->siteKeywords }}{{ $page->keywords ? ', '. $page->keywords : '' }}">
+    <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">
 
-    {{--    @stack('meta')--}}
+    @stack('meta')
 
-    {{--    <link rel="home" href="{{ $page->baseUrl }}">--}}
+    <link rel="home" href="{{ $page->baseUrl }}">
     <link rel="canonical" href="{{ $page->baseUrl }}">
-    <link rel="icon" href="/assets/images/MCdev.png" type="image/x-icon">
-    <link rel="shortcut icon" href="/assets/images/MCdev.png">
+    <link rel="icon" href="/assets/images/programming-logo-100.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/programming-logo-100.png">
 
     <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
 
@@ -29,9 +29,11 @@
 <header class="flex items-center shadow bg-white border-b h-24 py-4" role="banner">
     <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
         <div class="flex items-center">
-            <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                <img class="h-8 md:h-10 mr-3" src="/assets/images/mastercode-txt-100.png"
+            <a href="/" title="{{ $page->siteName }} home"
+               class="inline-flex items-center simple cube-palette-1">
+                <img class="h-8 md:h-10 mr-3" src="/assets/images/programming-logo-800.png"
                      alt="{{ $page->siteName }} logo"/>
+                THIAGO ALVES .DEV
             </a>
         </div>
 
@@ -56,17 +58,19 @@
         </li>
 
         <li>
-            Desenvolvido com <a href="http://jigsaw.tighten.co" class="simple cube-palette-1" target="_blank"
-                                title="Jigsaw by Tighten">Jigsaw</a>
-            e <a href="https://tailwindcss.com" class="simple cube-palette-1" target="_blank"
-                 title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
+            Desenvolvido com
+            <a href="http://jigsaw.tighten.co" class="simple cube-palette-1 hover:underline" target="_blank"
+               title="Jigsaw by Tighten">Jigsaw</a>
+            e
+            <a href="https://tailwindcss.com" class="simple cube-palette-1 hover:underline" target="_blank"
+               title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
         </li>
     </ul>
-    <a href="mailto:hello@mastercode.dev">
-        hello@mastercode.dev
+    <a href="mailto:hello@thiagoalves.dev">
+        hello@thiagoalves.dev
     </a>
     <br><br>
-    <a href="https://github.com/mastercode-dev" target="_blank">
+    <a href="https://github.com/thiagoalves-dev" target="_blank">
         <img src="/assets/images/social/github.min.svg" alt="Github" class="inline"/>
     </a>
 </footer>

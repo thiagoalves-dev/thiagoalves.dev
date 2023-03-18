@@ -104,7 +104,7 @@ posto muito longo.
 <body>
 <p>
     Assim se começa um parágrafo de texto. <br><br>
-    Também podemos adicionar um <a class="mastercode" href="https://mastercode.dev">link</a> para você acessar a página
+    Também podemos adicionar um <a class="mastercode" href="https://thiagoalves.dev">link</a> para você acessar a página
     inicial.
     <br><br>
     Ou use o botão abaixo para acabar logo com isso.

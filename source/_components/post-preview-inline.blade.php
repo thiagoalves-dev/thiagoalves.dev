@@ -11,7 +11,8 @@
 
     <p class="mb-4 mt-0">{!! $post->getExcerpt(200) !!}</p>
 
-    <a href="{{ $post->getUrl() }}" title="Read more - {{ $post->title }}" class="simple cube-palette-1 tracking-wide mb-2">
+    <a href="{{ $post->getUrl() }}" title="Read more - {{ $post->title }}"
+       class="simple cube-palette-1 tracking-wide mb-2 hover:underline">
         Ler +
     </a>
 </div>
