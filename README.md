@@ -1,41 +1,27 @@
-# Mastercode Blog
+# Thiagoalves.dev
 
-Repositório do blog que criamos para compartilhar o nosso conhecimento e ajudar desenvolvedores de todos os níveis.
+This is my professional [website](https://thiagoalves.dev) which I use to share my experiences and who I am.
 
-Qualquer pessoa pode contribuir aqui, basta criar um _Pull Request_.
+## Dependencies
 
-Veja abaixo como funciona.
+The project was developed with [Jigsaw](http://jigsaw.tighten.co) and [Tailwind CSS](https://tailwindcss.com), but only
+Docker is necessary to set it up.
 
-## Dependências
+**More details:**
 
-Desenvolvemos o projeto usando o _framework_ [Jigsaw](http://jigsaw.tighten.co) e algumas configurações são necessários para o seu funcionamento.
+- Docker >= 20;
+- Docker-compose >= 1.29;
 
-**São elas:**
- - PHP >= 7.2.5;
- - Composer;
- - Node.js;
- - NPM;
- 
- ## Instalação
- 
- Após fazer o _clone_ do repositório, execute os comandos abaixo no seu terminal.
- 
- Pacotes do _backend_:
+## Setup
+
+After cloning the repository, execute the following command and wait for build process:
+
  ```shell script
-$ composer install
+$ docker-compose up
 ```
 
-Pacotes do _frontend_:
-```shell script
-$ npm install
-```
+It might take a some minutes in the first time because of the Docker containers, but it is much faster later.
 
-## Visualização com _Browsersync_
+When the build ends, the following URL is showed: [http://localhost:3000](http://localhost:3000).
 
-Para executar o projeto, execute o comando abaixo no seu terminal. 
-
-```shell script
-$ npm run watch
-```
-
-Agora é só abrir o navegador na URL `http://localhost:3000`.
+Also, browsersync is already configured. 
