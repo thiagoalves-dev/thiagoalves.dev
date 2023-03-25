@@ -26,9 +26,6 @@ return [
                 });
             },
         ],
-        'founders'   => [
-            'sort' => 'sort',
-        ],
     ],
 
     // helpers

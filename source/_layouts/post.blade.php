@@ -36,13 +36,9 @@
     </nav>
 
     <div class="flex items-center">
-        @foreach($founders as $founder)
-            @if($founder->name === $page->author)
-                <div class="w-full md:w-1/2 mx-auto">
-                    @include('_components.founders.founder-card')
-                </div>
-            @endif
-        @endforeach
+        <div class="w-full md:w-1/2 mx-auto">
+            @include('_layouts.components.founder-card')
+        </div>
     </div>
 
     <p class="text-gray-700 text-xs text-center">
