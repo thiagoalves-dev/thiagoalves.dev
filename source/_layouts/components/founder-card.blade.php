@@ -4,8 +4,7 @@
     <div class="text-center md:text-left">
         <h2 class="text-lg mb-1">Thiago Alves</h2>
         <div class="text-gray-600">Analista de Sistemas</div>
-        <a href="/thiago/consultoria-individual" class="cube-palette-1 font-medium hover:underline">
-            Consultoria Individual</a>
+        <a href="/consultoria" class="cube-palette-1 font-medium hover:underline">Consultoria</a>
         <div class="mt-2">
             <a href="https://instagram.com/thiagoalves.dev" target="_blank"
                class="inline-block opacity-50 hover:opacity-75 mr-3">

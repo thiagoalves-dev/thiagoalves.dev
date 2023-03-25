@@ -12,7 +12,7 @@ description: Alguns serviços que ofereço para ajudar outras pessoas a se desen
 
 @section('body')
     <div class="text-center">
-        <h1>Consultoria Individual</h1>
+        <h1>Consultoria</h1>
 
         <p>
             Escolha um serviço abaixo, veja os detalhes e agende um horário comigo.
@@ -22,8 +22,8 @@ description: Alguns serviços que ofereço para ajudar outras pessoas a se desen
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            @include('thiago._layouts.mentory.advanced-hourly')
-            @include('thiago._layouts.mentory.advanced-monthly')
+            @include('_layouts.components.mentory.advanced-hourly')
+            @include('_layouts.components.mentory.advanced-monthly')
         </div>
 
         <p class="mt-10">
@@ -42,7 +42,7 @@ description: Alguns serviços que ofereço para ajudar outras pessoas a se desen
                 href="https://api.whatsapp.com/send?phone=5547991897941&text=Ol%C3%A1!%20Preciso%20de%20um%20boleto%20para%20pagar%20a%20Mentoria.">solicitar</a>).
         </p>
 
-        @include('thiago._layouts.mentory.calendly-embed')
+        @include('_layouts.components.mentory.calendly-embed')
 
         <h2 id="mais-informacoes">Mais informações</h2>
         <p>

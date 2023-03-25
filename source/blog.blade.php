@@ -19,7 +19,7 @@ description: Postagens frequentes e dicas práticas para ajudar desenvolvedores 
     <hr class="border-b my-6">
 
     @foreach ($pagination->items as $post)
-        @include('_components.post-preview-inline')
+        @include('_layouts.components.post-preview-inline')
 
         @if ($post != $pagination->items->last())
             <hr class="border-b my-6">
