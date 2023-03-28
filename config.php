@@ -11,23 +11,33 @@ return [
     'siteDescription' => 'Site com a finalidade de compartilhar experiências e ajudar outros desenvolvedores.',
     'siteKeywords'    => 'Full Stack, Web, Development, Desenvolvimento, Programação, Laravel, Vue.js, PHP, Vue, Sass, Front-end, Back-end, Javascript',
 
+    'profile'     => [
+        'name'         => 'Thiago Alves',
+        'profession'   => 'Analista de Sistemas',
+        'contactEmail' => 'hello@thiagoalves.dev',
+        'instagramUrl' => 'https://www.instagram.com/thiagoalves.dev',
+        'twitterUrl'   => 'https://twitter.com/thiagoalves_dev',
+        'linkedinUrl'  => 'https://www.linkedin.com/in/thiagoalvesdev',
+        'githubUrl'    => 'https://github.com/thiagoalves-dev',
+    ],
+
     // collections
-    'collections'     => [
-        'posts'      => [
+    'collections' => [
+        'posts' => [
             'author' => 'Author Name', // Default author, if not provided in a post
             'sort'   => '-date',
             'path'   => 'blog/{filename}',
-        ]
+        ],
     ],
 
     // helpers
-    'getDate'         => function ($page) {
+    'getDate'     => function ($page) {
         return Datetime::createFromFormat('U', $page->date);
     },
-    'getDateText'     => function ($page) {
+    'getDateText' => function ($page) {
         return date('d/m/Y', $page->date);
     },
-    'getExcerpt'      => function ($page, $length = 255) {
+    'getExcerpt'  => function ($page, $length = 255) {
         if ($page->excerpt) {
             return $page->excerpt;
         }
@@ -54,7 +64,7 @@ return [
             ? preg_replace('/\s+?(\S+)?$/', '', $truncated) . '...'
             : $cleaned;
     },
-    'isActive'        => function ($page, $path) {
+    'isActive'    => function ($page, $path) {
         return Str::endsWith(trimPath($page->getPath()), trimPath($path));
     },
 ];

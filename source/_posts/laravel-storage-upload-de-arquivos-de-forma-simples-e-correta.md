@@ -18,7 +18,7 @@ A forma como o Laravel trabalha essa questão é incrivelmente simples. Basicame
 _framework_ disponibiliza, dificilmente terá problemas com isso.
 
 Criei um projeto para usarmos como exemplo. Segue o _link_ do
-repositório: [thiagomcw/laravel-storage-example](https://github.com/thiagomcw/laravel-storage-example).
+repositório: [thiagoalves-dev/laravel-storage-example](https://github.com/thiagoalves-dev/laravel-storage-example).
 
 Fiz um HTML bem simples para simular um formulário onde será feito o _upload_ de uma foto de perfil de usuário.
 

@@ -213,7 +213,8 @@ Envio de e-mails tende a ser uma das partes mais obscuras de um sistema e també
 Já perdi a conta de quantas vezes fiz modificações num código, afetando o envio de um e-mail que, muitas vezes, nem
 tinha relação direta com o que foi alterado.
 
-O código acima está disponível no meu [repositório do github](https://github.com/thiagomcw/laravel-storage-example) para
+O código acima está disponível no
+meu [repositório do github](https://github.com/thiagoalves-dev/laravel-storage-example) para
 que possa copiar. Espero que ajude.
 
 Nos vemos em breve!

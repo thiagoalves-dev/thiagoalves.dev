@@ -66,11 +66,9 @@
                title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
         </li>
     </ul>
-    <a href="mailto:hello@thiagoalves.dev">
-        hello@thiagoalves.dev
-    </a>
+    <a href="mailto:{{ $page->profile->contactEmail }}">{{ $page->profile->contactEmail }}</a>
     <br><br>
-    <a href="https://github.com/thiagoalves-dev" target="_blank">
+    <a href="{{ $page->profile->githubUrl }}" target="_blank">
         <img src="/assets/images/social/github.min.svg" alt="Github" class="inline"/>
     </a>
 </footer>

@@ -54,7 +54,7 @@ description: Alguns serviços que ofereço para ajudar outras pessoas a se desen
         </p>
         <p>
             Para esclarecer qualquer dúvida, basta entrar em contato através do meu
-            <a href="https://instagram.com/thiagomcw" target="_blank">Instagram</a>.
+            <a href="{{ $page->profile->instagramUrl }}" target="_blank">Instagram</a>.
         </p>
     </div>
 @endsection

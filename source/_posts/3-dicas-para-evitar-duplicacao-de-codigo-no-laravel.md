@@ -18,7 +18,7 @@ Isso pode ser muito questionado, já que é possível argumentar que existe uma 
 delas, seria o programador. O que não é uma mentira, mas não é o foco da nossa conversa.
 
 A reflexão sobre o assunto vem do princípio _DRY_, criado
-por[Dave Thomas](https://en.wikipedia.org/wiki/Dave_Thomas_(programmer))
+por [Dave Thomas](https://en.wikipedia.org/wiki/Dave_Thomas_(programmer))
 e [Andy Hunt](https://en.wikipedia.org/wiki/Andy_Hunt_(author)), que significa _Don’t Repeat Yourself_ (não se repita).
 Basicamente, significa que as fontes de conhecimento e lógica de um sistema devem ter uma única representação.
 

@@ -862,10 +862,6 @@ main p a:hover {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -1100,17 +1096,9 @@ main p a:hover {
 .border-t-0 {
   border-top-width: 0px;
 }
-.border-blue-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(191 219 254 / var(--tw-border-opacity));
-}
 .border-blue-400 {
   --tw-border-opacity: 1;
   border-color: rgb(96 165 250 / var(--tw-border-opacity));
-}
-.border-gray-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 .border-gray-500 {
   --tw-border-opacity: 1;
@@ -1131,10 +1119,6 @@ main p a:hover {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 .bg-green-300 {
   --tw-bg-opacity: 1;
@@ -1195,9 +1179,6 @@ main p a:hover {
 .pb-0 {
   padding-bottom: 0px;
 }
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1227,9 +1208,6 @@ main p a:hover {
 }
 .font-sans {
   font-family: "Nunito Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-.text-2xl {
-  font-size: 1.5rem;
 }
 .text-3xl {
   font-size: 1.75rem;
@@ -1461,16 +1439,9 @@ main p a:hover {
   .md\:flex-row {
     flex-direction: row;
   }
-  .md\:rounded {
-    border-radius: 0.25rem;
-  }
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
-  }
-  .md\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
   }
   .md\:pr-3 {
     padding-right: 0.75rem;
@@ -1483,10 +1454,6 @@ main p a:hover {
   }
 }
 @media (min-width: 1024px) {
-  .lg\:-mx-12 {
-    margin-left: -3rem;
-    margin-right: -3rem;
-  }
   .lg\:block {
     display: block;
   }

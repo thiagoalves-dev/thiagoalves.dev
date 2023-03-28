@@ -159,7 +159,8 @@ mais fácil e rápido.
 Conforme o tempo passa, você não se preocupa mais em ter que escrever testes, mas sim, quais vai escrever para garantir
 que os mais variáveis comportamentos estão cobertos.
 
-Todo o código acima está disponível no meu [repositório](https://github.com/thiagomcw/laravel-storage-example), caso
+Todo o código acima está disponível no meu [repositório](https://github.com/thiagoalves-dev/laravel-storage-example),
+caso
 queira baixar e testar.
 
 Nos vemos em breve!

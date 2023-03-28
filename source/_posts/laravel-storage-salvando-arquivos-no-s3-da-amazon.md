@@ -16,7 +16,7 @@ fazer [upload de arquivos usando a classe Storage do Laravel](/blog/laravel-stor
 Vou aproveitar o código já feito para mostrar como salvar os arquivos no AWS S3, serviço de armazenamento da Amazon.
 
 Segue o _link_ do
-repositório: [thiagomcw/laravel-storage-example](https://github.com/thiagomcw/laravel-storage-example).
+repositório: [thiagoalves-dev/laravel-storage-example](https://github.com/thiagoalves-dev/laravel-storage-example).
 
 Partindo do pressuposto que já tenha uma conta na AWS criada, vamos ao passo a passo:
 
