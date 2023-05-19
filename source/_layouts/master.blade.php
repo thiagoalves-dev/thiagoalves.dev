@@ -25,7 +25,6 @@
 </head>
 
 <body class="flex flex-col justify-between min-h-screen bg-cube-palette-1-100 text-gray-800 leading-normal font-sans">
-@include('_layouts.third-party-tags.google-tag-manager-body')
 <header class="flex items-center shadow bg-white border-b h-24 py-4" role="banner">
     <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
         <div class="flex items-center">
