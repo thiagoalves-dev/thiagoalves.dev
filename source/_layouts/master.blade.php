@@ -50,8 +50,33 @@
     @yield('body')
 </main>
 
-<footer class="text-center text-sm mt-12 py-4" role="contentinfo">
-    <ul class="flex flex-col md:flex-row justify-center list-none">
+<footer class="text-center text-sm mt-12 py-2" role="contentinfo">
+    <ul class="justify-center list-none">
+        <li>
+            <a class="text-gray-600"
+               href="mailto:{{ $page->profile->contactEmail }}">{{ $page->profile->contactEmail }}</a>
+        </li>
+        <li class="mt-3 flex items-center justify-center">
+            <a href="{{ $page->profile->githubUrl }}" class="inline-block mr-4 opacity-50 hover:opacity-75"
+               target="_blank">
+                <img src="/assets/images/social/github.min.svg" alt="Github" class="h-4 mt-1"/>
+            </a>
+            <a title="Instagram" href="{{ $page->profile->instagramUrl }}"
+               class="inline-block mr-4 opacity-50 hover:opacity-75" target="_blank">
+                <img class="h-4 mt-1" src="/assets/images/social/instagram.png" alt="">
+            </a>
+            <a title="LinkedIn" href="{{ $page->profile->linkedinUrl }}"
+               class="inline-block mr-4 opacity-50 hover:opacity-75"
+               target="_blank">
+                <img class="h-4" src="/assets/images/social/linkedin.png" alt="">
+            </a>
+            <a title="Twitter" href="{{ $page->profile->twitter }}" class="inline-block opacity-50 hover:opacity-75"
+               target="_blank">
+                <img class="h-3 mt-1" src="/assets/images/social/twitter.png" alt="">
+            </a>
+        </li>
+    </ul>
+    <ul class="flex flex-col md:flex-row text-xs justify-center list-none mt-8">
         <li class="md:mr-2">
             &copy; Mastercode Web LTDA {{ date('Y') }}.
         </li>
@@ -65,11 +90,6 @@
                title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
         </li>
     </ul>
-    <a href="mailto:{{ $page->profile->contactEmail }}">{{ $page->profile->contactEmail }}</a>
-    <br><br>
-    <a href="{{ $page->profile->githubUrl }}" target="_blank">
-        <img src="/assets/images/social/github.min.svg" alt="Github" class="inline"/>
-    </a>
 </footer>
 
 <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
