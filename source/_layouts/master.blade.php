@@ -70,7 +70,7 @@
                target="_blank">
                 <img class="h-4" src="/assets/images/social/linkedin.png" alt="">
             </a>
-            <a title="Twitter" href="{{ $page->profile->twitter }}" class="inline-block opacity-50 hover:opacity-75"
+            <a title="Twitter" href="{{ $page->profile->twitterUrl }}" class="inline-block opacity-50 hover:opacity-75"
                target="_blank">
                 <img class="h-3 mt-1" src="/assets/images/social/twitter.png" alt="">
             </a>
