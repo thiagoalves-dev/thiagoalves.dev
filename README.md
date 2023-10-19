@@ -4,8 +4,8 @@ This is my professional [website](https://thiagoalves.dev) which I use to share 
 
 ## Dependencies
 
-The project was developed with [Jigsaw](http://jigsaw.tighten.co) and [Tailwind CSS](https://tailwindcss.com), but only
-Docker is necessary to set it up.
+The project was developed with [Nuxt.js](http://nuxt.com) and [Tailwind CSS](https://tailwindcss.com), but only
+Docker is needed to set it up.
 
 **More details:**
 
