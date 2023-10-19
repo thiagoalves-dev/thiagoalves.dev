@@ -12,12 +12,6 @@
                     <li v-for="feature in features" class="border-t py-2">{{ feature }}</li>
                 </ul>
             </div>
-            <!--            <hr class="mt-0 mb-3">-->
-            <!--            <div class="text-gray-600">-->
-            <!--                <strong>1 hora</strong>-->
-            <!--                <br>-->
-            <!--                <strong>Valor: R$ 94,00</strong>-->
-            <!--            </div>-->
         </div>
     </div>
 </template>
