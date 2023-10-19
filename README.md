@@ -1,27 +1,75 @@
-# Thiagoalves.dev
+# Nuxt 3 Minimal Starter
 
-This is my professional [website](https://thiagoalves.dev) which I use to share my experiences and who I am.
-
-## Dependencies
-
-The project was developed with [Jigsaw](http://jigsaw.tighten.co) and [Tailwind CSS](https://tailwindcss.com), but only
-Docker is necessary to set it up.
-
-**More details:**
-
-- Docker >= 20;
-- Docker-compose >= 1.29;
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
 
-After cloning the repository, execute the following command and wait for build process:
+Make sure to install the dependencies:
 
- ```shell script
-$ docker-compose up
+```bash
+# npm
+npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
 ```
 
-It might take a some minutes in the first time because of the Docker containers, but it is much faster later.
+## Development Server
 
-When the build ends, the following URL is showed: [http://localhost:3000](http://localhost:3000).
+Start the development server on `http://localhost:3000`:
 
-Also, browsersync is already configured. 
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

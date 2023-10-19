@@ -1,16 +1,14 @@
 const defaults = require('tailwindcss/defaultTheme');
 
-module.exports = {
-    content: require('fast-glob').sync([
-        'source/**/*.html',
-        'source/**/*.md',
-        'source/**/*.js',
-        'source/**/*.php',
-        'source/**/*.vue',
-    ]),
-    options: {
-        safelist: [/language/, /hljs/, /mce/],
-    },
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: [
+        "./components/**/*.{js,vue,ts}",
+        "./layouts/**/*.vue",
+        "./pages/**/*.vue",
+        "./plugins/**/*.{js,ts}",
+        "./app.vue",
+    ],
     theme: {
         extend: {
             fontFamily: {
@@ -52,17 +50,6 @@ module.exports = {
         borderWidth: ['responsive', 'active', 'focus'],
         width: ['responsive', 'focus']
     },
-    plugins: [
-        function ({addUtilities}) {
-            const newUtilities = {
-                '.transition-fast': {
-                    transition: 'all .2s ease-out',
-                },
-                '.transition': {
-                    transition: 'all .5s ease-out',
-                },
-            }
-            addUtilities(newUtilities)
-        }
-    ]
+    plugins: []
 }
+
