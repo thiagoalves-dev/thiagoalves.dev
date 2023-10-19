@@ -1,5 +1,5 @@
 import siteImage from "~/assets/images/programming-logo-800.png";
-import authorPicture from "~/assets/images/founders/thiago.jpg";
+import authorPicture from "assets/images/author/profile.jpg";
 
 const website = {
     logo: siteImage,
