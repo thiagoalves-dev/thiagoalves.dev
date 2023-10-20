@@ -18,6 +18,10 @@ const website = {
         twitterUrl: 'https://twitter.com/thiagoalves_dev',
         linkedinUrl: 'https://www.linkedin.com/in/thiagoalvesdev',
         githubUrl: 'https://github.com/thiagoalves-dev',
+    },
+
+    calendly: {
+        url: 'https://calendly.com/thiagoalves-dev/lets-talk'
     }
 }
 

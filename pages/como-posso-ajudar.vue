@@ -29,7 +29,7 @@
             <ServicesForDevelopers/>
         </div>
 
-        <Calendly id="schedule-a-call"/>
+        <CalendlyInlineWidget id="schedule-a-call" v-bind="calendlyOptions"/>
 
         <p>
             Para esclarecer qualquer dúvida, basta entrar em contato através de meu
@@ -41,4 +41,8 @@
 
 <script setup>
 import website from "~/data/website.js";
+
+const calendlyOptions = {
+    url: website.calendly.url
+};
 </script>

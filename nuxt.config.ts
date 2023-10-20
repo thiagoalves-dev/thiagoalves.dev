@@ -20,7 +20,8 @@ export default defineNuxtConfig({
     },
     modules: [
         '@nuxt/content',
-        '@zadigetvoltaire/nuxt-gtm'
+        '@zadigetvoltaire/nuxt-gtm',
+        'nuxt-calendly'
     ],
     content: {
         watch: {
@@ -36,5 +37,10 @@ export default defineNuxtConfig({
     },
     gtm: {
         id: 'GTM-7NFYK33VWQ'
+    },
+    calendly: {
+        isEnabled: true,
+        loadWidgetCSS: true,
+        loadWidgetCloseIconSvg: true
     }
 });

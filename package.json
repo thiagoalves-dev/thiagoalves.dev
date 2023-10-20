@@ -14,6 +14,7 @@
         "@zadigetvoltaire/nuxt-gtm": "^0.0.13",
         "autoprefixer": "^10.4.16",
         "nuxt": "^3.7.3",
+        "nuxt-calendly": "^0.1.15",
         "postcss": "^8.4.30",
         "tailwindcss": "^3.3.3"
     },
