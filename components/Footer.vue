@@ -2,7 +2,9 @@
     <footer class="text-center text-sm mt-12 py-2" role="contentinfo">
         <ul class="justify-center list-none">
             <li>
-                <a class="text-gray-600" :href="website.author.contactEmail">{{ website.author.contactEmail }}</a>
+                <a class="text-gray-600" :href="`mailto:${website.author.contactEmail}`">
+                    {{ website.author.contactEmail }}
+                </a>
             </li>
             <li class="mt-3 flex items-center justify-center">
                 <a :href="website.author.githubUrl" class="inline-block mr-4 opacity-50 hover:opacity-75"
