@@ -2,16 +2,6 @@ export default defineNuxtConfig({
     ssr: true,
     devtools: {enabled: true},
     css: ["~/assets/sass/main.scss"],
-    app: {
-        head: {
-            script: [
-                {
-                    src: 'https://assets.calendly.com/assets/external/widget.js',
-                    async: true
-                }
-            ]
-        }
-    },
     postcss: {
         plugins: {
             tailwindcss: {},
@@ -20,8 +10,8 @@ export default defineNuxtConfig({
     },
     modules: [
         '@nuxt/content',
-        '@zadigetvoltaire/nuxt-gtm',
-        'nuxt-calendly'
+        'nuxt-calendly',
+        'nuxt-gtag'
     ],
     content: {
         watch: {
@@ -35,12 +25,12 @@ export default defineNuxtConfig({
             preload: ['java', 'xml', 'sql', 'php', 'bash'],
         }
     },
-    gtm: {
-        id: 'GTM-7NFYK33VWQ'
-    },
     calendly: {
         isEnabled: true,
         loadWidgetCSS: true,
         loadWidgetCloseIconSvg: true
+    },
+    gtag: {
+        id: process.env.GOOGLE_ANALYTICS_ID
     }
 });
