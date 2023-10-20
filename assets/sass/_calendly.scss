@@ -1,0 +1,16 @@
+.calendly-inline-widget {
+    width: 100% !important;
+    height: 1200px !important;
+
+    @media (min-width: 1052px) {
+        height: 720px !important;
+    }
+
+    @media (max-width: 698px) {
+        margin-top: 30px !important;
+    }
+}
+
+.calendly-spinner {
+    display: none !important;
+}
