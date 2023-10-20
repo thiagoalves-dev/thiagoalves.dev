@@ -3,19 +3,22 @@
         <ul class="my-0">
             <li class="pl-4">
                 <NuxtLink :title="`${website.name} | Sobre`" to="/sobre"
-                          class="nav-menu__item cube-palette-2 hover:cube-palette-3">
+                          class="nav-menu__item cube-palette-2 hover:cube-palette-3"
+                          active-class="active cube-palette-3">
                     Sobre
                 </NuxtLink>
             </li>
             <li class="pl-4">
                 <NuxtLink :title="`${website.name} | Como posso ajudar`" to="/como-posso-ajudar"
-                          class="nav-menu__item cube-palette-2 hover:cube-palette-3">
+                          class="nav-menu__item cube-palette-2 hover:cube-palette-3"
+                          active-class="active cube-palette-3">
                     Como posso ajudar
                 </NuxtLink>
             </li>
             <li class="pl-4">
                 <NuxtLink :title="`${website.name} | Blog`" to="/blog"
-                          class="nav-menu__item cube-palette-2 hover:cube-palette-3">
+                          class="nav-menu__item cube-palette-2 hover:cube-palette-3"
+                          active-class="active cube-palette-3">
                     Blog
                 </NuxtLink>
             </li>
@@ -39,8 +42,5 @@
 </template>
 
 <script setup>
-import {setRouteActiveClasses} from "~/helpers/navigation.js";
 import website from "~/data/website.js";
-
-onMounted(() => setRouteActiveClasses());
 </script>

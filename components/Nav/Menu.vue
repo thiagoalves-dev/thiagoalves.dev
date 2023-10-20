@@ -12,14 +12,16 @@
 
                 <div id="vue-search" class="flex flex-1 justify-end items-center">
                     <nav class="hidden lg:flex items-center justify-center text-lg w-full">
-                        <NuxtLink :title="`${website.name} | Sobre`" to="/sobre" class="nma ml-6 cube-palette-2">
+                        <NuxtLink :title="`${website.name} | Sobre`" to="/sobre" class="nma ml-6 cube-palette-2"
+                                  active-class="active cube-palette-3">
                             Sobre
                         </NuxtLink>
                         <NuxtLink :title="`${website.name} | Como posso ajudar`" to="/como-posso-ajudar"
-                                  class="nma ml-6 cube-palette-2">
+                                  class="nma ml-6 cube-palette-2" active-class="active cube-palette-3">
                             Como posso ajudar
                         </NuxtLink>
-                        <NuxtLink :title="`${website.name} | Blog`" to="/blog" class="nma ml-6 cube-palette-2">
+                        <NuxtLink :title="`${website.name} | Blog`" to="/blog" class="nma ml-6 cube-palette-2"
+                                  active-class="active cube-palette-3">
                             Blog
                         </NuxtLink>
                     </nav>
@@ -48,8 +50,5 @@
 </template>
 
 <script setup>
-import {setRouteActiveClasses} from "~/helpers/navigation.js";
 import website from "~/data/website.js";
-
-onMounted(() => setRouteActiveClasses());
 </script>
