@@ -1,5 +1,6 @@
 <template>
     <NuxtLayout>
+        <MetaTags/>
         <div class="content-container text-center">
             <h1>Página não encontrada!</h1>
 
