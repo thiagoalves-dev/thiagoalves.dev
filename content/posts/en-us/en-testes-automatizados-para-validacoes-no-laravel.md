@@ -1,12 +1,13 @@
 ---
 featured: true
 date: '2020-07-01'
-title: 'Testes automatizados para validações no Laravel'
-description: 'Seguindo o assunto abordado no último post, desta vez vou implementar outra variação de teste no Laravel. Validação de dados das requisições.'
+title: 'EN-US Testes automatizados para validações no Laravel'
+description: 'EN-US Seguindo o assunto abordado no último post, desta vez vou implementar outra variação de teste no Laravel. Validação de dados das requisições.'
 keywords: 'Testes, Tests, Request, Controller, Validações'
+ptBrSlug: 'testes-automatizados-para-validacoes-no-laravel'
 ---
 
-Seguindo o assunto abordado no [último post](/blog/posts/teste-automatizado-de-e-mail-no-laravel), desta vez vou
+EN Seguindo o assunto abordado no [último post](/blog/posts/teste-automatizado-de-e-mail-no-laravel), desta vez vou
 implementar outra variação de teste no Laravel.
 
 Dias atrás, um desenvolvedor que nos acompanha aqui no blog, entrou em contato comigo para tirar algumas dúvidas sobre

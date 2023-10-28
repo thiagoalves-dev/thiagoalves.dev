@@ -5,8 +5,7 @@
         <div class="text-center md:text-left">
             <h2 class="text-lg mb-1">{{ website.author.name }}</h2>
             <div class="text-gray-600 text-xs">
-                {{ website.author.profession }}, no mercado de desenvolvimento de software desde 2011. Especialista em
-                PHP, Laravel e Vue.js.
+                {{ $t('authorShortBio') }}
             </div>
         </div>
     </div>
