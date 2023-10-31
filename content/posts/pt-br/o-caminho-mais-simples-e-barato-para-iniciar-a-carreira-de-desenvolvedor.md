@@ -3,6 +3,7 @@ date: '2020-04-30'
 title: 'O caminho mais simples e barato para iniciar a carreira de Desenvolvedor'
 description: 'Uma das principais portas de entrada no mundo da programação. HTML e CSS são as linguagens mais intuitivas do mercado.'
 keywords: 'Carreira, Desenvolvedor'
+enUsSlug: 'the-simplest-and-cheapest-way-to-start-a-developer-career'
 ---
 
 Ultimamente, muitas pessoas vieram até mim com as seguintes perguntas: que faculdade tenho que fazer? o curso tal é bom?
