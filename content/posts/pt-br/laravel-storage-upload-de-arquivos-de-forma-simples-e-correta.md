@@ -3,6 +3,7 @@ date: '2020-04-18'
 title: 'Laravel Storage: upload de arquivos de forma simples e correta'
 description: 'Exemplificando como fazer upload de arquivos usando a Storage do Laravel e a diferença de arquivos públicos e privados.'
 keywords: 'Storage, Upload, Arquivos'
+enUsSlug: 'laravel-storage-simple-correct-way-to-upload-files'
 ---
 
 Em qualquer sistema é muito comum que haja alguma manipulação de arquivos. Desde fotos para um site até relatórios
