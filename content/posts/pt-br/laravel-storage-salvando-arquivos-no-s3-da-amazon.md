@@ -3,10 +3,11 @@ date: '2020-04-25'
 title: 'Laravel Storage: salvando arquivos no S3 da Amazon'
 description: 'Exemplo de como salvar arquivos no s3 da Amazon usando a classe Storage do Laravel.'
 keywords: 'Storage, Upload, Arquivos, S3, Amazon, AWS'
+enUsSlug: 'laravel-storage-saving-files-on-aws-s3'
 ---
 
 Dias atrás demonstrei de forma simples como
-fazer [upload de arquivos usando a classe Storage do Laravel](/blog/posts/laravel-storage-upload-de-arquivos-de-forma-simples-e-correta).
+fazer [upload de arquivos usando a classe Storage do Laravel](/pt-br/blog/posts/laravel-storage-upload-de-arquivos-de-forma-simples-e-correta).
 
 Vou aproveitar o código já feito para mostrar como salvar os arquivos no AWS S3, serviço de armazenamento da Amazon.
 
