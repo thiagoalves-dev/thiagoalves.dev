@@ -3,6 +3,7 @@ date: '2020-05-02'
 title: 'Clean Code: princípio da responsabilidade única do SOLID'
 description: 'A base para o Clean Code é o SOLID. Então vou exemplificar o que a primeira letra do acrônimo ensina.'
 keywords: 'Clean Code, Código Limpo, SOLID, Classe'
+enUsSlug: 'clean-code-solid-single-responsibility-principle'
 ---
 
 Se tem uma coisa que estudei nos últimos anos e que mudou a minha vida como desenvolvedor, foi o tal do _Clean Code_.
