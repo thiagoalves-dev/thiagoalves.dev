@@ -7,19 +7,19 @@
                 </a>
             </li>
             <li class="mt-3 flex items-center justify-center">
-                <a :href="website.author.githubUrl" class="inline-block mr-4 opacity-50 hover:opacity-75"
+                <a :href="website.author.githubUrl" title="Github" class="inline-block mr-4 opacity-50 hover:opacity-75"
                    target="_blank">
-                    <img src="~/assets/images/social/github.min.svg" alt="Github" class="h-4 mt-1"/>
+                    <img src="~/assets/images/social/github.min.svg" alt="" class="h-4 mt-1"/>
                 </a>
-                <a title="Instagram" :href="website.author.instagramUrl"
+                <a :href="website.author.instagramUrl" title="Instagram"
                    class="inline-block mr-4 opacity-50 hover:opacity-75" target="_blank">
                     <img class="h-4 mt-1" src="~/assets/images/social/instagram.png" alt="">
                 </a>
-                <a title="LinkedIn" :href="website.author.linkedinUrl"
+                <a :href="website.author.linkedinUrl" title="LinkedIn"
                    class="inline-block mr-4 opacity-50 hover:opacity-75" target="_blank">
                     <img class="h-4" src="~/assets/images/social/linkedin.png" alt="">
                 </a>
-                <a title="Twitter" :href="website.author.twitterUrl" class="inline-block opacity-50 hover:opacity-75"
+                <a :href="website.author.twitterUrl" title="Twitter" class="inline-block opacity-50 hover:opacity-75"
                    target="_blank">
                     <img class="h-3 mt-1" src="~/assets/images/social/twitter.png" alt="">
                 </a>
@@ -31,10 +31,10 @@
             </li>
 
             <li>
-                Desenvolvido com
+                {{ $t('Developed with') }}
                 <a href="https://nuxt.com" class="simple cube-palette-1 hover:underline" target="_blank"
                    title="Jigsaw by Tighten">Nuxt</a>
-                e
+                {{ $t('and') }}
                 <a href="https://tailwindcss.com" class="simple cube-palette-1 hover:underline" target="_blank"
                    title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
             </li>

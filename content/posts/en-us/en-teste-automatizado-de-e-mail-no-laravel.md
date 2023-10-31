@@ -1,12 +1,13 @@
 ---
 featured: true
 date: '2020-06-26'
-title: 'Teste automatizado de e-mail no Laravel'
-description: 'Dias atrás, deparei-me com uma questão que quebrei a cabeça para testar. Eu precisava enviar um e-mail para um cliente e queria validar se a montagem dele acontecia da forma correta.'
+title: 'EN-US Teste automatizado de e-mail no Laravel'
+description: 'EN-US Dias atrás, deparei-me com uma questão que quebrei a cabeça para testar. Eu precisava enviar um e-mail para um cliente e queria validar se a montagem dele acontecia da forma correta.'
 keywords: 'Testes, Tests, Mailable, Email, View, Markdown'
+ptBrSlug: 'teste-automatizado-de-e-mail-no-laravel'
 ---
 
-Confesso que ultimamente, ando bastante interessado em aprofundar-me sobre testes automatizados. No meu dia a dia, a
+EN Confesso que ultimamente, ando bastante interessado em aprofundar-me sobre testes automatizados. No meu dia a dia, a
 preocupação com a cobertura de testes é cada vez maior.
 
 Dias atrás, deparei-me com uma questão que quebrei a cabeça para testar. Eu precisava enviar um e-mail para um cliente e

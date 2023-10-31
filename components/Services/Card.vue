@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
     color: {
         type: String,
         required: true

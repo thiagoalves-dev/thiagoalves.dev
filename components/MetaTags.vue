@@ -5,17 +5,17 @@
         <Meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <Meta name="apple-mobile-web-app-title" :content="pageTitle"/>
 
-        <Meta name="description" :content="description || website.description"/>
+        <Meta name="description" :content="description || $t(website.description)"/>
         <Meta name="keywords" :content="pageKeywords"/>
 
         <Meta property="og:type" :content="type"/>
         <Meta property="og:url" :content="url.href"/>
         <Meta property="og:site_name" :content="website.name"/>
-        <Meta property="og:description" :content="description || website.description"/>
+        <Meta property="og:description" :content="description || $t(website.description)"/>
         <Meta property="og:title" :content="pageTitle"/>
         <Meta property="og:image" :content="coverImage || defaultImage"/>
         <Meta name="twitter:card" content="summary_large_image"/>
-        <Meta name="twitter:image:alt" :content="description || website.description"/>
+        <Meta name="twitter:image:alt" :content="description || $t(website.description)"/>
 
         <Link rel="home" :href="url.origin"/>
         <Link rel="canonical" :href="url.origin"/>
