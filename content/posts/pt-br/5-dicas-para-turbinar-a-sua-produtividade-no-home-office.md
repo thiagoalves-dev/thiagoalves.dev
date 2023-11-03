@@ -3,6 +3,7 @@ date: '2020-05-08'
 title: '5 dicas para turbinar a sua produtividade no home office'
 description: 'É totalmente possível ser produtivo trabalhando de casa, basta dar a atenção adequada a isso.'
 keywords: 'Home Office, Produtividade, Foco'
+enUsSlug: '5-tips-to-boost-your-productivity-at-home-office'
 ---
 
 Com a evolução das ferramentas de comunicação, trabalhar de casa está cada dia mais comum. Infelizmente, potencializado
