@@ -2,7 +2,7 @@
 date: '2020-05-15'
 title: 'Is it worth graduating to be a programmer?'
 description: 'Programming is an extremely technical and practical activity. It is like in the mechanic profession, it does not matter if you read fifty books on the subject, that does not make you a professional.'
-keywords: 'Faculdade, Graduação, Prática, Técnica'
+keywords: 'Degree, Graduating'
 ptBrSlug: 'vale-a-pena-fazer-faculdade-para-ser-programador'
 ---
 
