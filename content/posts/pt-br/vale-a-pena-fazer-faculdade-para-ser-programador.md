@@ -3,8 +3,8 @@ date: '2020-05-15'
 title: 'Vale a pena fazer faculdade para ser programador?'
 description: 'A programação é uma atividade extremamente técnica e prática. É como na profissão de mecânico, não importa se você leu cinquenta livros sobre o tema, isso não te faz um profissional.'
 keywords: 'Faculdade, Graduação, Prática, Técnica'
+enUsSlug: 'is-it-worth-graduating-to-be-a-programmer'
 ---
-
 
 Dias atrás, mencionei num post que muitas pessoas vinham até mim e perguntavam qual faculdade precisariam fazer para
 começar a programar. Ao mesmo tempo em que penso como essa pergunta possui uma resposta óbvia para mim, lembro como, há
