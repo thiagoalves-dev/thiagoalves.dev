@@ -3,6 +3,7 @@ date: '2020-05-13'
 title: 'Deveria usar API Resources no Laravel? Sim!'
 description: 'Se você trabalha com APIs na sua aplicação Laravel e ainda não usa API Resources, é bem provável que o seu código não esteja lá essas coisas.'
 keywords: 'Api, Resources, JSON'
+enUsSlug: 'should-you-use-api-resources-with-laravel-yes'
 ---
 
 Dias atrás eu navegava pelo [reddit](https://reddit.com) quando me deparei com a seguinte pergunta de um usuário:
