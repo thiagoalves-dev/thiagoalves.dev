@@ -1,6 +1,7 @@
 ---
 date: '2020-05-29'
 title: 'Ser programador é frustrante'
+enUsSlug: 'being-a-developer-is-frustrating'
 ---
 
 Já faz quatro horas que eu tô batendo cabeça com esse maldito erro. Porque eu tinha que dizer que essa tarefa era
