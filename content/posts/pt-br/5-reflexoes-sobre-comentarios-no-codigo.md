@@ -3,6 +3,7 @@ date: '2020-05-22'
 title: '5 reflexões sobre comentários no código'
 description: 'Qualquer programador com alguma experiência, principalmente que já tenha trabalhado em equipe, deve ter se deparado com algum comentário do tipo: "não mexer", "aqui é que a mágica acontece" ou "não sei o que isso faz".'
 keywords: 'Código, Comentários, Legibilidade, Bugs, Configurações'
+enUsSlug: '5-thoughts-on-comments-in-code'
 ---
 
 Qualquer programador com alguma experiência, principalmente que já tenha trabalhado em equipe, deve ter se deparado com
@@ -108,8 +109,7 @@ sofrem alteração, não há problemas. Replicar essa prática nos seus arquivos
 Há quem pense que isso é uma tremenda bobagem. A famosa invenção de moda. Se esse é o seu caso, tudo bem, trabalhe da
 forma como achar melhor.
 
-Como eu disse no
-post ["Um dos maiores erros que os desenvolvedores cometem"](/blog/posts/um-dos-maiores-erros-que-os-desenvolvedores-cometem),
-o mais importante é se manter com a mente aberta para as possibilidades.
+De qualquer forma, como eu costumo dizer quando discuto conceitos da profissão com colegas, o mais importante é se
+manter com a mente aberta para as possibilidades.
 
 Nos vemos em breve!
