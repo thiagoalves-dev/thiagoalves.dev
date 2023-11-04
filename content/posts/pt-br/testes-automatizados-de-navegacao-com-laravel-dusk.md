@@ -3,6 +3,7 @@ date: '2020-05-31'
 title: 'Testes automatizados de navegação com Laravel Dusk'
 description: 'Por mais iniciante que você possa ser, é bem provável que, em algum momento, tenha ouvido falar no tal de teste automatizado, da sua importância no desenvolvimento de sistemas e tudo mais.'
 keywords: 'Testes, Navegação, Dusk'
+enUsSlug: 'automated-browsing-tests-with-laravel-dusk'
 ---
 
 Por mais iniciante que você possa ser, é bem provável que, em algum momento, tenha ouvido falar no _tal_ de teste
