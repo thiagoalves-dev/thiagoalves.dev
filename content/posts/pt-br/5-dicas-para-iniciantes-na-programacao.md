@@ -2,7 +2,8 @@
 date: '2020-06-04'
 title: '5 dicas para iniciantes na programação'
 description: 'Não importa quem seja, a tecnologia usada, se está numa empresa grande ou pequena, todo o programador já viveu a experiência de ser um iniciante, de não saber direito o que está fazendo e ter aquela sensação de estar completamente perdido.'
-keywords: 'Iniciante, Junior, Conceitos, Hype' 
+keywords: 'Iniciante, Junior, Conceitos, Hype'
+enUsSlug: '5-tips-for-begginner-developers'
 ---
 
 Não importa quem seja, a tecnologia usada, se está numa empresa grande ou pequena, todo o programador já viveu a
