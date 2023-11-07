@@ -3,6 +3,7 @@ date: '2020-06-09'
 title: 'Conceitos básicos sobre Code Review'
 description: 'Code Review se resume numa prática de revisão de código, como o próprio nome diz, onde um programador revisa uma implementação feita por outro, com o objetivo de encontrar falhas em geral.'
 keywords: 'Code Review, Arquitetura, Design Patterns, Legibilidade'
+enUsSlug: 'basic-concepts-about-code-review'
 ---
 
 Uma das formas de se manter, ao mesmo tempo, a integridade do código e a equipe na mesma página, é aderindo a prática do
