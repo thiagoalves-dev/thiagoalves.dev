@@ -1,31 +1,31 @@
 ---
 featured: true
 date: '2020-07-01'
-title: 'EN-US Testes automatizados para validações no Laravel'
-description: 'EN-US Seguindo o assunto abordado no último post, desta vez vou implementar outra variação de teste no Laravel. Validação de dados das requisições.'
-keywords: 'Testes, Tests, Request, Controller, Validações'
+title: 'Automated validation tests with Laravel'
+description: 'Following the topic covered in the last post, this time I will implement another test variation in Laravel. Validation of request data.'
+keywords: 'Tests, Request, Controller, Validation'
 ptBrSlug: 'testes-automatizados-para-validacoes-no-laravel'
 ---
 
-EN Seguindo o assunto abordado no [último post](/blog/posts/teste-automatizado-de-e-mail-no-laravel), desta vez vou
-implementar outra variação de teste no Laravel.
+Following the topic covered in the [last post](/blog/posts/automated-email-testing-with-laravel), this time I will
+implement another test variation in Laravel.
 
-Dias atrás, um desenvolvedor que nos acompanha aqui no blog, entrou em contato comigo para tirar algumas dúvidas sobre
-testes de validação de dados, compartilhei com ele alguns exemplos que escrevi na hora e discutimos mais alguns detalhes
-sobre o tema. Então, decidi que seria uma boa ideia postar os exemplos aqui, para que mais pessoas possam ter acesso.
+A few days ago, a developer who follows us here on the blog, contacted me to ask some questions about data validation
+tests, I shared with him some examples that I wrote at the time and we discussed some more details about the topic. So,
+I decided it would be a good idea to post the examples here, so that more people can have access.
 
-Na minha rotina de trabalho, o desenvolvimento de APIs é algo bastante comum. Logo, escrever testes para isso, também, e
-uma das lógicas que costumo testar são exatamente as validações dos dados recebidos nas requisições.
+In my work routine, API development is quite common. Therefore, writing tests for this, too, and one of the logics that
+I usually test is exactly the validations of the data received in requests.
 
-Sem mais delongas, vamos ao que interessa!
+Without further ado, let's get to the point!
 
-### O cenário
+### The context
 
-O meu sistema possui um cadastro de usuários simples. Poderia ser qualquer site desses em que criamos uma conta,
-preenchendo alguns campos básicos, inicialmente.
+My system has a simple user registration. It could be any site where we create an account, filling in some basic fields
+initially.
 
-Recebo os dados através de uma `Request`, inserindo-os no banco e retornando o objeto criado (simplificado para o
-exemplo). Segue abaixo:
+I receive the data through a `Request`, inserting it into the database and returning the created object (simplified for
+the example). See below:
 
 ```php
 // app/Http/Controllers/UsersController.php
@@ -43,7 +43,7 @@ class UsersController extends Controller
 }
 ```
 
-No `FormRequest` eu valido as informações vindas do formulário:
+In the `FormRequest` class, I validate the information coming from the form:
 
 ```php
 // app/Http/Requests/UserStoreRequest.php
@@ -68,12 +68,12 @@ class UserStoreRequest extends FormRequest
 }
 ```
 
-### O teste
+### The test
 
-O meu objetivo é testar se os dados são validados pela `Request` corretamente. Para isso, escrevi dois testes onde, no
-primeiro o foco são os campos obrigatórios e no segundo são as especificidades de cada campo.
+My goal is to test whether the data is validated by `Request` correctly. To do this, I wrote two tests where, in the
+first, the focus is on the mandatory fields and in the second, the specifics of each field.
 
-Veja abaixo:
+See below:
 
 ```php
 // tests/Feature/Http/Controllers/UsersControllerTest.php
@@ -125,14 +125,14 @@ class UsersControllerTest extends TestCase
 }
 ```
 
-Veja o resultado:
+See the result:
 
 ![](/images/posts/laravel-test-form-requests/two-tests.png)
 
-### Incrementando
+### Improving
 
-No cenário descrito, também podemos validar se o e-mail informado já está cadastrado no banco. Basta adicionar a
-regra `unique` à minha `Request`.
+In the scenario described, we can also validate whether the email provided is already registered with the bank. Just add
+the `unique` rule to my `Request`.
 
 ```php
 // app/Http/Requests/UserStoreRequest.php
@@ -147,7 +147,8 @@ public function rules()
 }
 ```
 
-No teste, crio um usuário para garantir que haverá algum cadastrado e uso o seu e-mail na requisição para forçar o erro.
+In the test, I create a user to ensure that there will be one registered and use their email in the request to force the
+error.
 
 ```php
 // tests/Feature/Http/Controllers/UsersControllerTest.php
@@ -172,22 +173,22 @@ public function testStoreUniqueEmailValidation()
 }
 ```
 
-Veja o resultado:
+The result:
 
 ![](/images/posts/laravel-test-form-requests/three-tests.png)
 
-Muitas regras podem ser implementadas nas validações de dados. Recomendo que, quando mais regras, mais testes sejam
-escritos, pois, acredito ser a melhor forma de explorar as possibilidades.
+Many rules can be implemented in data validations. I recommend that, when there are more rules, more tests are written,
+as I believe it is the best way to explore the possibilities.
 
-### Concluindo
+### Then
 
-Para testes relacionados a comportamento de formulário, exibição de erros, recomendo o uso do _Laravel Dusk_. Inclusive,
-já fiz um [post aqui no blog sobre isso](/blog/posts/testes-automatizados-de-navegacao-com-laravel-dusk).
+For testing related to form behavior, error display, I recommend using Laravel Dusk. In fact, I already made
+a [post here on the blog about it](/blog/posts/automated-browsing-tests-with-laravel-dusk).
 
-Noto uma grande carência de conteúdo gratuito relacionado a testes, pelo menos em _PHP_. Ultimamente, muitas pessoas
-comentam comigo que não encontram nada muito prático e que se sentem perdidos, não sabendo por onde começar.
+I notice a great lack of free content related to testing, at least in PHP. Lately, many people have commented to me that
+they can't find anything very practical and that they feel lost, not knowing where to start.
 
-Gradualmente, trarei novos exemplos aqui para ajudar. Talvez possamos até fazer uma live, _codando_ testes e tirando
-dúvidas. O que acha?
+Gradually, I will bring new examples here to help. Maybe we can even do a live, coding tests and answering questions.
+What do you think?
 
-Nos vemos em breve!
+See you later!
