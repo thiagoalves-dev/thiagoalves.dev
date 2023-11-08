@@ -15,7 +15,8 @@ para que essa tarefa seja dificultada, como: _Pull Requests_ com excesso de alte
 de definição sobre convenções, ego. Por isso é muito importante que a equipe esteja alinhada na forma de trabalho.
 
 Se você não faz ideia do que estou falando, _Code Review_ se resume numa prática de revisão de código, como o próprio
-nome diz, onde um programador revisa uma implementação feita por outro, com o objetivo de encontrar falhas em geral.
+nome diz, onde um programador revisa o código escrito por outro programador, com o objetivo de evitar problemas em
+geral.
 
 Uma das formas de estruturar essa revisão, é dividindo-a em três segmentos, onde um é pré-requisito para o outro. São
 eles:
@@ -26,7 +27,7 @@ Princípios, convenções, segurança, _design patterns_. A lista pode ser grand
 regras estabelecidas pelo time, reforçando a importância da comunicação.
 
 Nessa etapa, é possível analisar se a implementação realizada está de acordo com o desenho da aplicação, se as entidades
-do sistema e são respeitadas, não contendo classes, regras de negócios e funções em locais inapropriados.
+do sistema estão sendo respeitadas, não contendo classes, regras de negócios e funções em locais inapropriados.
 
 Outra questão importante, é se os testes estão compatíveis com as novas funcionalidades e, claro, se executam
 corretamente. Até mesmo para validar se as mudanças não prejudicam outras áreas do sistema, já existentes.
@@ -61,6 +62,6 @@ menos dois profissionais com alguma experiência. As dinâmicas de _Code Review_
 configuração do time. É possível que haja apenas um profissional que revisa o código e estabelece as regras, por
 exemplo.
 
-Se você possui alguma experiência diferente, nesse assunto, compartilha conosco nos comentários.
+Se você possui alguma experiência diferente, nesse assunto, compartilhe nos comentários.
 
 Nos vemos em breve!
