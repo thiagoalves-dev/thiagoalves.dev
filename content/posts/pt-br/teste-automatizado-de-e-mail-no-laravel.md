@@ -14,7 +14,7 @@ Dias atrás, deparei-me com uma questão que quebrei a cabeça para testar. Eu p
 queria validar se a montagem dele acontecia da forma correta.
 
 Na documentação do _Laravel_, encontrei uma opção chamada de [Mail Fake](https://laravel.com/docs/mocking#mail-fake),
-mas confesso que não satisfez a minha necessidade. Durante as minhas tentativas, fiz alterações no código que deveriam
+mas confesso que não atendeu a minha necessidade. Durante as minhas tentativas, fiz alterações no código que deveriam
 ter causado a "quebra" do teste, mas isso não aconteceu. Sendo assim, desisti de usá-lo.
 
 Depois de conversar com um amigo, surgiu uma ideia interessante que me possibilitaria testar a classe `Mailable` e
@@ -199,7 +199,7 @@ Resultado:
 ![Teste com falha](/images/posts/laravel-mailable-tests/fail.png)
 
 Este teste não inclui validar o envio do e-mail, uma vez que isso geralmente depende de um servidor externo. O foco é
-realmente testar a sua montagem, não uma integração com o `SMTP`.
+realmente testar a sua montagem, não uma integração com o servidor `SMTP`.
 
 ### Concluindo
 
