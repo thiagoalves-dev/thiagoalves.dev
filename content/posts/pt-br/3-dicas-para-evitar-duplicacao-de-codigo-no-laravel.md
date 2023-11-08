@@ -53,8 +53,8 @@ Na documentação, é possível encontrar esse recurso
 em [Resource Controllers](https://laravel.com/docs/controllers#resource-controllers). Um pouco confuso, na minha
 opinião. Apesar disso, se trata de uma função bem útil que o _framework_ disponibiliza.
 
-Costumo dizer que o primeiro passo para manter um _controller_ bem organizado é usar os métodos considerados que vem por
-padrão.
+Costumo dizer que o primeiro passo para manter um _controller_ bem organizado é usar os métodos padrão que o _framework_
+oferece.
 
 Vamos continuar no exemplo dos produto e imaginar que precisamos implementar todos os métodos de manutenção dos
 produtos. Veja abaixo duas formas diferentes de criar rotas para isso obtendo o mesmo resultado.
