@@ -11,7 +11,7 @@ por onde começo? é muito difícil fazer o que você faz?
 
 Inclusive, esse foi um dos motivos pelos quais resolvi começar um blog e, obviamente, este post aqui.
 
-A verdade é que não existe uma forma correta ou a que dê mais certo. É possível começar pelos cursos de formação
+A verdade é que não existe uma forma correta, ou a que dê mais certo. É possível começar pelos cursos de formação
 tradicionais ou totalmente do zero, sem nunca entrar numa sala de aula.
 
 Se você tem desejo ou condições de fazer uma faculdade, nada contra. Agora, isso não será decisivo para torná-lo um
