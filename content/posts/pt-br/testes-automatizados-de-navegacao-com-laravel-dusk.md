@@ -6,8 +6,8 @@ keywords: 'Testes, Navegação, Dusk'
 enUsSlug: 'automated-browsing-tests-with-laravel-dusk'
 ---
 
-Por mais iniciante que você possa ser, é bem provável que, em algum momento, tenha ouvido falar no _tal_ de teste
-automatizado, da sua importância no desenvolvimento de sistemas e tudo mais.
+Por mais iniciante que você possa ser, é bem provável que, em algum momento, tenha ouvido falar no _tais_ testes
+automatizados, da sua importância no desenvolvimento de sistemas e tudo mais.
 
 De fato, conforme elevamos o nível de complexidade dos nossos projetos, é possível notar o quanto esse recurso nos ajuda
 na construção e manutenção das funcionalidades.
