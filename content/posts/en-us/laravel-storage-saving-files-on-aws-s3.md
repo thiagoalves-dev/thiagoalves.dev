@@ -9,16 +9,16 @@ ptBrSlug: 'laravel-storage-salvando-arquivos-no-s3-da-amazon'
 A few days ago I demonstrated in a simple way how
 to [upload files using Laravel's Storage class](/blog/posts/laravel-storage-simple-correct-way-to-upload-files).
 
-I am going to use the code already made to show how to save files in AWS S3, Amazon's storage service.
+I am going to use the same code in order to show how to save files in AWS S3, Amazon's storage service.
 
 Follow the repository
 link: [thiagoalves-dev/laravel-storage-example](https://github.com/thiagoalves-dev/laravel-storage-example).
 
-Assuming you already have an AWS account created, let's go step by step:
+Assuming you have already created an AWS account, let's follow the steps below:
 
 **Bucket**
 
-In `Services > Storage > S3`, create a new bucket to store your application files.
+In `Services > Storage > S3`, create a new bucket to store your application's files.
 
 **Credentials**
 
@@ -26,7 +26,8 @@ In your AWS user menu, go to My Security Credentials, create a new Access Key an
 
 **Setup**
 
-Laravel already comes with the S3 configuration variables by default, just add your account and bucket data.
+Laravel already comes with the S3 configuration variables by default in the `.env` file, just add your account and
+bucket data.
 
 ```bash
 # .env
@@ -53,17 +54,17 @@ AWS_BUCKET=bucket-name
 
 **S3 Package**
 
-You need to install a [package](https://github.com/thephpleague/flysystem-aws-s3-v3) for communication with S3 to work
-correctly.
+You need to install a [package](https://github.com/thephpleague/flysystem-aws-s3-v3) in order for the integration with
+the S3 service to work correctly.
 
-There is no need for configuration or coding in this regard, just run the following command in the
+No configuration or coding are needed at this step, just execute the following command in your
 terminal: `composer require league/flysystem-aws-s3-v3`.
 
 You're all set! Let's start coding.
 
 **Upload**
 
-I added a new route for the method I will use for the updaload with S3.
+I added a new route for the method where I will implement the upload the files by integrating with the S3 service.
 
 ```php
 // routes/web.php
@@ -89,10 +90,10 @@ On the _Bucket_ page, you have access to the uploaded file.
 
 **Preview**
 
-There are several ways to access files on S3: through download, temporary addresses, etc. This will also vary depending
-on the access permissions configured on the bucket.
+There are several ways to access files on S3: through download, temporary addresses, etc. This also varies depending
+on the access permissions that are configured on the bucket.
 
-Below, I have given an example of a route where I pass the name of the file I want to access and, in the controller,
+Below, I share an example of a route where I pass the file name that I want to access and, in the controller, I
 redirect it to a temporary address, then it is possible to see the image I uploaded.
 
 ```php
