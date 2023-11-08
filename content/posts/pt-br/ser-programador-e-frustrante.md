@@ -20,7 +20,7 @@ não tá carregando. A _internet_ caiu.
 
 Programo em _PHP_, mas tô querendo aprender _Python_. _Python_ nada, tá todo mundo usando Javascript, é o futuro. Será
 que começo pelo _Angular_, _Vue_ ou _React_? _Angular_ é do Google, _React_ do Facebook. _Vue_ é mais fácil. Desisto,
-vou aprender _Java_ e fazer aplicativo nativo para _Andoird_, mas agora se faz isso com Kotlin. Caramba, vai sair o PHP
+vou aprender _Java_ e fazer aplicativo nativo para _Android_, mas agora isso é feito com Kotlin. Caramba, vai sair o PHP
 8!
 
 \- Então, pra fazer isso, você precisa disparar um evento e criar um _Listener_ que vai colocar um _Job_ na fila do
