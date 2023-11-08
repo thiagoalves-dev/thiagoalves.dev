@@ -6,7 +6,7 @@ keywords: 'Storage, Upload, Files'
 ptBrSlug: 'laravel-storage-upload-de-arquivos-de-forma-simples-e-correta'
 ---
 
-Managing files is a very common feature for any kind of systems, websites, mobiles apps and so on. From public photos to
+Managing files is a very common feature for any kind of system, website, mobile app and so on. From public photos to
 private reports, many types of files require specific storage approaches.
 
 The way Laravel handles this issue is incredibly simple. Basically, if you use the structure that the framework
@@ -43,7 +43,7 @@ public function store(Request $request)
 
 #### Saving the file as public
 
-In this case, the image will be accessible to anyone, you just need to know how to do that.
+In this case, the image will be accessible to anyone once the user has the URL to do that.
 
 ```php
 // HomeController
@@ -67,7 +67,7 @@ Laravel already comes with the `storage/app/public` folder configured.
 ]
 ``` 
 
-You need to create a symlink within Laravel's public directory to make your public files accessible via Browser URL.
+You only need to create a symlink to the Laravel's public directory to make your public files accessible via browser.
 
 Execute the following command: `php artisan storage:link`.
 
