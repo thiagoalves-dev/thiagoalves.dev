@@ -7,8 +7,8 @@ enUsSlug: '5-thoughts-on-comments-in-code'
 ---
 
 Qualquer programador com alguma experiência, principalmente que já tenha trabalhado em equipe, deve ter se deparado com
-algum comentário do tipo: "não mexer", "aqui é que a mágica acontece" ou "não sei o que isso faz". Já é quase uma
-tradição.
+algum comentário no código do tipo: "não mexer", "aqui é que a mágica acontece" ou "não sei o que isso faz". Já é
+praticamente uma tradição.
 
 Por trás dessa prática inofensiva e até engraçada, à primeira vista, uma série de problemas podem estar se escondendo no
 código. Neste _post_, trago algumas reflexões carregadas de conceitos e da minha opinião sobre o tema.
