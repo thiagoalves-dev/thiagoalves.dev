@@ -93,8 +93,8 @@ Na visualização do _Bucket_ acesso o arquivo que fiz upload.
 Existem várias formas de ter acesso aos arquivos no S3: através de _download_, endereços temporários, etc. Isso também
 vai variar de acordo com as permissões de acesso configuradas no _bucket_.
 
-Abaixo, exemplifiquei uma rota onde passo o nome do arquivo que quero acessar e, no _controller_, redireciono para um
-endereço temporário ou é possível ver a imagem que cadastrei.
+Abaixo, exemplifico uma rota onde passo o nome do arquivo que quero acessar e, no _controller_, redireciono para um
+endereço temporário onde é possível ver a imagem que cadastrei.
 
 ```php
 // routes/web.php
