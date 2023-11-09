@@ -6,55 +6,56 @@ keywords: 'Home Office, Productivity, Focus'
 ptBrSlug: '5-dicas-para-turbinar-a-sua-produtividade-no-home-office'
 ---
 
-With the evolution of communication tools, working from home is becoming more common every day. Unfortunately,
+With the evolution of communication tools, working from home has been becoming more common every day. Unfortunately,
 heightened by our current context.
 
 Obviously, areas linked to technology, such as systems development, are pioneers in this regard and obtain very
 satisfactory results.
 
-I have worked from home for over three years. I went through a learning curve, normal, but for a long time now I can say
-that I am quite productive.
+I have worked from home for over three years. I went through a learning curve, totally normal, and after some time I can
+say that I am quite productive.
 
 A few days ago, I opened a question box on my [instagram](https://instagram.com/thiagoalves.dev), and some very
-interesting questions came up. As the space there is smaller, I decided to bring the subject here and delve a little
+interesting questions came up. As the space there is small, I decided to bring the subject here and delve a little
 deeper.
 
 I've put together 5 tips to help you improve your performance and have more time to do the things you love.
 
 ### 1 - Learn how to say "no"
 
-It is not uncommon, every now and then, for that person to appear looking like a Shrek kitten asking for a favor that
-has nothing to do with work. We promptly put aside our task to respond to someone else's "EMERGENCY".
+It is not uncommon, sometimes, for that person to appear looking
+like [Puss in Boots](https://en.wikipedia.org/wiki/Puss_in_Boots_(Shrek)) asking for a favor that
+has nothing to do with work. Then, we promptly put aside our task to respond to someone else's "EMERGENCY".
 
-If this happens to you, your productivity is certainly compromised. It is important here to try to identify the causes
+If this happens to you, your productivity is certainly compromised. It is important here to identify the causes
 of this. Maybe you're just a disconnected person. On the other hand, there are deeper emotional issues that stop you
 from denying someone something.
 
 Make an alignment with the people closest to you. Ask them not to interrupt you during your work hours. Say that you
-count on that person to help you with this. That eliminates half the problem, that's for me.
+count on them to help you with this. That might eliminate half the problem.
 
-Remember: **people don't ask favors from those who have free time, but rather from those who solve the problem**.
+Remember: **people don't ask favors from those who have free time, but rather from those who solve problems**.
 
-### 2 - Set a time to start/stop working
+### 2 - Set the time to start/stop working
 
 For years, I thought about working from home to make my schedule the way I thought best. Until the second page, this
-worked. If there is a maxim that says that too much of everything is bad, flexible working hours are no different.
+worked. There is a cliché that says that everything in excess is bad, and flexible working hours are no different.
 
 In fact, I don't know a single person who can be highly productive without a well-defined routine.
 
-I believe that the fact that there is no commute to an office, for example, creates difficulty in turning on and off
-what I call "work mode". A point of attention here is the stopping time. There's no point in waking up at five o'clock
-in the morning and starting work early if at 10 o'clock at night you still have that black screen in front of you.
+I believe in the fact that there is no commute to the office may make difficult turning on and off what I call "work
+mode". A point of attention here is the stopping time. There's no point in waking up at 5am and starting work early if
+at 10pm you still have that black screen in front of you.
 
 Establish a suitable number of hours per day and stick to them. With exceptions, of course. Having a stopping time will
 increase your sense of urgency and also increase your productivity.
 
 ### 3 - Eliminate the noise
 
-Neighbor's dog barking, construction, cell phone vibrating on the table. There will never be a shortage of options to
-get in your way and many of them simply cannot be avoided.
+Neighbor's dog barking, construction, cell phone vibrating on the table. There will always be plenty of options to get
+in your way and some of them simply cannot be avoided.
 
-Start with the closest noises, from inside the house. Try to work in a more private environment, preferably one where
+Start with the closest noises, from inside your house. Try to work in a more private environment, preferably one where
 you can close the door. Invest in a good set of headphones and eliminate all the surrounding noise.
 
 Be careful with the music. I know it's a very personal issue, but music can also take away your attention, especially
@@ -63,7 +64,7 @@ this [playlist](https://www.youtube.com/playlist?list=PLZiGJIkRM7M0GSufh7RGTYZrF
 
 ### 4 - Work in blocks of time
 
-Divide the hours of your workday into blocks. Set aside most of your time to carry out your tasks, but also take breaks
+Divide the hours of your workday into blocks. Set aside most of your time to carry out your tasks, but also take time
 to respond to people and take breaks.
 
 It can be an hour or more, but I recommend that it doesn't last much longer. Over time, you will discover your ideal
@@ -72,14 +73,14 @@ time.
 Each block of time must be a cycle divided into three modes: productive, response and unproductive.
 
 During productive mode, focus only on your task, disconnecting from everything else. In response mode, take time to pay
-attention to colleagues, leaders or customers who may be waiting to hear from you. No less important, take a few minutes
-to disconnect for a while, grab a coffee, some water, and stretch. Then start a new cycle.
+attention to colleagues, leaders and customers who may be waiting to hear from you. No less important, take a few
+minutes to disconnect for a while, grab a coffee, some water, and stretch. Then start a new cycle.
 
-This method is quite old and I know many people who use it. Works well for me too.
+This method is quite old, I know many people who use it and works pretty well for me too.
 
 ### 5 - Breathe deep
 
-You know those moments when your mind just freezes?
+You know those moments when your mind almost freezes?
 
 Do a deep breathing exercise. Preferably, get away from the computer. Just focus on breathing for two or three minutes.
 This is enough for you to completely change your emotional state and make your mind empty.
