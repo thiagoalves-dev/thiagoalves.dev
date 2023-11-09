@@ -6,24 +6,24 @@ keywords: 'Career'
 ptBrSlug: 'minhas-primeiras-experiencias-como-desenvolvedor'
 ---
 
-A layman on the subject, when talking to an experienced developer, may get the (very false) impression that
+A layman on the subject, when talking to an experienced developer, may get the (wrong) impression that
 is talking to a NASA engineer (lol). And generally this hides a beginning of a career full of ups and downs,
 uncertainties and difficulties.
 
-The fact is that every profession has its learning curve: you start from scratch, start learning, move up a level, your
-head explodes and becomes a master at it.
+The fact is that every profession has their learning journey: you start from scratch, start learning, move up a level,
+your head explodes and becomes a master at it.
 
-To illustrate that, I'll share a little about the beginning of my journey with you.
+To illustrate that, I am going to share a little about the beginning of my journey with you.
 
 ### Start of studies
 
-I kind of parachuted into the area. I was never very interested in technology. Until I was 18, the only thing I had to
-technology was a cell phone without a camera.
+I kind of parachuted into the area. I was never very interested in technology. Until I was 18, the only technological
+thing I had was a cell phone without camera.
 
 When I finished high school, I still didn't know what career to pursue. So I decided to take a technical course in
 IT, simply because I understood that there would be more job offers.
 
-In the first semester, maintenance, networking and programming classes began. I don’t even need to say which one caught
+In the first semester, maintenance, networking and programming classes began. I don’t need to say which one caught
 my attention the most, right? I'm good at mathematics, and I've always had reasonable logical reasoning, which helped me
 a lot.
 
@@ -33,7 +33,7 @@ Development. I passed and, for one year, I did the two courses at the same time.
 ### First work experiences
 
 After finishing my technical course, I got an internship at the institution I was studying at. It was my first contact
-with programming outside a classroom. The first reality check.
+with programming outside the classroom. The first reality check.
 
 Seriously, it was horrible. I simply had no idea what I was doing. It was a lot of new information at the same time.
 And, to make it matters worse, my main task was to maintain a system made by a much more experienced professional than
@@ -46,10 +46,10 @@ look "useless" compared to what I was doing out of it. Even so, I chose to compl
 ### Entering the job market
 
 At the beginning of 2011 I officially entered the job market to work as a developer. The most interesting thing is that
-on my first day of work I received the news that I would work in a different position than the one I applied for and
+on my first day at work I received the news that I would work in a different position than the one I applied for and
 with a technology I had never seen in my life.
 
-I chose to stay and face the challenge. Once again I was very lost, but the baggage I had, however small it was,
+I chose to stay and face the challenge. Once again I was very lost, but previous experience, however small it was,
 guaranteed me a very quick evolution.
 
 Since then, a lot has happened. Different companies, projects, technologies, learning. It has been a great journey.
@@ -57,7 +57,7 @@ Since then, a lot has happened. Different companies, projects, technologies, lea
 ### Then
 
 The biggest lesson I learned from my career is that we should always try to be involved in projects that take us out of
-my comfort zone. This way I can keep the evolution happening.
+our comfort zone. This way we can keep the evolution happening.
 
 The intention with this text is to bring a closer view of reality to people who do not understand our work very well.
 
