@@ -12,24 +12,24 @@ importance in systems development and everything else.
 In fact, as we increase the level of complexity of our projects, it is possible to notice how much this resource helps
 us in building and maintaining functionalities.
 
-Unfortunately, many professionals, including myself, only notice this when they start to face problems that could have
-been avoided if the tests had been written. An example is the good old change that causes a break in another area of the
-system.
+Unfortunately, many professionals, including myself, only notice that when they start to face problems that could have
+been avoided if the tests had been written. An example of this, is that change made that causes a bug in another area of
+the system.
 
 ### Different types of tests
 
-This is a pretty broad field these days. There are ways to test virtually every area of an application. From that small
-function that formats a CPF, for example, to a complex integration full of steps with another third-party system.
+This is a pretty broad field these days. There are ways to test virtually every area of a system. From that small
+function that formats a date, for example, to a complex integration full of steps with another third-party system.
 
 Unit, functional, integration, performance, security tests. The list is really extensive, to the point where some
 companies have professionals specialized in developing these tests, known as QA (Quality Analyst).
 
 ### Laravel Dusk
 
-It is a Laravel package for carrying out tests simulating browser behavior, filling out forms, clicking on buttons and
+It is a Laravel package created to develop tests simulating browser behavior, filling out forms, clicking on buttons and
 links, validating whether certain information appears on the screen and much more.
 
-Like most solutions the framework offers, the package is very simple to install and use. The configuration process
+Like most solutions the framework offers, the package is very simple to install and use. The setup process
 practically does not exist, just execute the commands in the documentation. It also does not have dependencies
 like [JDK](https://www.google.com/search?q=JDK) e [Selenium](https://www.selenium.dev).
 
@@ -48,22 +48,22 @@ project's `tests` directory.
 $ php artisan dusk:install
 ```
 
-![Diretório de testes do projeto](/images/posts/laravel-dusk/tests-directory.png)
+![Project's testing folder](/images/posts/laravel-dusk/tests-directory.png)
 
 You're all set!
 
 P.S.: Confirm the installation commands in the [official documentation](https://laravel.com/docs/dusk), as they may
 change.
 
-P.S. 2: Before we start practicing, check if the APP_URL variable in your .env has the full URL of the application, if
-not, correct it.
+P.S. 2: Before we start practicing, check if the APP_URL variable in your `.env` file has the full URL of your
+application, if not, fix it.
 
 ### Let's do it
 
 #### The context
 
-I implemented a very basic registration screen, where you only need to fill in your name and email. When clicking "
-Save", I will be redirected to a second screen where I list all the registrations made. Screenchots below.
+I implemented a very basic registration screen, where you only need to fill out your name and email. When clicking on
+the "Save" button, you will be redirected to a second screen where a list of all registers is showed. Screenchots below.
 
 ![Form to add items](/images/posts/laravel-dusk/form.png)
 
@@ -78,7 +78,7 @@ I need to create an automated test to ensure this behavior happens correctly. So
 
 public function testAddRegisterSuccess()
 {
-    // Gerador de dados falsos
+    // Fake data generator
     $faker = Factory::create('pt_BR');
 
     $this->browse(function (Browser $browser) use ($faker) {
@@ -145,11 +145,11 @@ Result:
 
 The possibilities are endless. In the future, I will make a second post exploring more resources.
 
-At first glance, this process seems laborious, but, like everything in programming, practice will make it easier and
-faster.
+At first impressions, this process seems laborious, but, like everything in programming, practice will make it easier
+and faster.
 
-As time passes, you no longer worry about having to write tests, but rather, which ones to write to ensure that the most
-variable behaviors are covered.
+As time passes, you no longer worry about having to write tests, but rather, which ones to write in order to ensure that
+the most variable behaviors are covered.
 
 All the code above is available in my [repository](https://github.com/thiagoalves-dev/laravel-storage-example), if you
 want to download and test it.
