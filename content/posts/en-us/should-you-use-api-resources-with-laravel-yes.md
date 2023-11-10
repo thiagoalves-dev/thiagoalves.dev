@@ -16,13 +16,13 @@ little data.
 As the documentation itself says, this feature allows us to create a transformation layer between the models and the
 JSON responses to be returned.
 
-At first glance, it may seem like it doesn't make much difference, especially if you need to return the data the way it
-already is, but a few more details are enough for this feature to show its value.
+At first impressions, it may seem like it doesn't make much difference, especially if you need to return the data the
+way it already is, but a few more details are enough for this feature to show its value.
 
 ### Let's do it
 
-Our exercise today consists of the following: we need to search for a specific product and its data. Below we have the
-models to represent the product and category, in addition to the route of our API method.
+Our today's exercise consists of the following context: we need to search for a specific product and its data. Below we
+have the models to represent the products and categories, in addition to the route of our API method.
 
 ```php
 // app/Product.php
@@ -58,7 +58,7 @@ class Category extends Model
 Route::get('/products/{product}', 'ProductsController@show');
 ```
 
-**In the first example, I will implement the method just returning the model data, without any changes:**
+**In the first example, I implement the method just returning the model data without any changes:**
 
 ```php
 // app/Http/Controllers/ProductsController.php
@@ -85,10 +85,10 @@ Response:
 }
 ```
 
-Even though I don't really agree with the idea, in a case like this, there is actually no need to use API Resource.
+Even though I don't really agree with the idea, in a case like this, there is no such a huge need to use API Resource.
 
-By raising the level of demand a little, it is possible to see that our method will need improvements. Imagine that next
-to the product, we need to return its category data.
+By raising the level of demand a little, it is possible to see that our method will need improvements. Imagine that
+together with the product, we need to return its category data.
 
 **Let's go**:
 
@@ -123,12 +123,12 @@ Response:
 }
 ```
 
-Yeah, I confess that it was even better than I imagined (lol), but it's still very basic.
+Yeah, I confess that it was a little better than I imagined (lol), but it's still very basic.
 
 ### Let's go to what matters
 
-It's time to be more demanding with our method. Now, the product must have a price option already formatted in reais,
-the dates must be in Brazilian reading format and the category must be optional.
+It's time to be more demanding with our method. Now, the product must have a price option already formatted in dollars,
+the dates must be in American reading format and the category must be optional.
 
 **Let's put the API Resource to work for us:**
 
@@ -152,8 +152,8 @@ class Product extends JsonResource
             'id'         => $this->getKey(),
             'name'       => $this->name,
             'price'      => $this->price,
-            'price_show' => number_format($this->price, 2, ',', '.'),
-            'create_at'  => $this->created_at->format('d/m/Y H:i:s'),
+            'price_show' => '$' . number_format($this->price, 2, '.', ','),
+            'create_at'  => $this->created_at->format('m/d/Y H:i:s'),
             'category'   => $this->when($request->get('include_category'), function () {
                 return new \App\Http\Resources\Category($this->category);
             }),
@@ -187,8 +187,8 @@ Response:
         "id": 2,
         "name": "Juice",
         "price": 4.54,
-        "price_show": "4,54",
-        "create_at": "11/05/2020 20:22:30",
+        "price_show": "$4.54",
+        "create_at": "05/11/2020 20:22:30",
         "category": {
             "id": 1,
             "name": "Drinks"
@@ -259,15 +259,15 @@ Response:
                 "id": 3,
                 "name": "Pizza",
                 "price": 10.9,
-                "price_show": "10,90",
-                "create_at": "11/05/2020 20:22:32"
+                "price_show": "$10.90",
+                "create_at": "05/11/2020 20:22:32"
             },
             {
                 "id": 4,
                 "name": "French Fries",
                 "price": 7.49,
-                "price_show": "7,49",
-                "create_at": "11/05/2020 20:22:35"
+                "price_show": "$7.49",
+                "create_at": "05/11/2020 20:22:35"
             }
         ]
     }
@@ -278,13 +278,13 @@ Anyway, even if I use a very simple example like this, it's clear how useful thi
 
 ### Then
 
-I've been using this resource for at least two years without interruption and I've never stopped. No matter how simple
-the API method I need to implement, I always end up using Resources.
+I've been using this resource for at least two years without interruption, and I've never stopped. No matter how simple
+the API method I need to implement, I always end up using API Resources.
 
-It is important to make it clear that in the code above, it is possible to make a series of optimizations, but I chose
-to try to be more didactic.
+It is important to clarify that in the code above, it is possible to make a series of optimizations, but I chose
+to be more didactic.
 
-All code for the examples is in my [github repository](https://github.com/thiagoalves-dev/laravel-storage-example), if
-you want to use it in your tests.
+All code for the examples is in my [github repository](https://github.com/thiagoalves-dev/laravel-storage-example) in
+case you want to use it for your tests.
 
 See you later!
