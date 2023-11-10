@@ -79,7 +79,7 @@ Apenas tome cuidado com uma única fonte de opinião. Se não tiver outro profis
 outras opiniões e as traga para conversa. Existe muito programador de ego elevado por aí, puxando a “sardinha" para o
 próprio lado.
 
-Além disso, a opinião de uma pessoa é muitas vazes baseada na percepção dela sobre as coisas.
+Além disso, a opinião de uma pessoa é, na maioria das vezes, baseada na percepção dela sobre as coisas.
 
 ### Concluindo
 
