@@ -6,19 +6,21 @@ keywords: 'Code, Comments, Readability, Bugs, Config'
 ptBrSlug: '5-reflexoes-sobre-comentarios-no-codigo'
 ---
 
-Any programmer with some experience, especially one who has worked in a team, must have come across some comment like: "
-don't touch it", "this is where the magic happens" or "I don't know what this does". It's almost a tradition now.
+Any programmer with some experience, especially one who has been part of a team, must have come across some comment
+like: "don't touch it", "this is where the magic happens" or "I don't know what this does". It's kind of traditional.
 
-Behind this harmless and even funny practice, at first glance, a series of problems could be hiding in the code. In this
-post, I bring some reflections full of concepts and my opinion on the topic.
+Behind this harmless and even funny practice, many problems may have been hidden in the code. In this post, I bring some
+reflections full of concepts and my opinion about this topic.
 
 ### Code readability
 
-If you just wrote a code and it was so complex that you had to make comments to explain what it does, most likely the
-problem is that it is not readable enough.
+If you just wrote a code and it was so complex that you had to make comments to explain what it does, most likely you
+method is not readable enough.
 
-Make revisions to what you wrote, looking for areas for improvement and thinking that, some time later, someone will
-need to modify this logic, including yourself.
+Review your code, looking for things that can be improved, specially in terms of readability. Bad nomenclatures,
+excessive logic and conditions usually make the code more difficult to be read.
+
+Don't forget that someone will need to maintain this logic, including yourself.
 
 ### Lying comments
 
@@ -31,27 +33,25 @@ public function getCurrentMonth() {
 }
 ```
 
-It may seem silly, but imagine you correcting an error that happens in production, the broken logic consumes the
-method above, and it wasn't even you who implemented it. Basically, this can determine whether the problem will affect a
-few users or a few hundred because of the time lost during the fix.
+It may seem silly, but imagine you correcting an error that is happening in production, the logic where the problem is
+consumes the method above, and it wasn't even you who implemented it. Basically, this can determine whether the problem
+will affect a few users or a few hundred because of the time lost during the fix.
 
 ### Outdated comments
 
-For me, this topic alone is enough to argue that comments should not be used.
+For me, this topic itself is enough to argue that comments should not be made in the code.
 
 In my experience, I was never helped by a comment and, the main reason, was that it was no longer consistent with the
 implemented logic, because it had changed at some point.
 
-It's always the same story: the guy writes that method with dozens of lines and dozens of other lines to explain what it
-all does, a correction is necessary, it is made, but the comment is not updated. The rest is history (lol).
+It's always the same story: some guy writes that method with dozens of lines code and other dozens of lines of comments
+to explain what it all does, a fix is necessary, it is made, but the comment is not updated. The rest is history (lol).
 
 ### The best medicine is prevention
 
-It sounds like [Drauzio Varella](https://pt.wikipedia.org/wiki/Drauzio_Varella) saying, "but it's true".
-
-Some factors that contribute to the creation of comments: very large methods, classes with excessive logic, class
-naming, variables and methods incompatible with their practical function. Taking extra care with these issues helps a
-lot. Example below.
+Some points that contribute to the creation of comments: large methods, classes with excessive logic, naming of classes,
+variables and methods incompatible with their practical function. Taking extra care with these issues helps a lot.
+Example below.
 
 ```php
 // BEFORE
@@ -70,22 +70,22 @@ function isActive(Product $product) {
 
 **Begginers**
 
-You, young grasshopper, at the HEIGHT OF THE BEGINNING of your career as a programmer, are reading this post and feeling
-terrified because you comment on every line of code you write, even those native functions of the language so as not to
-forget what they do. Rest assured, everything in its own time. The most important thing now is your progress. Over time,
+You, young grasshopper, at the PEAK OF THE BEGINNING of your career as a programmer, are reading this post and feeling
+terrified because you comment on every line of code you write, even those native functions of the language, so you don't
+forget what they do. Relax, everything in its own time. The most important thing now is your progress. Over time,
 this begins to lose its meaning. Just be aware of seeking the necessary evolution to abandon this practice.
 
 **Bugs**
 
-The system is giving errors in production, many users are being affected, and you know that that naughty hack is going
+The system is broken in production, many users being affected, and you know that a small naughty hack is going
 to stop the bleeding? Do it and use a comment to signal the need to refactor that piece of code, but don't forget to
-already put a task in the queue to do this, if it is not possible to refactor at the moment.
+set a task for this in case it is not possible to work on that at the moment.
 
 **Config**
 
-In some frameworks, such as Laravel, it is common for there to be some configuration files full of comments explaining
-how each parameter operates and what its customization options are. As these are files that rarely change, there are no
-problems. Replicating this practice in your files can also be a good idea.
+In some frameworks, such as Laravel, we commonly see configuration files full of comments explaining how each parameter
+operates and what its customization options are. As these files are rarely changed, there is no problem. Replicating
+this practice in your files may also be a good idea.
 
 ```php
 /*
@@ -104,8 +104,8 @@ problems. Replicating this practice in your files can also be a good idea.
 
 ### Then
 
-There are those who think this is complete nonsense. The famous fashion invention. If that's your case, that's fine,
-work however you see fit.
+There are those who think this is a complete nonsense. The famous fashion invention. If that's your case, that's fine,
+work however you prefer.
 
 Anyway, as I usually say when discussing professional concepts with colleagues, the most important thing is to keep an
 open mind to the possibilities.
