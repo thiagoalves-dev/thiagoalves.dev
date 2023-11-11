@@ -2,14 +2,18 @@
     <NuxtLayout>
         <MetaTags/>
         <div class="content-container text-center">
-            <h1>Página não encontrada!</h1>
+            <h1>{{ $t('Page not found') }}!</h1>
 
-            <NuxtLink to="/" class="back">
-                Voltar para a página inicial!
+            <NuxtLink :to="localePath('/')" class="back">
+                {{ $t('Go back to the home page') }}
             </NuxtLink>
         </div>
     </NuxtLayout>
 </template>
+
+<script setup>
+const localePath = useLocalePath();
+</script>
 
 <style lang="scss" scoped>
 a.back {
