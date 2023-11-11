@@ -6,6 +6,7 @@
             <slot/>
         </main>
         <Footer/>
+        <LanguageSwitcher/>
     </div>
     </Body>
 </template>

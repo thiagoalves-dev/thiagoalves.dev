@@ -1,9 +1,12 @@
-const dateDbToPtBr = (date) => {
+const formatDbDate = (date, language) => {
     const [yyyy, mm, dd] = date.split(/-/g);
 
-    return `${dd}/${mm}/${yyyy}`;
+    if (language === 'pt-br')
+        return `${dd}/${mm}/${yyyy}`;
+
+    return `${mm}/${dd}/${yyyy}`;
 };
 
 export {
-    dateDbToPtBr
+    formatDbDate
 };
