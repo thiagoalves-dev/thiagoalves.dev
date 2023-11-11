@@ -2,26 +2,26 @@
 featured: true
 date: '2020-07-01'
 title: 'Automated validation tests with Laravel'
-description: 'Following the topic covered in the last post, this time I will implement another test variation in Laravel. Validation of request data.'
+description: 'Following the topic covered in the last post, now it is time to implement another type of automated test in Laravel. Automated tests on data validation.'
 keywords: 'Tests, Request, Controller, Validation'
 ptBrSlug: 'testes-automatizados-para-validacoes-no-laravel'
 ---
 
-Following the topic covered in the [last post](/blog/posts/automated-email-testing-with-laravel), this time I will
-implement another test variation in Laravel.
+Following the topic covered in the [last post](/blog/posts/automated-email-testing-with-laravel), now it is time to
+implement another type of automated test in Laravel. Automated tests on data validation.
 
-A few days ago, a developer who follows us here on the blog, contacted me to ask some questions about data validation
-tests, I shared with him some examples that I wrote at the time and we discussed some more details about the topic. So,
-I decided it would be a good idea to post the examples here, so that more people can have access.
+A few days ago, a developer who is follower of mine contacted me to ask some questions about automated tests on data
+validation, I shared some examples with him, and we discussed some more details about the topic. So, I realized it would
+be a good idea to post the examples here, so more people can have access to it.
 
 In my work routine, API development is quite common. Therefore, writing tests for this, too, and one of the logics that
-I usually test is exactly the validations of the data received in requests.
+I usually test is exactly the validations of the data received via requests.
 
 Without further ado, let's get to the point!
 
 ### The context
 
-My system has a simple user registration. It could be any site where we create an account, filling in some basic fields
+My system has a simple user registration. It could be any site where we create an account, filling out some basic fields
 initially.
 
 I receive the data through a `Request`, inserting it into the database and returning the created object (simplified for
@@ -52,11 +52,6 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class UserStoreRequest extends FormRequest
 {
-    public function authorize()
-    {
-        return true;
-    }
-
     public function rules()
     {
         return [
@@ -70,8 +65,8 @@ class UserStoreRequest extends FormRequest
 
 ### The test
 
-My goal is to test whether the data is validated by `Request` correctly. To do this, I wrote two tests where, in the
-first, the focus is on the mandatory fields and in the second, the specifics of each field.
+My goal is to test whether the data is validated by the `Request` class correctly. To do this, I wrote two tests where,
+in the first one, the focus is on the required fields and in the second one, the specifics of each field.
 
 See below:
 
@@ -127,12 +122,12 @@ class UsersControllerTest extends TestCase
 
 See the result:
 
-![](/images/posts/laravel-test-form-requests/two-tests.png)
+![Result of the tests](/images/posts/laravel-test-form-requests/two-tests.png)
 
 ### Improving
 
-In the scenario described, we can also validate whether the email provided is already registered with the bank. Just add
-the `unique` rule to my `Request`.
+In the scenario described, we can also validate whether the email provided is already registered in our database by just
+adding the `unique` rule to my `Request`.
 
 ```php
 // app/Http/Requests/UserStoreRequest.php
@@ -147,8 +142,8 @@ public function rules()
 }
 ```
 
-In the test, I create a user to ensure that there will be one registered and use their email in the request to force the
-error.
+In the test, I create a user to ensure that there is already one registered in the database and send their email in the
+request in order to force the error.
 
 ```php
 // tests/Feature/Http/Controllers/UsersControllerTest.php
@@ -175,18 +170,18 @@ public function testStoreUniqueEmailValidation()
 
 The result:
 
-![](/images/posts/laravel-test-form-requests/three-tests.png)
+![Result of the tests](/images/posts/laravel-test-form-requests/three-tests.png)
 
-Many rules can be implemented in data validations. I recommend that, when there are more rules, more tests are written,
-as I believe it is the best way to explore the possibilities.
+Many rules can be implemented in data validations. I recommend that, there more validation rules you have, the more
+tests write, as I believe it is the best way to explore the possibilities.
 
 ### Then
 
-For testing related to form behavior, error display, I recommend using Laravel Dusk. In fact, I already made
+For testing related to form behavior, error display, I recommend using Laravel Dusk. In fact, I already wrote
 a [post here on the blog about it](/blog/posts/automated-browsing-tests-with-laravel-dusk).
 
-I notice a great lack of free content related to testing, at least in PHP. Lately, many people have commented to me that
-they can't find anything very practical and that they feel lost, not knowing where to start.
+I notice a great lack of free content related to automated testing, at least in PHP. Lately, many people have told me
+that they can't find anything that practical, and they feel lost without knowing how to start.
 
 Gradually, I will bring new examples here to help. Maybe we can even do a live, coding tests and answering questions.
 What do you think?
