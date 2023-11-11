@@ -4,10 +4,10 @@ date: '2020-07-01'
 title: 'Testes automatizados para validações no Laravel'
 description: 'Seguindo o assunto abordado no último post, desta vez vou implementar outra variação de teste no Laravel. Validação de dados das requisições.'
 keywords: 'Testes, Tests, Request, Controller, Validações'
-enUsSlug: 'en-testes-automatizados-para-validacoes-no-laravel'
+enUsSlug: 'automated-validation-tests-with-laravel'
 ---
 
-Seguindo o assunto abordado no [último post](/blog/posts/teste-automatizado-de-e-mail-no-laravel), desta vez vou
+Seguindo o assunto abordado no [último post](/pt-br/blog/posts/teste-automatizado-de-e-mail-no-laravel), desta vez vou
 implementar outra variação de teste no Laravel.
 
 Dias atrás, um desenvolvedor que nos acompanha aqui no blog, entrou em contato comigo para tirar algumas dúvidas sobre
@@ -182,7 +182,7 @@ escritos, pois, acredito ser a melhor forma de explorar as possibilidades.
 ### Concluindo
 
 Para testes relacionados a comportamento de formulário, exibição de erros, recomendo o uso do _Laravel Dusk_. Inclusive,
-já fiz um [post aqui no blog sobre isso](/blog/posts/testes-automatizados-de-navegacao-com-laravel-dusk).
+já fiz um [post aqui no blog sobre isso](/pt-br/blog/posts/testes-automatizados-de-navegacao-com-laravel-dusk).
 
 Noto uma grande carência de conteúdo gratuito relacionado a testes, pelo menos em _PHP_. Ultimamente, muitas pessoas
 comentam comigo que não encontram nada muito prático e que se sentem perdidos, não sabendo por onde começar.

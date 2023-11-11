@@ -1,17 +1,17 @@
 ---
 date: '2020-05-15'
-title: 'Vale a pena fazer faculdade para ser programador?'
+title: 'Vale à pena fazer faculdade para ser programador?'
 description: 'A programação é uma atividade extremamente técnica e prática. É como na profissão de mecânico, não importa se você leu cinquenta livros sobre o tema, isso não te faz um profissional.'
 keywords: 'Faculdade, Graduação, Prática, Técnica'
+enUsSlug: 'is-it-worth-graduating-to-be-a-programmer'
 ---
-
 
 Dias atrás, mencionei num post que muitas pessoas vinham até mim e perguntavam qual faculdade precisariam fazer para
 começar a programar. Ao mesmo tempo em que penso como essa pergunta possui uma resposta óbvia para mim, lembro como, há
 treze anos, eu estava ainda mais perdido do que essas pessoas.
 
 Se você está com pressa e entrou nesse post atrás de uma resposta rápida, já vou adiantar a minha opinião sobre o
-assunto: **não vale a pena fazer faculdade de programação**.
+assunto: **não vale à pena fazer faculdade para ser programador**.
 
 **Simples assim?**
 
@@ -53,11 +53,11 @@ mesmo!?
 
 **O diploma não importa muito**
 
-Em muitas áreas, como medicina, é impensável que haja um profissional atuando sem diploma. Na programação, isso
-definitivamente não acontece.
+Em muitas áreas, como medicina, por exemplo, é impensável haver um profissional atuando sem diploma. Na programação, as
+coisas já não são bem assim.
 
 Mesmo que você tenha um belo diploma pendurado na parede, sem experiência prática, é muito provável que perca uma vaga
-para outro profissional que trabalha na área há alguns poucos meses e só tem o ensino médio completo. O importante é o
+para outro profissional que trabalha na área há alguns poucos anos e só tem o ensino médio completo. O importante é o
 que você sabe na prática, os problemas que já resolveu, os projetos que já participou.
 
 ### Não se aproveita nada da faculdade?
@@ -73,7 +73,7 @@ maneira.
 ### Na minha experiência
 
 Eu já escrevi a aqui no blog sobre
-as [minhas primeiras experiências na programação](/blog/posts/minhas-primeiras-experiencias-como-desenvolvedor).
+as [minhas primeiras experiências na programação](/pt-br/blog/posts/minhas-primeiras-experiencias-como-desenvolvedor).
 
 Contradizendo a minha opinião, fiz dois cursos: técnico e tecnólogo. Há 13 anos, ainda não se tinha tanto acesso à
 informação e a verdade é que eu nem sabia o que um programador faz, muito menos como se tornar um.
@@ -82,7 +82,7 @@ Mesmo estudando, tratei de pôr em prática muito cedo e isso foi o que fez a di
 
 Pude conviver com algumas dezenas de profissionais da minha área e, sempre que tocávamos no assunto, chegávamos à mesma
 conclusão na maioria das vezes. Muitos abandonaram os seus cursos pela metade, pois, com algum tempo no mercado já não
-fazia mais sentido gastar tempo e dinheiro com isso.
+fazia mais sentido gastar tempo e dinheiro com faculdade.
 
 ### Finalizando
 
@@ -94,7 +94,7 @@ simplesmente escreva. A cada desafio que encontrar, novos ensinamentos serão ap
 hoje.
 
 A minha dica final é que leia o post em que falo
-sobre [o caminho mais simples e barato para iniciar a carreira de desenvolvedor](/blog/posts/o-caminho-mais-simples-e-barato-para-iniciar-a-carreira-de-desenvolvedor).
+sobre [o caminho mais simples e barato para iniciar a carreira de desenvolvedor](/pt-br/blog/posts/o-caminho-mais-simples-e-barato-para-iniciar-a-carreira-de-desenvolvedor).
 Já seria um belo ponto de partida.
 
 Se precisar de alguma ajuda é só entrar em contato.

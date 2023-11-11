@@ -3,6 +3,7 @@ date: '2020-04-30'
 title: 'O caminho mais simples e barato para iniciar a carreira de Desenvolvedor'
 description: 'Uma das principais portas de entrada no mundo da programação. HTML e CSS são as linguagens mais intuitivas do mercado.'
 keywords: 'Carreira, Desenvolvedor'
+enUsSlug: 'the-simplest-and-cheapest-way-to-start-a-developer-career'
 ---
 
 Ultimamente, muitas pessoas vieram até mim com as seguintes perguntas: que faculdade tenho que fazer? o curso tal é bom?
@@ -10,7 +11,7 @@ por onde começo? é muito difícil fazer o que você faz?
 
 Inclusive, esse foi um dos motivos pelos quais resolvi começar um blog e, obviamente, este post aqui.
 
-A verdade é que não existe uma forma correta ou a que dê mais certo. É possível começar pelos cursos de formação
+A verdade é que não existe uma forma correta, ou a que dê mais certo. É possível começar pelos cursos de formação
 tradicionais ou totalmente do zero, sem nunca entrar numa sala de aula.
 
 Se você tem desejo ou condições de fazer uma faculdade, nada contra. Agora, isso não será decisivo para torná-lo um

@@ -3,6 +3,7 @@ date: '2020-05-27'
 title: '3 dicas para evitar duplicação de código no Laravel'
 description: 'Uma das regras não oficiais da programação diz que: a quantidade de código escrito está diretamente ligada a quantidade de erros gerados.'
 keywords: 'Dry, Clean Code, Route, Resource, Repository, Duplicação'
+enUsSlug: '3-tips-to-avoid-code-duplication-in-laravel'
 ---
 
 Uma das regras não oficiais da programação diz que: a quantidade de código escrito está diretamente ligada a quantidade
@@ -52,8 +53,8 @@ Na documentação, é possível encontrar esse recurso
 em [Resource Controllers](https://laravel.com/docs/controllers#resource-controllers). Um pouco confuso, na minha
 opinião. Apesar disso, se trata de uma função bem útil que o _framework_ disponibiliza.
 
-Costumo dizer que o primeiro passo para manter um _controller_ bem organizado é usar os métodos considerados que vem por
-padrão.
+Costumo dizer que o primeiro passo para manter um _controller_ bem organizado é usar os métodos padrão que o _framework_
+oferece.
 
 Vamos continuar no exemplo dos produto e imaginar que precisamos implementar todos os métodos de manutenção dos
 produtos. Veja abaixo duas formas diferentes de criar rotas para isso obtendo o mesmo resultado.

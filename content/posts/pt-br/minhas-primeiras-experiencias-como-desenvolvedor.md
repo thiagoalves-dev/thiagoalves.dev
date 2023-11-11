@@ -3,6 +3,7 @@ date: '2020-05-04'
 title: 'Minhas primeiras experiências como Desenvolvedor'
 description: 'Contando um pouco do começo da minha história na programação e desmistificando algumas crenças.'
 keywords: 'Carreira'
+enUsSlug: 'my-first-experiences-as-a-developer'
 ---
 
 Uma pessoa leiga no assunto, ao conversar com um desenvolvedor experiente, pode ficar a impressão (muito falsa) de que

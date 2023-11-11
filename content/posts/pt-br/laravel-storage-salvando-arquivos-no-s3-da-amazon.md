@@ -3,10 +3,11 @@ date: '2020-04-25'
 title: 'Laravel Storage: salvando arquivos no S3 da Amazon'
 description: 'Exemplo de como salvar arquivos no s3 da Amazon usando a classe Storage do Laravel.'
 keywords: 'Storage, Upload, Arquivos, S3, Amazon, AWS'
+enUsSlug: 'laravel-storage-saving-files-on-aws-s3'
 ---
 
 Dias atrás demonstrei de forma simples como
-fazer [upload de arquivos usando a classe Storage do Laravel](/blog/posts/laravel-storage-upload-de-arquivos-de-forma-simples-e-correta).
+fazer [upload de arquivos usando a classe Storage do Laravel](/pt-br/blog/posts/laravel-storage-upload-de-arquivos-de-forma-simples-e-correta).
 
 Vou aproveitar o código já feito para mostrar como salvar os arquivos no AWS S3, serviço de armazenamento da Amazon.
 
@@ -92,8 +93,8 @@ Na visualização do _Bucket_ acesso o arquivo que fiz upload.
 Existem várias formas de ter acesso aos arquivos no S3: através de _download_, endereços temporários, etc. Isso também
 vai variar de acordo com as permissões de acesso configuradas no _bucket_.
 
-Abaixo, exemplifiquei uma rota onde passo o nome do arquivo que quero acessar e, no _controller_, redireciono para um
-endereço temporário ou é possível ver a imagem que cadastrei.
+Abaixo, exemplifico uma rota onde passo o nome do arquivo que quero acessar e, no _controller_, redireciono para um
+endereço temporário onde é possível ver a imagem que cadastrei.
 
 ```php
 // routes/web.php

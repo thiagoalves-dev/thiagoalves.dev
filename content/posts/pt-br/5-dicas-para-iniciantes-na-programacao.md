@@ -2,7 +2,8 @@
 date: '2020-06-04'
 title: '5 dicas para iniciantes na programação'
 description: 'Não importa quem seja, a tecnologia usada, se está numa empresa grande ou pequena, todo o programador já viveu a experiência de ser um iniciante, de não saber direito o que está fazendo e ter aquela sensação de estar completamente perdido.'
-keywords: 'Iniciante, Junior, Conceitos, Hype' 
+keywords: 'Iniciante, Junior, Conceitos, Hype'
+enUsSlug: '5-tips-for-begginner-developers'
 ---
 
 Não importa quem seja, a tecnologia usada, se está numa empresa grande ou pequena, todo o programador já viveu a
@@ -23,13 +24,13 @@ conceitos, é um dos mais importantes passos para se tornar um programador capaz
 fato!
 
 Por outro lado, é preciso ter um pouco de cuidado com isso. Recomendo, que você procure limitar a quantidade de conteúdo
-que estuda ao mesmo tempo. Procure avançar na teoria, conforme você vai as colocando em prática e não perca tempo com
+que estuda ao mesmo tempo. Procure avançar na teoria, conforme você a coloca em prática e não perca tempo com
 coisas que estão fora do seu contexto atual.
 
 No início, é muito comum que, a cada busca por conhecimento, você encontre ainda mais dúvidas do que antes. Ou seja,
 quanto mais estuda, mais vai estudar. Apenas isso já pode ser o suficiente para causar um _overload_ de informação.
 
-Basicamente, quem dirá o que você precisa aprender, serão os problemas que tem de resolver.
+Basicamente, quem dirá o que você precisa aprender, serão os problemas a serem resolvidos.
 
 ### Não se deixe levar pelo hype
 
@@ -41,7 +42,8 @@ A verdade é que as coisas não mudam tão rápido assim. O mais importante agor
 tecnologia que você já usa.
 
 Não estou dizendo para não se atualizar, muito menos para não ficar atento ao que há de novo no mercado, pelo contrário,
-faz parte da profissão se manter atualizado. Apenas faça isso com prudência.
+faz parte da profissão se manter atualizado. Apenas faça isso com prudência e não se deixe levar pela ansiedade gerada
+pelo "mercado de novidades que vão dominar o mundo".
 
 ### Atenção às boas práticas
 
@@ -54,8 +56,8 @@ o mesmo cuidado com a nomenclatura das variáveis. Isso ajudará muito na hora d
 
 ### Não se preocupe em decorar
 
-No início, é muito comum que nos preocupemos demais em saber como cada coisa deve ser feita, ou até como as funções
-nativas das linguagens se comportam.
+No início, é muito comum que nos preocupemos demais em saber exatamente a forma correta de cada coisa deve ser feita e
+como cada coisa funciona. Até mesmo como aquelas funções nativas das linguagens se comportam.
 
 Definitivamente, isso não deve ser preocupação. Eu mesmo, estou sempre pesquisando funcionalidades básicas das
 tecnologias que uso porque simplesmente não lembro. O mais importante na carreira de um programador de qualquer nível, é
@@ -63,7 +65,7 @@ ele saber ONDE e COMO encontrar o que precisa.
 
 Você também pode usar alguns comentários no código para te orientar, mas recomendo que faça isso muito no início e
 considere abandonar essa prática sempre que possível. Escrevi mais sobre esse assunto no
-_post_ [5 reflexões sobre comentários no código](/blog/posts/5-reflexoes-sobre-comentarios-no-codigo/).
+_post_ [5 reflexões sobre comentários no código](/pt-br/blog/posts/5-reflexoes-sobre-comentarios-no-codigo/).
 
 ### Ouça os mais experientes com atenção, mas cuidado
 
@@ -71,11 +73,13 @@ Uma das verdades da minha carreira, é a que eu jamais estaria no nível de hoje
 profissionais que convivi. Ter por perto pessoas que sabem mais que você, é realmente algo especial.
 
 Se você tem um líder técnico, trabalhe da forma como ele está pedindo. Os ensinamentos de alguém mais experiente,
-somados à sua prática, criarão a sua própria forma de trabalho, que vai amadurecer com o tempo.
+somados à sua prática, formação a sua própria forma de trabalho, que vai amadurecer com o tempo.
 
 Apenas tome cuidado com uma única fonte de opinião. Se não tiver outro profissional para perguntar, busque no google
 outras opiniões e as traga para conversa. Existe muito programador de ego elevado por aí, puxando a “sardinha" para o
 próprio lado.
+
+Além disso, a opinião de uma pessoa é, na maioria das vezes, baseada na percepção dela sobre as coisas.
 
 ### Concluindo
 
