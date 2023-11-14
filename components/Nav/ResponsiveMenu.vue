@@ -22,6 +22,13 @@
                     {{ $t('Blog') }}
                 </NuxtLink>
             </li>
+            <li class="pl-4" v-if="locale === 'pt-br'">
+                <NuxtLink :to="localePath('/american-visa')" :title="`${$t('American VISA')} | ${website.name}`"
+                          class="nav-menu__item cube-palette-2 hover:cube-palette-3"
+                          active-class="active cube-palette-3">
+                    {{ $t('American VISA') }}
+                </NuxtLink>
+            </li>
             <li class="pl-4 flex items-center justify-center">
                 <a :href="website.author.instagramUrl" title="Instagram"
                    class="inline-block mr-4 opacity-50 hover:opacity-75" target="_blank">
@@ -44,4 +51,5 @@
 import website from "~/data/website.js";
 
 const localePath = useLocalePath();
+const {locale} = useI18n();
 </script>

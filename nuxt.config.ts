@@ -61,6 +61,9 @@ export default defineNuxtConfig({
             },
             'how-i-can-help': {
                 'pt-br': '/como-posso-ajudar'
+            },
+            'american-visa': {
+                'pt-br': '/visto-americano'
             }
         }
     },
