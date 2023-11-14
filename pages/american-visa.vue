@@ -18,12 +18,12 @@
         </div>
         <div class="my-12">
             <a href="https://internacionalize-se.com.br/nublu/solicite-seu-visto-de-estudante/?utm_source=geral&utm_medium=embaixador&utm_campaign=nublu&utm_id=thiagoalves"
-               class="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent hover:no-underline rounded mr-2"
+               class="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent hover:no-underline rounded block sm:inline-block sm:mr-2"
                target="_blank">
                 Quero visto de estudante
             </a>
             <a href="https://internacionalize-se.com.br/vistopronto/?utm_source=geral&utm_medium=embaixador&utm_campaign=vistopronto&utm_id=thiagoalves"
-               class="bg-transparent hover:bg-blue-400 text-blue-600 font-semibold hover:text-white py-2 px-4 border border-blue-400 hover:border-transparent hover:no-underline rounded ml-2"
+               class="bg-transparent hover:bg-blue-400 text-blue-600 font-semibold hover:text-white py-2 px-4 border border-blue-400 hover:border-transparent hover:no-underline rounded block mt-4 sm:inline-block sm:ml-2 sm:mt-0"
                target="_blank">
                 Quero visto de turista
             </a>
