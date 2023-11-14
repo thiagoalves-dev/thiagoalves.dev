@@ -40,4 +40,5 @@ export default {
     'Share your thoughts about this post in the comments below, in case you have any questions or would like to suggest a topic.': 'Comente abaixo o que você achou deste post, se ficou com alguma dúvida ou se gostaria de sugerir algum assunto.',
     'Page not found': 'Página não encontrada',
     'Go back to the home page': 'Voltar para a página inicial',
+    'American VISA': 'Visto Americano',
 };
