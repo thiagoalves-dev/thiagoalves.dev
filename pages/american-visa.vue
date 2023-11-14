@@ -16,7 +16,7 @@
                 Caso tenha interesse, acesse os links abaixo e entre em contato com a Nublu Intercâmbio para saber mais.
             </p>
         </div>
-        <div class="my-12">
+        <div class="my-8 lg:my-12">
             <a href="https://internacionalize-se.com.br/nublu/solicite-seu-visto-de-estudante/?utm_source=geral&utm_medium=embaixador&utm_campaign=nublu&utm_id=thiagoalves"
                class="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent hover:no-underline rounded block sm:inline-block sm:mr-2"
                target="_blank">
