@@ -16,6 +16,8 @@
 </template>
 
 <script setup>
+const route = useRoute();
+
 const toggle = () => {
     const menu = document.getElementById('js-nav-menu');
     menu.classList.toggle('hidden');
@@ -23,4 +25,10 @@ const toggle = () => {
     document.getElementById('js-nav-menu-hide').classList.toggle('hidden');
     document.getElementById('js-nav-menu-show').classList.toggle('hidden');
 };
+
+watch(() => route.path, () => {
+    if (document.getElementById('js-nav-menu').classList.contains('lg:block')) {
+        toggle();
+    }
+});
 </script>
