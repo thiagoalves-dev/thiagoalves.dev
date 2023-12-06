@@ -55,6 +55,9 @@ export default defineNuxtConfig({
         strategy: 'prefix_except_default',
         customRoutes: 'config',
         dynamicRouteParams: true,
+        detectBrowserLanguage: {
+            useCookie: false
+        },
         pages: {
             'about': {
                 'pt-br': '/sobre'
