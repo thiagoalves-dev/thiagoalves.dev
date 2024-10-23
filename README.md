@@ -24,4 +24,4 @@ It might take a some minutes in the first time because of the Docker containers,
 
 When the build ends, the following URL is showed: [http://localhost:3000](http://localhost:3000).
 
-Also, browsersync is already configured. 
+Also, browsersync is already configured..
