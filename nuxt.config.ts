@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
     ssr: true,
-    devtools: {enabled: true},
+    devtools: { enabled: true },
     css: ["~/assets/sass/main.scss"],
     postcss: {
         plugins: {
@@ -20,7 +20,7 @@ export default defineNuxtConfig({
         watch: {
             ws: {
                 hostname: 'localhost',
-                port: 3000
+                port: 1000
             }
         },
         highlight: {
