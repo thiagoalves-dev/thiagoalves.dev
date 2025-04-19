@@ -13,7 +13,7 @@
         "@nuxt/devtools": "latest",
         "@nuxtjs/i18n": "^8.0.0-rc.5",
         "autoprefixer": "^10.4.16",
-        "nuxt": "^3.7.3",
+        "nuxt": "^3.16.2",
         "nuxt-calendly": "^0.1.15",
         "nuxt-gtag": "^1.1.1",
         "postcss": "^8.4.30",
