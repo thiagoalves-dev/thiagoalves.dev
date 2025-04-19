@@ -1,11 +1,8 @@
-@tailwind base;
-@tailwind components;
+@use '_tailwind';
+@use 'highlight.js/styles/a11y-light.css';
+@use '_base';
+@use '_navigation';
+@use '_calendly';
+@use '_blog';
 
-@import 'highlight.js/styles/a11y-light.css';
 
-@import '_base';
-@import '_navigation';
-@import '_calendly';
-@import '_blog';
-
-@tailwind utilities;
