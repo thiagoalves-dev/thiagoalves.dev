@@ -1,3 +1,5 @@
+import { resolve } from 'pathe';
+
 export default defineNuxtConfig({
     ssr: true,
     devtools: { enabled: true },
@@ -36,7 +38,7 @@ export default defineNuxtConfig({
     },
 
     i18n: {
-        vueI18n: './i18n.config.ts',
+        vueI18n: resolve('./i18n/i18n.config.ts'),
         locales: [
             {
                 iso: 'en-US',
@@ -53,8 +55,6 @@ export default defineNuxtConfig({
         ],
         defaultLocale: 'en-us',
         strategy: 'prefix_except_default',
-        customRoutes: 'config',
-        dynamicRouteParams: true,
         detectBrowserLanguage: {
             useCookie: false
         },

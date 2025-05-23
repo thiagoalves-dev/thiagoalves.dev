@@ -1,5 +1,5 @@
-import enUs from "~/data/lang/en-us";
-import ptBr from "~/data/lang/pt-br";
+import enUs from "./languages/en-us";
+import ptBr from "./languages/pt-br";
 
 export default defineI18nConfig(() => ({
     legacy: false,

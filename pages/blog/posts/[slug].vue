@@ -6,7 +6,8 @@
 
         <h1 class="leading-none mb-2">{{ post.title }}</h1>
 
-        <p class="text-gray-700 text-xl md:mt-0">{{ website.author.name }} • {{ formatDbDate(post.date, locale) }}</p>
+        <p class="text-gray-700 text-xl md:mt-0">{{ website.author.name }} •
+            {{ formatDbDate(post.date, locale) }}</p>
 
         <div class="border-b border-cube-palette-1-200 mb-10 pb-4">
             <ContentDoc :path="postPath" :head="false"/>
@@ -14,14 +15,17 @@
 
         <nav class="flex justify-between text-sm md:text-base mb-10">
             <div class="mr-1">
-                <NuxtLink v-if="previousPost" :to="localePath(`/blog/posts/${slugFromPath(previousPost._path)}`)"
-                          class="cube-palette-2" :title="`${$t('Previous post')}: ${previousPost.title}`">
+                <NuxtLink v-if="previousPost"
+                          :to="localePath(`/blog/posts/${slugFromPath(previousPost._path)}`)"
+                          class="cube-palette-2"
+                          :title="`${$t('Previous post')}: ${previousPost.title}`">
                     &LeftArrow; {{ previousPost.title }}
                 </NuxtLink>
             </div>
 
             <div class="ml-1">
-                <NuxtLink v-if="nextPost" :to="localePath(`/blog/posts/${slugFromPath(nextPost._path)}`)"
+                <NuxtLink v-if="nextPost"
+                          :to="localePath(`/blog/posts/${slugFromPath(nextPost._path)}`)"
                           class="cube-palette-2" :title="`${$t('Next post')}: ${nextPost.title}`">
                     {{ nextPost.title }} &RightArrow;
                 </NuxtLink>
