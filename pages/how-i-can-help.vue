@@ -21,9 +21,7 @@
             <ServicesForCompanies/>
             <ServicesForDevelopers/>
         </div>
-
-        <CalendlyInlineWidget id="schedule-a-call" v-bind="calendlyOptions"/>
-
+        
         <p>
             {{ $t('In case you have any questions, please reach out to me on') }}
             <a :href="website.author.instagramUrl" target="_blank">Instagram</a>
@@ -35,8 +33,4 @@
 
 <script setup>
 import website from "~/config/website.js";
-
-const calendlyOptions = {
-    url: website.calendly.url
-};
 </script>

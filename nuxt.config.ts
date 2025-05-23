@@ -13,7 +13,6 @@ export default defineNuxtConfig({
 
     modules: [
         '@nuxt/content',
-        'nuxt-calendly',
         '@nuxtjs/i18n',
         'nuxt-gtag'
     ],
@@ -29,12 +28,6 @@ export default defineNuxtConfig({
             theme: 'github-light',
             preload: ['java', 'xml', 'sql', 'php', 'bash'],
         }
-    },
-
-    calendly: {
-        isEnabled: true,
-        loadWidgetCSS: true,
-        loadWidgetCloseIconSvg: true
     },
 
     i18n: {
