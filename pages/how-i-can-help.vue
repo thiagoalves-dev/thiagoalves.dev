@@ -34,7 +34,7 @@
 </template>
 
 <script setup>
-import website from "~/data/website.js";
+import website from "~/config/website.js";
 
 const calendlyOptions = {
     url: website.calendly.url

@@ -51,7 +51,7 @@
 import {useRoute, useRouter} from "#app";
 import {formatDbDate} from "~/helpers/dates.js";
 import {slugFromPath} from "~/helpers/posts.js";
-import website from "~/data/website.js";
+import website from "~/config/website.js";
 
 const route = useRoute();
 const router = useRouter();
@@ -77,11 +77,6 @@ const [previousPost, nextPost] = (
             .findSurround(post._path)
     )
 ).data.value;
-
-route.meta.nuxtI18n = {
-    'pt-br': {slug: post.ptBrSlug || slugFromPath(post._path)},
-    'en-us': {slug: post.enUsSlug || slugFromPath(post._path)},
-};
 
 const postPath = `posts/${locale.value}/${route.params.slug}`;
 </script>

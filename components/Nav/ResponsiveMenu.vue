@@ -9,7 +9,8 @@
                 </NuxtLink>
             </li>
             <li class="pl-4">
-                <NuxtLink :to="localePath('/how-i-can-help')" :title="`${$t('How I can help')} | ${website.name}`"
+                <NuxtLink :to="localePath('/how-i-can-help')"
+                          :title="`${$t('How I can help')} | ${website.name}`"
                           class="nav-menu__item cube-palette-2 hover:cube-palette-3"
                           active-class="active cube-palette-3">
                     {{ $t('How I can help') }}
@@ -23,7 +24,8 @@
                 </NuxtLink>
             </li>
             <li class="pl-4" v-if="locale === 'pt-br'">
-                <NuxtLink :to="localePath('/american-visa')" :title="`${$t('American VISA')} | ${website.name}`"
+                <NuxtLink :to="localePath('/american-visa')"
+                          :title="`${$t('American VISA')} | ${website.name}`"
                           class="nav-menu__item cube-palette-2 hover:cube-palette-3"
                           active-class="active cube-palette-3">
                     {{ $t('American VISA') }}
@@ -38,7 +40,8 @@
                    class="inline-block mr-4 opacity-50 hover:opacity-75" target="_blank">
                     <img class="h-4" src="~/assets/images/social/linkedin.png" alt="">
                 </a>
-                <a :href="website.author.twitterUrl" title="Twitter" class="inline-block opacity-50 hover:opacity-75"
+                <a :href="website.author.twitterUrl" title="Twitter"
+                   class="inline-block opacity-50 hover:opacity-75"
                    target="_blank">
                     <img class="h-3 mt-1" src="~/assets/images/social/twitter.png" alt="">
                 </a>
@@ -48,7 +51,7 @@
 </template>
 
 <script setup>
-import website from "~/data/website.js";
+import website from "~/config/website.js";
 
 const localePath = useLocalePath();
 const {locale} = useI18n();
