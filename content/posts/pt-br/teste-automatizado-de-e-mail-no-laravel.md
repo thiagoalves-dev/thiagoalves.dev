@@ -4,33 +4,41 @@ date: '2020-06-26'
 title: 'Teste automatizado de e-mail no Laravel'
 description: 'Dias atrás, deparei-me com uma questão que quebrei a cabeça para testar. Eu precisava enviar um e-mail para um cliente e queria validar se a montagem dele acontecia da forma correta.'
 keywords: 'Testes, Tests, Mailable, Email, View, Markdown'
-enUsSlug: 'automated-email-testing-with-laravel'
 ---
 
-Confesso que ultimamente, ando bastante interessado em aprofundar-me sobre testes automatizados. No meu dia a dia, a
+Confesso que ultimamente, ando bastante interessado em aprofundar-me sobre testes automatizados. No
+meu dia a dia, a
 preocupação com a cobertura de testes é cada vez maior.
 
-Dias atrás, deparei-me com uma questão que quebrei a cabeça para testar. Eu precisava enviar um e-mail para um cliente e
+Dias atrás, deparei-me com uma questão que quebrei a cabeça para testar. Eu precisava enviar um
+e-mail para um cliente e
 queria validar se a montagem dele acontecia da forma correta.
 
-Na documentação do _Laravel_, encontrei uma opção chamada de [Mail Fake](https://laravel.com/docs/mocking#mail-fake),
-mas confesso que não atendeu a minha necessidade. Durante as minhas tentativas, fiz alterações no código que deveriam
+Na documentação do _Laravel_, encontrei uma opção chamada
+de [Mail Fake](https://laravel.com/docs/mocking#mail-fake),
+mas confesso que não atendeu a minha necessidade. Durante as minhas tentativas, fiz alterações no
+código que deveriam
 ter causado a "quebra" do teste, mas isso não aconteceu. Sendo assim, desisti de usá-lo.
 
-Depois de conversar com um amigo, surgiu uma ideia interessante que me possibilitaria testar a classe `Mailable` e
+Depois de conversar com um amigo, surgiu uma ideia interessante que me possibilitaria testar a
+classe `Mailable` e
 a `view`, de uma forma bastante simples.
 
 Abaixo, vou usar uma implementação fictícia para exemplificar o que fiz.
 
 ### O cenário
 
-Preciso enviar um e-mail para um cliente contendo o resumo do pedido de compra que ele fez no meu site.
+Preciso enviar um e-mail para um cliente contendo o resumo do pedido de compra que ele fez no meu
+site.
 
-Para isso, implementei uma classe `Mailable` que recebe o `ID` do pedido que enviarei na mensagem. No meu sistema, os
-pedidos são representados classe pela `Order`, que possui uma ligação direta com a classe `User`, representando o
+Para isso, implementei uma classe `Mailable` que recebe o `ID` do pedido que enviarei na mensagem.
+No meu sistema, os
+pedidos são representados classe pela `Order`, que possui uma ligação direta com a classe `User`,
+representando o
 cliente que fez o pedido.
 
-A `view` do e-mail foi desenvolvida com [Markdown](https://en.wikipedia.org/wiki/Markdown), mas o mesmo poderia ser
+A `view` do e-mail foi desenvolvida com [Markdown](https://en.wikipedia.org/wiki/Markdown), mas o
+mesmo poderia ser
 feito com HTML.
 
 Seguem abaixo, o código - ligeiramente resumido - do cenário descrito:
@@ -113,10 +121,12 @@ Seu pedido, no valor de R$ {{ $order->total_price }}, foi confirmado!
 
 ### O teste
 
-Como mencionado na introdução, o meu objetivo é testar a classe `Mailable` e a montagem da `view`, para me certificar de
+Como mencionado na introdução, o meu objetivo é testar a classe `Mailable` e a montagem da `view`,
+para me certificar de
 que não existem erros nessa lógica, devido às mudanças que acontecerão no código ao longo do tempo.
 
-Para isso, o primeiro passo é gerar dados falsos para usar no teste. Fiz isso usando as famosas `factories`.
+Para isso, o primeiro passo é gerar dados falsos para usar no teste. Fiz isso usando as famosas
+`factories`.
 
 ```php
 // database/factories/UserFactory.php
@@ -143,7 +153,8 @@ $factory->define(Order::class, function (Faker $faker) {
 });
 ```
 
-Para validar o que quero, vou usar dois testes apenas. Um que testará o método build do `Mailable` e outro que valida a
+Para validar o que quero, vou usar dois testes apenas. Um que testará o método build do `Mailable` e
+outro que valida a
 renderização do corpo do e-mail. Segue abaixo.
 
 ```php
@@ -174,14 +185,16 @@ class OrderSummaryTest extends TestCase
 }
 ```
 
-Simples, né? Apenas isso é o suficiente para verificar se toda a lógica de montagem do e-mail acontece corretamente.
+Simples, né? Apenas isso é o suficiente para verificar se toda a lógica de montagem do e-mail
+acontece corretamente.
 Ambos validam o retorno de métodos que devem falhar se algo de errado acontecer.
 
 Veja o resultado:
 
 ![Teste bem sucedido](/images/posts/laravel-mailable-tests/success.png)
 
-Agora se eu remover o relacionamento do pedido com o usuário, por exemplo, as duas verificações devem quebrar.
+Agora se eu remover o relacionamento do pedido com o usuário, por exemplo, as duas verificações
+devem quebrar.
 
 ```php
 // app/Order.php 
@@ -198,14 +211,17 @@ Resultado:
 
 ![Teste com falha](/images/posts/laravel-mailable-tests/fail.png)
 
-Este teste não inclui validar o envio do e-mail, uma vez que isso geralmente depende de um servidor externo. O foco é
+Este teste não inclui validar o envio do e-mail, uma vez que isso geralmente depende de um servidor
+externo. O foco é
 realmente testar a sua montagem, não uma integração com o servidor `SMTP`.
 
 ### Concluindo
 
-Envio de e-mails tende a ser uma das partes mais obscuras de um sistema e também uma das mais chatas de se testar.
+Envio de e-mails tende a ser uma das partes mais obscuras de um sistema e também uma das mais chatas
+de se testar.
 
-Já perdi a conta de quantas vezes fiz modificações num código, afetando o envio de um e-mail que, muitas vezes, nem
+Já perdi a conta de quantas vezes fiz modificações num código, afetando o envio de um e-mail que,
+muitas vezes, nem
 tinha relação direta com o que foi alterado.
 
 O código acima está disponível no

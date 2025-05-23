@@ -3,13 +3,14 @@ date: '2020-04-18'
 title: 'Laravel Storage: simple, correct way to upload files'
 description: 'Exemplifying how to upload files using Laravel Storage and the difference between public and private files.'
 keywords: 'Storage, Upload, Files'
-ptBrSlug: 'laravel-storage-upload-de-arquivos-de-forma-simples-e-correta'
 ---
 
-Managing files is a very common feature for any kind of system, website, mobile app and so on. From public photos to
+Managing files is a very common feature for any kind of system, website, mobile app and so on. From
+public photos to
 private reports, many types of files require specific storage approaches.
 
-The way Laravel handles this issue is incredibly simple. Basically, if you use the structure that the framework
+The way Laravel handles this issue is incredibly simple. Basically, if you use the structure that
+the framework
 provides, you will hardly have any problems with it.
 
 I created a project to use as an example. You can see the code in the following
@@ -29,7 +30,8 @@ I made a very simple HTML to simulate a form where a user profile photo will be 
 
 #### Saving the file as private
 
-In this case, the image will only be accessible by implementing a functionality that allows that. Whether viewing or
+In this case, the image will only be accessible by implementing a functionality that allows that.
+Whether viewing or
 downloading.
 
 ```php
@@ -67,7 +69,8 @@ Laravel already comes with the `storage/app/public` folder configured.
 ]
 ``` 
 
-You only need to create a symlink to the Laravel's public directory to make your public files accessible via browser.
+You only need to create a symlink to the Laravel's public directory to make your public files
+accessible via browser.
 
 Execute the following command: `php artisan storage:link`.
 

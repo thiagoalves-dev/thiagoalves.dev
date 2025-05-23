@@ -3,13 +3,13 @@ date: '2020-04-25'
 title: 'Laravel Storage: salvando arquivos no S3 da Amazon'
 description: 'Exemplo de como salvar arquivos no s3 da Amazon usando a classe Storage do Laravel.'
 keywords: 'Storage, Upload, Arquivos, S3, Amazon, AWS'
-enUsSlug: 'laravel-storage-saving-files-on-aws-s3'
 ---
 
 Dias atrás demonstrei de forma simples como
 fazer [upload de arquivos usando a classe Storage do Laravel](/pt-br/blog/posts/laravel-storage-upload-de-arquivos-de-forma-simples-e-correta).
 
-Vou aproveitar o código já feito para mostrar como salvar os arquivos no AWS S3, serviço de armazenamento da Amazon.
+Vou aproveitar o código já feito para mostrar como salvar os arquivos no AWS S3, serviço de
+armazenamento da Amazon.
 
 Segue o _link_ do
 repositório: [thiagoalves-dev/laravel-storage-example](https://github.com/thiagoalves-dev/laravel-storage-example).
@@ -22,12 +22,14 @@ Em `Services > Storage > S3`, crie um novo bucket para armazenar os arquivos da 
 
 **Chaves de Acesso**
 
-No menu do seu usuário na AWS, vá em _My Security Credentials_. Crie uma nova _Access Key_ e copie as chaves que forem
+No menu do seu usuário na AWS, vá em _My Security Credentials_. Crie uma nova _Access Key_ e copie
+as chaves que forem
 geradas.
 
 **Configuração**
 
-O Laravel já trás por padrão as variáveis de configuração do S3, basta adicionar os dados da sua conta e _bucket_.
+O Laravel já trás por padrão as variáveis de configuração do S3, basta adicionar os dados da sua
+conta e _bucket_.
 
 ```bash
 # .env
@@ -54,10 +56,12 @@ AWS_BUCKET=bucket-name
 
 **S3 Package**
 
-É preciso instalar um [pacote](https://github.com/thephpleague/flysystem-aws-s3-v3) para que a comunicação com o S3
+É preciso instalar um [pacote](https://github.com/thephpleague/flysystem-aws-s3-v3) para que a
+comunicação com o S3
 funcione corretamente.
 
-Não há necessidade de configuração ou codificação nesse sentido, apenas execute o seguinte comando no
+Não há necessidade de configuração ou codificação nesse sentido, apenas execute o seguinte comando
+no
 terminal: `composer require league/flysystem-aws-s3-v3`.
 
 Tudo pronto! Agora vamos ao código.
@@ -72,7 +76,8 @@ Adicionei uma nova rota para o método que usarei o S3.
 Route::post('/storeS3', 'HomeController@storeS3')->name('home.storeS3');
 ```
 
-O segundo parâmetro do método `store` é o disco em que iremos salvar o arquivo. Nele passamos o "s3" e o Laravel faz o
+O segundo parâmetro do método `store` é o disco em que iremos salvar o arquivo. Nele passamos o "s3"
+e o Laravel faz o
 resto sozinho.
 
 ```php
@@ -90,10 +95,12 @@ Na visualização do _Bucket_ acesso o arquivo que fiz upload.
 
 **Visualização**
 
-Existem várias formas de ter acesso aos arquivos no S3: através de _download_, endereços temporários, etc. Isso também
+Existem várias formas de ter acesso aos arquivos no S3: através de _download_, endereços
+temporários, etc. Isso também
 vai variar de acordo com as permissões de acesso configuradas no _bucket_.
 
-Abaixo, exemplifico uma rota onde passo o nome do arquivo que quero acessar e, no _controller_, redireciono para um
+Abaixo, exemplifico uma rota onde passo o nome do arquivo que quero acessar e, no _controller_,
+redireciono para um
 endereço temporário onde é possível ver a imagem que cadastrei.
 
 ```php

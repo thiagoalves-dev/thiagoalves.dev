@@ -3,25 +3,31 @@ date: '2020-05-13'
 title: 'Deveria usar API Resources no Laravel? Sim!'
 description: 'Se você trabalha com APIs na sua aplicação Laravel e ainda não usa API Resources, é bem provável que o seu código não esteja lá essas coisas.'
 keywords: 'Api, Resources, JSON'
-enUsSlug: 'should-you-use-api-resources-with-laravel-yes'
 ---
 
-Dias atrás eu navegava pelo [reddit](https://reddit.com) quando me deparei com a seguinte pergunta de um usuário:
-"deveria usar _API Resources_?". Muitas respostas surgiram, com bons argumentos, o convencendo que sim.
+Dias atrás eu navegava pelo [reddit](https://reddit.com) quando me deparei com a seguinte pergunta
+de um usuário:
+"deveria usar _API Resources_?". Muitas respostas surgiram, com bons argumentos, o convencendo que
+sim.
 
-A minha opinião sobre o assunto é muito clara: se você trabalha com _APIs_ na sua aplicação _Laravel_ e ainda não usa
-_API Resources_, é bem provável que o seu código não esteja lá essas coisas. A não ser que os seus métodos manipulem
+A minha opinião sobre o assunto é muito clara: se você trabalha com _APIs_ na sua aplicação
+_Laravel_ e ainda não usa
+_API Resources_, é bem provável que o seu código não esteja lá essas coisas. A não ser que os seus
+métodos manipulem
 pouquíssimos dados.
 
-Como a própria documentação diz, esse recurso serve para que façamos uma camada de transformação entre os modelos e as
+Como a própria documentação diz, esse recurso serve para que façamos uma camada de transformação
+entre os modelos e as
 respostas em _JSON_ a serem retornadas.
 
-A primeira vista, pode parecer que não faz muita diferença, ainda mais se você precisar retornar os dados do jeito que
+A primeira vista, pode parecer que não faz muita diferença, ainda mais se você precisar retornar os
+dados do jeito que
 eles já são, mas bastam alguns detalhes a mais para que esse recurso mostre o seu valor.
 
 ### Na prática
 
-O nosso exercício de hoje consiste no seguinte: precisamos buscar um produto específico e os seus dados. Abaixo temos os
+O nosso exercício de hoje consiste no seguinte: precisamos buscar um produto específico e os seus
+dados. Abaixo temos os
 modelos para representar o produto e a categoria, além da rota do nosso método de API.
 
 ```php
@@ -58,7 +64,8 @@ class Category extends Model
 Route::get('/products/{product}', 'ProductsController@show');
 ```
 
-**No primeiro exemplo, vou implementar o método apenas devolvendo os dados do modelo, sem qualquer alteração:**
+**No primeiro exemplo, vou implementar o método apenas devolvendo os dados do modelo, sem qualquer
+alteração:**
 
 ```php
 // app/Http/Controllers/ProductsController.php
@@ -85,9 +92,11 @@ Resposta:
 }
 ```
 
-Mesmo não concordando muito com a ideia, num caso como esse, de fato não há uma necessidade de usar _API Resource_.
+Mesmo não concordando muito com a ideia, num caso como esse, de fato não há uma necessidade de usar
+_API Resource_.
 
-Ao elevarmos um pouco o nível de exigência, é possível perceber que o nosso método vai precisar de melhorias. Imagine
+Ao elevarmos um pouco o nível de exigência, é possível perceber que o nosso método vai precisar de
+melhorias. Imagine
 que junto ao produto, precisamos retornar os dados da categoria do mesmo.
 
 **Vamos lá:**
@@ -127,7 +136,8 @@ Resposta:
 
 ### Vamos ao que interessa
 
-É hora de ser mais exigente com o nosso método. Agora, o produto precisa ter uma opção de preço já formatada em reais,
+É hora de ser mais exigente com o nosso método. Agora, o produto precisa ter uma opção de preço já
+formatada em reais,
 as datas precisam vir no formato de leitura do Brasil e a categoria deve ser opcional.
 
 **É hora de colocar o _API Resource_ para trabalhar a nosso favor:**
@@ -199,10 +209,13 @@ Resposta:
 
 Simples, né!?
 
-Agora temos um retorno mais completo e que podemos modificar de acordo com a demanda do sistema no momento.
+Agora temos um retorno mais completo e que podemos modificar de acordo com a demanda do sistema no
+momento.
 
-Para mim, o maior benefício está em não ter que manipular os dados dentro do controller e ainda poder acrescentar outras
-informações sempre que eu precisar. Por exemplo, além da categoria, eu poderia retornar o usuário que cadastrou o
+Para mim, o maior benefício está em não ter que manipular os dados dentro do controller e ainda
+poder acrescentar outras
+informações sempre que eu precisar. Por exemplo, além da categoria, eu poderia retornar o usuário
+que cadastrou o
 produto no sistema.
 
 ### Outro exemplo
@@ -278,14 +291,17 @@ Enfim, mesmo que eu use um exemplo bastante simples como esse, possibilidades re
 
 ### Finalizando
 
-Uso esse recurso há pelo menos dois anos ininterruptos e nunca mais parei. Por mais simples que seja o método de _API_
+Uso esse recurso há pelo menos dois anos ininterruptos e nunca mais parei. Por mais simples que seja
+o método de _API_
 que eu precise implementar, acabo sempre por usar _Resources_.
 
-É importante deixar claro que no código acima, é possível fazer uma série de otimizações, mas optei por tentar ser mais
+É importante deixar claro que no código acima, é possível fazer uma série de otimizações, mas optei
+por tentar ser mais
 didático.
 
 Todo so códigos dos exemplos estão no
-meu [repositório no github](https://github.com/thiagoalves-dev/laravel-storage-example), caso queira usá-lo nos seus
+meu [repositório no github](https://github.com/thiagoalves-dev/laravel-storage-example), caso queira
+usá-lo nos seus
 testes.
 
 Nos vemos em breve!

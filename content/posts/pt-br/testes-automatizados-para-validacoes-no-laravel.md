@@ -4,27 +4,33 @@ date: '2020-07-01'
 title: 'Testes automatizados para validações no Laravel'
 description: 'Seguindo o assunto abordado no último post, desta vez vou implementar outra variação de teste no Laravel. Validação de dados das requisições.'
 keywords: 'Testes, Tests, Request, Controller, Validações'
-enUsSlug: 'automated-validation-tests-with-laravel'
 ---
 
-Seguindo o assunto abordado no [último post](/pt-br/blog/posts/teste-automatizado-de-e-mail-no-laravel), desta vez vou
+Seguindo o assunto abordado
+no [último post](/pt-br/blog/posts/teste-automatizado-de-e-mail-no-laravel), desta vez vou
 implementar outra variação de teste no Laravel.
 
-Dias atrás, um desenvolvedor que nos acompanha aqui no blog, entrou em contato comigo para tirar algumas dúvidas sobre
-testes de validação de dados, compartilhei com ele alguns exemplos que escrevi na hora e discutimos mais alguns detalhes
-sobre o tema. Então, decidi que seria uma boa ideia postar os exemplos aqui, para que mais pessoas possam ter acesso.
+Dias atrás, um desenvolvedor que nos acompanha aqui no blog, entrou em contato comigo para tirar
+algumas dúvidas sobre
+testes de validação de dados, compartilhei com ele alguns exemplos que escrevi na hora e discutimos
+mais alguns detalhes
+sobre o tema. Então, decidi que seria uma boa ideia postar os exemplos aqui, para que mais pessoas
+possam ter acesso.
 
-Na minha rotina de trabalho, o desenvolvimento de APIs é algo bastante comum. Logo, escrever testes para isso, também, e
+Na minha rotina de trabalho, o desenvolvimento de APIs é algo bastante comum. Logo, escrever testes
+para isso, também, e
 uma das lógicas que costumo testar são exatamente as validações dos dados recebidos nas requisições.
 
 Sem mais delongas, vamos ao que interessa!
 
 ### O cenário
 
-O meu sistema possui um cadastro de usuários simples. Poderia ser qualquer site desses em que criamos uma conta,
+O meu sistema possui um cadastro de usuários simples. Poderia ser qualquer site desses em que
+criamos uma conta,
 preenchendo alguns campos básicos, inicialmente.
 
-Recebo os dados através de uma `Request`, inserindo-os no banco e retornando o objeto criado (simplificado para o
+Recebo os dados através de uma `Request`, inserindo-os no banco e retornando o objeto criado (
+simplificado para o
 exemplo). Segue abaixo:
 
 ```php
@@ -70,7 +76,8 @@ class UserStoreRequest extends FormRequest
 
 ### O teste
 
-O meu objetivo é testar se os dados são validados pela `Request` corretamente. Para isso, escrevi dois testes onde, no
+O meu objetivo é testar se os dados são validados pela `Request` corretamente. Para isso, escrevi
+dois testes onde, no
 primeiro o foco são os campos obrigatórios e no segundo são as especificidades de cada campo.
 
 Veja abaixo:
@@ -131,7 +138,8 @@ Veja o resultado:
 
 ### Incrementando
 
-No cenário descrito, também podemos validar se o e-mail informado já está cadastrado no banco. Basta adicionar a
+No cenário descrito, também podemos validar se o e-mail informado já está cadastrado no banco. Basta
+adicionar a
 regra `unique` à minha `Request`.
 
 ```php
@@ -147,7 +155,8 @@ public function rules()
 }
 ```
 
-No teste, crio um usuário para garantir que haverá algum cadastrado e uso o seu e-mail na requisição para forçar o erro.
+No teste, crio um usuário para garantir que haverá algum cadastrado e uso o seu e-mail na requisição
+para forçar o erro.
 
 ```php
 // tests/Feature/Http/Controllers/UsersControllerTest.php
@@ -176,18 +185,24 @@ Veja o resultado:
 
 ![](/images/posts/laravel-test-form-requests/three-tests.png)
 
-Muitas regras podem ser implementadas nas validações de dados. Recomendo que, quando mais regras, mais testes sejam
+Muitas regras podem ser implementadas nas validações de dados. Recomendo que, quando mais regras,
+mais testes sejam
 escritos, pois, acredito ser a melhor forma de explorar as possibilidades.
 
 ### Concluindo
 
-Para testes relacionados a comportamento de formulário, exibição de erros, recomendo o uso do _Laravel Dusk_. Inclusive,
-já fiz um [post aqui no blog sobre isso](/pt-br/blog/posts/testes-automatizados-de-navegacao-com-laravel-dusk).
+Para testes relacionados a comportamento de formulário, exibição de erros, recomendo o uso do
+_Laravel Dusk_. Inclusive,
+já fiz
+um [post aqui no blog sobre isso](/pt-br/blog/posts/testes-automatizados-de-navegacao-com-laravel-dusk).
 
-Noto uma grande carência de conteúdo gratuito relacionado a testes, pelo menos em _PHP_. Ultimamente, muitas pessoas
-comentam comigo que não encontram nada muito prático e que se sentem perdidos, não sabendo por onde começar.
+Noto uma grande carência de conteúdo gratuito relacionado a testes, pelo menos em _PHP_.
+Ultimamente, muitas pessoas
+comentam comigo que não encontram nada muito prático e que se sentem perdidos, não sabendo por onde
+começar.
 
-Gradualmente, trarei novos exemplos aqui para ajudar. Talvez possamos até fazer uma live, _codando_ testes e tirando
+Gradualmente, trarei novos exemplos aqui para ajudar. Talvez possamos até fazer uma live, _codando_
+testes e tirando
 dúvidas. O que acha?
 
 Nos vemos em breve!
