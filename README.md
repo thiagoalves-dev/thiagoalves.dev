@@ -1,27 +1,50 @@
-# Thiagoalves.dev
+# Thiago Alves' Website
 
-This is my professional [website](https://thiagoalves.dev) which I use to share my experiences and who I am.
+This is a Nuxt 3 project with Tailwind CSS 4, created from scratch while preserving the Docker setup. It uses the latest versions of all dependencies as of October 2023.
+
+**Note:** Tailwind CSS v4 requires the separate @tailwindcss/postcss package for PostCSS integration. This project has been configured to use this package instead of using tailwindcss directly as a PostCSS plugin. The postcss package is not directly included as it's likely bundled with or included as a dependency of @tailwindcss/postcss.
 
 ## Dependencies
 
-The project was developed with [Nuxt.js](http://nuxt.com) and [Tailwind CSS](https://tailwindcss.com), but only
-Docker is needed to set it up.
-
-**More details:**
-
-- Docker >= 20;
-- Docker-compose >= 1.29;
+- Node.js: 22.14.0
+- Nuxt: 3.17.5
+- Tailwind CSS: 4.1.8
+- @tailwindcss/postcss: 4.1.8
+- Autoprefixer: 10.4.21
+- Sass: 1.89.1
 
 ## Setup
 
-After cloning the repository, execute the following command and wait for build process:
+Make sure to install the dependencies:
 
- ```shell script
-$ docker-compose up
+```bash
+# npm
+npm install
 ```
 
-It might take a some minutes in the first time because of the Docker containers, but it is much faster later.
+## Development Server
 
-When the build ends, the following URL is showed: [http://localhost:3000](http://localhost:3000).
+Start the development server on `http://localhost:1000`:
 
-Also, browsersync is already configured..
+```bash
+# npm
+npm run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

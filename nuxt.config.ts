@@ -1,70 +1,15 @@
-import { resolve } from 'pathe';
-
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    ssr: true,
-    devtools: { enabled: true },
-    css: ["~/assets/sass/main.scss"],
-    postcss: {
-        plugins: {
-            tailwindcss: {},
-            autoprefixer: {},
-        },
-    },
-
-    modules: [
-        '@nuxt/content',
-        '@nuxtjs/i18n',
-        'nuxt-gtag'
-    ],
-
-    content: {
-        watch: {
-            ws: {
-                hostname: 'localhost',
-                port: 1000
-            }
-        },
-        highlight: {
-            theme: 'github-light',
-            preload: ['java', 'xml', 'sql', 'php', 'bash'],
+  devtools: { enabled: true },
+  css: ['~/assets/css/tailwind.css'],
+  postcss: {
+    plugins: {
+      '@tailwindcss/postcss': {
+        config: {
+          path: './tailwind.config.js'
         }
+      },
+      autoprefixer: {},
     },
-
-    i18n: {
-        vueI18n: resolve('./i18n/i18n.config.ts'),
-        locales: [
-            {
-                iso: 'en-US',
-                code: 'en-us',
-                name: 'English (US)',
-                flag: 'rounded-united-states.png'
-            },
-            {
-                iso: 'pt-BR',
-                code: 'pt-br',
-                name: 'Português (BR)',
-                flag: 'rounded-brazil.png'
-            }
-        ],
-        defaultLocale: 'en-us',
-        strategy: 'prefix_except_default',
-        detectBrowserLanguage: {
-            useCookie: false
-        },
-        pages: {
-            'about': {
-                'pt-br': '/sobre'
-            },
-            'how-i-can-help': {
-                'pt-br': '/como-posso-ajudar'
-            },
-            'american-visa': {
-                'pt-br': '/visto-americano'
-            }
-        }
-    },
-
-    gtag: {
-        id: process.env.GOOGLE_ANALYTICS_ID
-    }
-});
+  },
+})

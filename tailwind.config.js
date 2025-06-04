@@ -1,55 +1,48 @@
-const defaults = require('tailwindcss/defaultTheme');
-
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: [
-        "./components/**/*.{js,vue,ts}",
-        "./layouts/**/*.vue",
-        "./pages/**/*.vue",
-        "./plugins/**/*.{js,ts}",
-        "./app.vue",
-    ],
-    theme: {
-        extend: {
-            fontFamily: {
-                sans: ['"Nunito Sans"', ...defaults.fontFamily.sans],
-                mono: ['monospace'],
-            },
-            lineHeight: {
-                normal: '1.6',
-                loose: '1.75',
-            },
-            maxWidth: {
-                none: 'none',
-                '7xl': '80rem',
-                '8xl': '88rem'
-            },
-            spacing: {
-                '7': '1.75rem',
-                '9': '2.25rem'
-            },
-            boxShadow: {
-                'lg': '0 -1px 27px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.08)',
-            }
-        },
-        fontSize: {
-            'xs': '.8rem',
-            'sm': '.925rem',
-            'base': '1rem',
-            'lg': '1.125rem',
-            'xl': '1.25rem',
-            '2xl': '1.5rem',
-            '3xl': '1.75rem',
-            '4xl': '2.125rem',
-            '5xl': '2.625rem',
-            '6xl': '10rem',
-        },
-    },
-    variants: {
-        borderRadius: ['responsive', 'focus'],
-        borderWidth: ['responsive', 'active', 'focus'],
-        width: ['responsive', 'focus']
-    },
-    plugins: []
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./app.vue",
+    "./error.vue",
+  ],
+  safelist: [
+    'bg-gray-800',
+    'text-white',
+    'p-4',
+    'container',
+    'mx-auto',
+    'flex',
+    'justify-between',
+    'items-center',
+    'text-xl',
+    'font-bold',
+    'space-x-4',
+    'hover:text-gray-300',
+    'flex-grow',
+    'px-4',
+    'py-8',
+    'text-center',
+    'text-4xl',
+    'mb-8',
+    'text-lg',
+    'mb-6',
+    'mb-4',
+    'text-6xl',
+    'text-red-500',
+    'text-2xl',
+    'bg-blue-500',
+    'hover:bg-blue-700',
+    'py-2',
+    'px-4',
+    'rounded',
+    'flex-col',
+    'min-h-screen'
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
 }
-
