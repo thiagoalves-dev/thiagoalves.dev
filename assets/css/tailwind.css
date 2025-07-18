@@ -1,3 +1,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Prism syntax highlighting */
+@layer components {
+  pre[class*="language-"] {
+    @apply text-zinc-100 bg-zinc-900 rounded-3xl p-8 overflow-x-auto border border-transparent;
+  }
+  
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    @apply text-zinc-500;
+  }
+  
+  .token.punctuation {
+    @apply text-zinc-400;
+  }
+  
+  .token.property,
+  .token.tag,
+  .token.boolean,
+  .token.number,
+  .token.constant,
+  .token.symbol,
+  .token.deleted {
+    @apply text-teal-400;
+  }
+  
+  .token.selector,
+  .token.attr-name,
+  .token.string,
+  .token.char,
+  .token.builtin,
+  .token.inserted {
+    @apply text-teal-400;
+  }
+  
+  .token.operator,
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .style .token.string {
+    @apply text-zinc-300;
+  }
+  
+  .token.atrule,
+  .token.attr-value,
+  .token.keyword {
+    @apply text-zinc-300 font-semibold;
+  }
+  
+  .token.function,
+  .token.class-name {
+    @apply text-zinc-200;
+  }
+  
+  .token.regex,
+  .token.important,
+  .token.variable {
+    @apply text-zinc-300;
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
