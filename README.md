@@ -1,34 +1,41 @@
-# Thiago Alves' Website
+# Nuxt Minimal Starter
 
-This is a Nuxt 3 project with Tailwind CSS 4, created from scratch while preserving the Docker setup. It uses the latest versions of all dependencies as of October 2023.
-
-**Note:** Tailwind CSS v4 requires the separate @tailwindcss/postcss package for PostCSS integration. This project has been configured to use this package instead of using tailwindcss directly as a PostCSS plugin. The postcss package is not directly included as it's likely bundled with or included as a dependency of @tailwindcss/postcss.
-
-## Dependencies
-
-- Node.js: 22.14.0
-- Nuxt: 3.17.5
-- Tailwind CSS: 4.1.8
-- @tailwindcss/postcss: 4.1.8
-- Autoprefixer: 10.4.21
-- Sass: 1.89.1
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
 
-Make sure to install the dependencies:
+Make sure to install dependencies:
 
 ```bash
 # npm
 npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
 ```
 
 ## Development Server
 
-Start the development server on `http://localhost:1000`:
+Start the development server on `http://localhost:3000`:
 
 ```bash
 # npm
 npm run dev
+
+# pnpm
+pnpm dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
 ```
 
 ## Production
@@ -38,6 +45,15 @@ Build the application for production:
 ```bash
 # npm
 npm run build
+
+# pnpm
+pnpm build
+
+# yarn
+yarn build
+
+# bun
+bun run build
 ```
 
 Locally preview production build:
@@ -45,6 +61,15 @@ Locally preview production build:
 ```bash
 # npm
 npm run preview
+
+# pnpm
+pnpm preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

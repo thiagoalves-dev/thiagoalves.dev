@@ -7,4 +7,4 @@ services:
         ports:
             - '1000:1000'
         command: >
-            bash -c "npm install && npm run dev"
+            bash -c "npm install && npm run dev -- --host --port 1000"
