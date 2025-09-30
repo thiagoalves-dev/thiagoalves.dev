@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-amber-300" style="height: 2000px">
-    <slot />
-  </div>
+  <Body class="bg-zinc-50 dark:bg-black">
+    <Container>
+      <slot />
+    </Container>
+  </Body>
 </template>
-
-<script setup></script>
