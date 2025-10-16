@@ -15,6 +15,7 @@
         "@tailwindcss/typography": "^0.5.15",
         "@tailwindcss/vite": "^4.1.13",
         "eslint": "^9.36.0",
+        "lucide-vue-next": "^0.545.0",
         "nuxt": "^4.1.0",
         "tailwindcss": "^4.1.13",
         "vue": "^3.5.20",
