@@ -62,7 +62,7 @@
   </header>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 import { Moon, SunMedium } from 'lucide-vue-next';
 
 const items = [
@@ -76,11 +76,11 @@ const items = [
 const route = useRoute();
 
 const open = ref(false);
-const menu = ref<HTMLElement | null>(null);
+const menu = ref(null);
 
-function onClickOutside(e: MouseEvent) {
+function onClickOutside(e) {
   if (!open.value) return;
-  const target = e.target as Node;
+  const target = e.target;
   if (menu.value && !menu.value.contains(target)) open.value = false;
 }
 
