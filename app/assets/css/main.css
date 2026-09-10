@@ -1,84 +1,88 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-@plugin "@tailwindcss/typography";
+@plugin '@tailwindcss/typography';
 
 @config '../../../typography.js';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --text-xs: 0.8125rem;
-    --text-xs--line-height: 1.5rem;
-    --text-sm: 0.875rem;
-    --text-sm--line-height: 1.5rem;
-    --text-base: 1rem;
-    --text-base--line-height: 1.75rem;
-    --text-lg: 1.125rem;
-    --text-lg--line-height: 1.75rem;
-    --text-xl: 1.25rem;
-    --text-xl--line-height: 2rem;
-    --text-2xl: 1.5rem;
-    --text-2xl--line-height: 2rem;
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: 2.25rem;
-    --text-4xl: 2rem;
-    --text-4xl--line-height: 2.5rem;
-    --text-5xl: 3rem;
-    --text-5xl--line-height: 3.5rem;
-    --text-6xl: 3.75rem;
-    --text-6xl--line-height: 1;
-    --text-7xl: 4.5rem;
-    --text-7xl--line-height: 1;
-    --text-8xl: 6rem;
-    --text-8xl--line-height: 1;
-    --text-9xl: 8rem;
-    --text-9xl--line-height: 1;
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.5rem;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.5rem;
+  --text-base: 1rem;
+  --text-base--line-height: 1.75rem;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 2rem;
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: 2rem;
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: 2.25rem;
+  --text-4xl: 2rem;
+  --text-4xl--line-height: 2.5rem;
+  --text-5xl: 3rem;
+  --text-5xl--line-height: 3.5rem;
+  --text-6xl: 3.75rem;
+  --text-6xl--line-height: 1;
+  --text-7xl: 4.5rem;
+  --text-7xl--line-height: 1;
+  --text-8xl: 6rem;
+  --text-8xl--line-height: 1;
+  --text-9xl: 8rem;
+  --text-9xl--line-height: 1;
 }
 
-pre[class*='language-'] {
+/* Prism syntax highlighting — template ships this as src/styles/prism.css,
+   imported with `layer(components)`. */
+@layer components {
+  pre[class*='language-'] {
     color: var(--color-zinc-100);
-}
+  }
 
-.token.tag,
-.token.class-name,
-.token.selector,
-.token.selector .class,
-.token.selector.class,
-.token.function {
+  .token.tag,
+  .token.class-name,
+  .token.selector,
+  .token.selector .class,
+  .token.selector.class,
+  .token.function {
     color: var(--color-pink-400);
-}
+  }
 
-.token.attr-name,
-.token.keyword,
-.token.rule,
-.token.pseudo-class,
-.token.important {
+  .token.attr-name,
+  .token.keyword,
+  .token.rule,
+  .token.pseudo-class,
+  .token.important {
     color: var(--color-zinc-300);
-}
+  }
 
-.token.module {
+  .token.module {
     color: var(--color-pink-400);
-}
+  }
 
-.token.attr-value,
-.token.class,
-.token.string,
-.token.property {
+  .token.attr-value,
+  .token.class,
+  .token.string,
+  .token.property {
     color: var(--color-teal-300);
-}
+  }
 
-.token.punctuation,
-.token.attr-equals {
+  .token.punctuation,
+  .token.attr-equals {
     color: var(--color-zinc-500);
-}
+  }
 
-.token.unit,
-.language-css .token.function {
+  .token.unit,
+  .language-css .token.function {
     color: var(--color-sky-200);
-}
+  }
 
-.token.comment,
-.token.operator,
-.token.combinator {
+  .token.comment,
+  .token.operator,
+  .token.combinator {
     color: var(--color-zinc-400);
+  }
 }
