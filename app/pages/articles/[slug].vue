@@ -2,8 +2,8 @@
   <ArticleLayout v-if="article" :article="article">
     <!--
       ContentRenderer's own root element is the .prose container — see the note in
-      article-layout.vue for why it can't be nested inside a separate <Prose> wrapper.
-      Classes mirror prose.vue plus the template's `mt-8`.
+      article-layout.vue for why it can't be nested inside a separate wrapper element.
+      The prose/dark:prose-invert pair is the template's Prose styling, plus its `mt-8`.
     -->
     <ContentRenderer :value="article" class="prose dark:prose-invert mt-8" data-mdx-content />
   </ArticleLayout>

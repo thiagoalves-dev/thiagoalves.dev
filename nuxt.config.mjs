@@ -45,7 +45,7 @@ export default defineNuxtConfig({
           // Must be a colour-mode map; a non-string value is used as a raw Shiki theme object.
           // Code blocks are dark in both schemes, so `default` alone covers it.
           theme: { default: spotlightPrism },
-          langs: ['js', 'jsx', 'ts', 'tsx', 'c', 'css', 'html', 'json', 'bash', 'diff', 'md'],
+          langs: ['js', 'jsx', 'ts', 'tsx', 'c', 'rust', 'css', 'html', 'json', 'bash', 'diff', 'md'],
         },
       },
     },

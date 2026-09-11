@@ -27,11 +27,12 @@
             </time>
           </header>
           <!--
-            The template wraps the body in <Prose class="mt-8" data-mdx-content>. Here the caller
-            supplies that element instead: Nuxt Content's <ContentRenderer> always emits a root
-            element, so it has to BE the .prose container. Nesting it inside a separate <Prose>
-            added an extra div, which stole the typography `> :first-child` / `> :last-child`
-            margin resets and made every article 76px taller than the template.
+            The Next template wraps the body in its own Prose component. Here the caller supplies
+            that element instead: Nuxt Content's <ContentRenderer> always emits a root element, so
+            it has to BE the .prose container. Wrapping it in a second element added an extra div,
+            which stole the typography `> :first-child` / `> :last-child` margin resets and made
+            every article 76px taller than the template. That is also why this port has no Prose
+            component of its own.
           -->
           <slot />
         </article>
@@ -49,9 +50,9 @@ defineProps({
 });
 
 const router = useRouter();
-const previousPathname = ref(null);
 
-onMounted(() => {
-  previousPathname.value = window.history.state?.back ?? null;
-});
+// Mirrors the template's AppContext.previousPathname — see app/plugins/previous-route.client.js.
+// Null on a fresh document load, so the back button only appears after an in-app navigation,
+// exactly as the template behaves.
+const previousPathname = useState('previousPath', () => null);
 </script>
