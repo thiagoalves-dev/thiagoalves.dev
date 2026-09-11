@@ -72,9 +72,20 @@ export const spotlightPrism = {
       settings: { foreground: PINK },
     },
 
-    // keyword / storage -> zinc-300
+    // keyword / storage / attr-name -> zinc-300.
+    // `entity.other.attribute-name` belongs here, not with strings: Prism colours an attribute NAME
+    // zinc-300 and only its VALUE teal, so `<div class="foo">` shows `class` grey and `"foo"` teal.
+    // The `.class` / `.id` CSS-selector variants are a different thing and stay pink, below.
     {
-      scope: ['keyword', 'storage', 'storage.type', 'storage.modifier', 'keyword.control', 'variable.language'],
+      scope: [
+        'keyword',
+        'storage',
+        'storage.type',
+        'storage.modifier',
+        'keyword.control',
+        'variable.language',
+        'entity.other.attribute-name',
+      ],
       settings: { foreground: ZINC300 },
     },
 
@@ -107,7 +118,6 @@ export const spotlightPrism = {
         'punctuation.definition.string.begin',
         'punctuation.definition.string.end',
         'constant.other.symbol',
-        'entity.other.attribute-name',
         'support.type.property-name',
         'meta.object-literal.key',
         'variable.other.property',
