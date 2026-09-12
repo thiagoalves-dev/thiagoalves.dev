@@ -6,6 +6,8 @@
           <NuxtImg
             src="/images/portrait.jpg"
             alt=""
+            :width="800"
+            :height="800"
             sizes="320px lg:512px"
             class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
           />

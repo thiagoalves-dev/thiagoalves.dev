@@ -37,14 +37,21 @@
     <div class="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
       <div
         v-for="(image, imageIndex) in photos"
-        :key="image"
+        :key="image.src"
         :class="[
           'relative w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
           rotations[imageIndex % rotations.length],
         ]"
       >
         <div class="aspect-9/10">
-          <NuxtImg :src="image" alt="" sizes="176px sm:288px" class="absolute inset-0 h-full w-full object-cover" />
+          <NuxtImg
+            :src="image.src"
+            :width="image.width"
+            :height="image.height"
+            alt=""
+            sizes="176px sm:288px"
+            class="absolute inset-0 h-full w-full object-cover"
+          />
         </div>
       </div>
     </div>
@@ -137,12 +144,14 @@ const { data: articles } = await useAsyncData('home-articles', () =>
 
 const homeArticles = computed(() => (articles.value ?? []).slice(0, 4));
 
+// Intrinsic dimensions are declared so the rendered size never depends on which srcset candidate
+// the browser happens to pick — the template sets width/height on every image for the same reason.
 const photos = [
-  '/images/photos/image-1.jpg',
-  '/images/photos/image-2.jpg',
-  '/images/photos/image-3.jpg',
-  '/images/photos/image-4.jpg',
-  '/images/photos/image-5.jpg',
+  { src: '/images/photos/image-1.jpg', width: 3744, height: 5616 },
+  { src: '/images/photos/image-2.jpg', width: 3936, height: 2624 },
+  { src: '/images/photos/image-3.jpg', width: 5760, height: 3840 },
+  { src: '/images/photos/image-4.jpg', width: 2400, height: 3000 },
+  { src: '/images/photos/image-5.jpg', width: 4240, height: 2384 },
 ];
 
 const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
