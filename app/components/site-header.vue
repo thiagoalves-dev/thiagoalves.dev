@@ -23,8 +23,8 @@
               <NuxtImg
                 src="/images/avatar.jpg"
                 alt=""
-                :width="512"
-                :height="512"
+                :width="720"
+                :height="694"
                 sizes="64px"
                 class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16"
                 preload
@@ -48,8 +48,8 @@
                 <NuxtImg
                   src="/images/avatar.jpg"
                   alt=""
-                  :width="512"
-                  :height="512"
+                  :width="720"
+                  :height="694"
                   sizes="36px"
                   class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-9 w-9"
                   preload
@@ -169,8 +169,6 @@ import { Popover, PopoverButton, PopoverOverlay, PopoverPanel, TransitionRoot } 
 const navigation = [
   { href: '/about', label: 'About' },
   { href: '/articles', label: 'Articles' },
-  { href: '/projects', label: 'Projects' },
-  { href: '/speaking', label: 'Speaking' },
   { href: '/uses', label: 'Uses' },
 ];
 

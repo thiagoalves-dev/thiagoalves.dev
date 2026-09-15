@@ -9,23 +9,17 @@
         where we develop technologies that empower regular people to explore space on their own terms.
       </p>
       <div class="mt-6 flex gap-6">
-        <NuxtLink to="#" class="group -m-1 p-1" aria-label="Follow on X">
-          <IconX
-            class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300"
-          />
-        </NuxtLink>
-        <NuxtLink to="#" class="group -m-1 p-1" aria-label="Follow on Instagram">
-          <IconInstagram
-            class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300"
-          />
-        </NuxtLink>
-        <NuxtLink to="#" class="group -m-1 p-1" aria-label="Follow on GitHub">
-          <IconGitHub
-            class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300"
-          />
-        </NuxtLink>
-        <NuxtLink to="#" class="group -m-1 p-1" aria-label="Follow on LinkedIn">
-          <IconLinkedIn
+        <NuxtLink
+          v-for="link in socialLinks"
+          :key="link.label"
+          :to="link.href"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="group -m-1 p-1"
+          :aria-label="`Follow on ${link.label}`"
+        >
+          <component
+            :is="link.icon"
             class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300"
           />
         </NuxtLink>
@@ -39,7 +33,7 @@
         v-for="(image, imageIndex) in photos"
         :key="image.src"
         :class="[
-          'relative w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
+          'group relative w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
           rotations[imageIndex % rotations.length],
         ]"
       >
@@ -50,8 +44,18 @@
             :height="image.height"
             alt=""
             sizes="176px sm:288px"
-            class="absolute inset-0 h-full w-full object-cover"
+            class="absolute inset-0 h-full w-full object-cover saturate-[0.7] sepia-[0.25] contrast-[1.05]"
           />
+        </div>
+
+        <!--
+          Custom hover caption. It lives INSIDE the photo because the strip wrapper is
+          overflow-hidden — a tooltip positioned outside the image would be clipped.
+        -->
+        <div
+          class="pointer-events-none absolute inset-x-0 bottom-0 translate-y-2 bg-gradient-to-t from-zinc-900/80 to-transparent px-3 pt-8 pb-3 opacity-0 transition duration-200 ease-out group-hover:translate-y-0 group-hover:opacity-100 sm:px-4 sm:pb-4"
+        >
+          <p class="text-xs font-medium text-white sm:text-sm">{{ image.caption }}</p>
         </div>
       </div>
     </div>
@@ -125,7 +129,13 @@
               </dl>
             </li>
           </ol>
-          <AppButton href="#" variant="secondary" class="group mt-6 w-full">
+          <AppButton
+            :href="cvUrl"
+            variant="secondary"
+            class="group mt-6 w-full"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             Download CV
             <IconArrowDown
               class="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50"
@@ -138,6 +148,15 @@
 </template>
 
 <script setup>
+import { resolveComponent } from 'vue';
+
+// LinkedIn, Instagram, X — in that order. Thiago dropped the template's GitHub link.
+const socialLinks = [
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/thiagoalvesdev', icon: resolveComponent('IconLinkedIn') },
+  { label: 'Instagram', href: 'https://www.instagram.com/thiagoalves.dev', icon: resolveComponent('IconInstagram') },
+  { label: 'X', href: 'https://x.com/thiagoalves_dev', icon: resolveComponent('IconX') },
+];
+
 const { data: articles } = await useAsyncData('home-articles', () =>
   queryCollection('articles').order('date', 'DESC').all(),
 );
@@ -147,12 +166,15 @@ const homeArticles = computed(() => (articles.value ?? []).slice(0, 4));
 // Intrinsic dimensions are declared so the rendered size never depends on which srcset candidate
 // the browser happens to pick — the template sets width/height on every image for the same reason.
 const photos = [
-  { src: '/images/photos/image-1.jpg', width: 3744, height: 5616 },
-  { src: '/images/photos/image-2.jpg', width: 3936, height: 2624 },
-  { src: '/images/photos/image-3.jpg', width: 5760, height: 3840 },
-  { src: '/images/photos/image-4.jpg', width: 2400, height: 3000 },
-  { src: '/images/photos/image-5.jpg', width: 4240, height: 2384 },
+  { src: '/images/photos/desk.jpg', caption: 'The setup', width: 1024, height: 768 }, // the setup
+  { src: '/images/photos/image-2.jpg', caption: 'Pair programming', width: 768, height: 1024 }, // cat
+  { src: '/images/photos/image-1.jpg', caption: 'Austin, TX', width: 1024, height: 768 }, // with Carol — centre
+  { src: '/images/photos/image-4.jpg', caption: 'Supervising', width: 768, height: 1024 }, // cat
+  { src: '/images/photos/skull.jpg', caption: 'Desk company', width: 4284, height: 5712 }, // desk detail
 ];
+
+// Drive's /view URL opens the preview page; /uc?export=download starts the download directly.
+const cvUrl = 'https://drive.google.com/uc?export=download&id=1vZ2xtsWwHJ9DRFICN9XbIkUZ88kC2uj6';
 
 const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
 

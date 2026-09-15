@@ -29,8 +29,7 @@
 <script setup>
 const navLinks = [
   { href: '/about', label: 'About' },
-  { href: '/projects', label: 'Projects' },
-  { href: '/speaking', label: 'Speaking' },
+  { href: '/articles', label: 'Articles' },
   { href: '/uses', label: 'Uses' },
 ];
 
