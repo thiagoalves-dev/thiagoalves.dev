@@ -5,12 +5,12 @@
 </template>
 
 <script setup>
-const siteTitle = 'Spencer Sharp - Software designer, founder, and amateur astronaut';
+const siteTitle = 'Thiago Alves - Software engineer, tech lead, and amateur pitmaster';
 const siteDescription =
-  'I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.';
+  'I\u2019m Thiago, a Brazilian software engineer based in Austin, Texas. I\u2019ve been building software since 2008, and for many years I\u2019ve split my time between leading teams and keeping my hands on the code.';
 
 useHead({
-  titleTemplate: (title) => (title ? `${title} - Spencer Sharp` : siteTitle),
+  titleTemplate: (title) => (title ? `${title} - Thiago Alves` : siteTitle),
   htmlAttrs: {
     lang: 'en',
     class: 'h-full antialiased',

@@ -2,11 +2,11 @@
   <Container class="mt-9">
     <div class="max-w-2xl">
       <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-        Software designer, founder, and amateur astronaut.
+        Software engineer, tech lead, and amateur pitmaster.
       </h1>
       <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-        I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria,
-        where we develop technologies that empower regular people to explore space on their own terms.
+        I’m Thiago, a Brazilian software engineer based in Austin, Texas. I’ve been building software since 2008, and
+        for many years I’ve split my time between leading teams and keeping my hands on the code.
       </p>
       <div class="mt-6 flex gap-6">
         <NuxtLink
@@ -72,28 +72,6 @@
         </Card>
       </div>
       <div class="space-y-10 lg:pl-16 xl:pl-24">
-        <form action="/thank-you" class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-          <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-            <IconMail class="h-6 w-6 flex-none" />
-            <span class="ml-3">Stay up to date</span>
-          </h2>
-          <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            Get notified when I publish something new, and unsubscribe at any time.
-          </p>
-          <div class="mt-6 flex items-center">
-            <span class="flex min-w-0 flex-auto p-px">
-              <input
-                type="email"
-                placeholder="Email address"
-                aria-label="Email address"
-                required
-                class="w-full appearance-none rounded-[calc(var(--radius-md)-1px)] bg-white px-3 py-[calc(--spacing(2)-1px)] shadow-md shadow-zinc-800/5 outline outline-zinc-900/10 placeholder:text-zinc-400 focus:ring-4 focus:ring-teal-500/10 focus:outline-teal-500 sm:text-sm dark:bg-zinc-700/15 dark:text-zinc-200 dark:outline-zinc-700 dark:placeholder:text-zinc-500 dark:focus:ring-teal-400/10 dark:focus:outline-teal-400"
-              />
-            </span>
-            <AppButton type="submit" class="ml-4 flex-none">Join</AppButton>
-          </div>
-        </form>
-
         <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
           <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
             <IconBriefcase class="h-6 w-6 flex-none" />
@@ -166,11 +144,11 @@ const homeArticles = computed(() => (articles.value ?? []).slice(0, 4));
 // Intrinsic dimensions are declared so the rendered size never depends on which srcset candidate
 // the browser happens to pick — the template sets width/height on every image for the same reason.
 const photos = [
-  { src: '/images/photos/desk.jpg', caption: 'The setup', width: 1024, height: 768 }, // the setup
-  { src: '/images/photos/image-2.jpg', caption: 'Pair programming', width: 768, height: 1024 }, // cat
-  { src: '/images/photos/image-1.jpg', caption: 'Austin, TX', width: 1024, height: 768 }, // with Carol — centre
-  { src: '/images/photos/image-4.jpg', caption: 'Supervising', width: 768, height: 1024 }, // cat
-  { src: '/images/photos/skull.jpg', caption: 'Desk company', width: 4284, height: 5712 }, // desk detail
+  { src: '/images/photos/desk.jpg', caption: 'Where the magic happens', width: 1024, height: 768 }, // the setup
+  { src: '/images/photos/image-2.jpg', caption: 'Olivia', width: 768, height: 1024 }, // cat
+  { src: '/images/photos/image-1.jpg', caption: 'My accomplice', width: 1024, height: 768 }, // with Carol — centre
+  { src: '/images/photos/image-4.jpg', caption: 'Jack', width: 768, height: 1024 }, // cat
+  { src: '/images/photos/skull.jpg', caption: 'Salamanca', width: 1200, height: 1600 }, // desk detail
 ];
 
 // Drive's /view URL opens the preview page; /uc?export=download starts the download directly.
@@ -180,35 +158,39 @@ const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
 
 const resume = [
   {
-    company: 'Planetaria',
-    title: 'CEO',
-    logo: '/images/logos/planetaria.svg',
-    start: '2019',
-    end: {
-      label: 'Present',
-      dateTime: new Date().getFullYear().toString(),
-    },
+    company: 'Contracts Connected',
+    title: 'Lead Software Engineer',
+    logo: '/images/logos/contracts-connected.png',
+    start: '2024',
+    end: { label: 'Present', dateTime: new Date().getFullYear().toString() },
   },
   {
-    company: 'Airbnb',
-    title: 'Product Designer',
-    logo: '/images/logos/airbnb.svg',
-    start: '2014',
-    end: '2019',
+    company: 'Fresh Consulting',
+    title: 'Senior Full-Stack Engineer',
+    logo: '/images/logos/fresh-consulting.png',
+    start: '2022',
+    end: '2024',
   },
   {
-    company: 'Facebook',
-    title: 'iOS Software Engineer',
-    logo: '/images/logos/facebook.svg',
-    start: '2011',
-    end: '2014',
+    company: 'EyeCarePro',
+    title: 'Senior Full-Stack Engineer',
+    logo: '/images/logos/eyecarepro.png',
+    start: '2021',
+    end: '2022',
   },
   {
-    company: 'Starbucks',
-    title: 'Shift Supervisor',
-    logo: '/images/logos/starbucks.svg',
-    start: '2008',
-    end: '2011',
+    company: 'Suno',
+    title: 'Tech Lead',
+    logo: '/images/logos/suno.png',
+    start: '2020',
+    end: '2021',
+  },
+  {
+    company: 'Meu Câmbio',
+    title: 'Tech Lead and Partner',
+    logo: '/images/logos/meu-cambio.png',
+    start: '2017',
+    end: '2020',
   },
 ];
 
