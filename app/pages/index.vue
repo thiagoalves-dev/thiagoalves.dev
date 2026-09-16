@@ -139,7 +139,7 @@ const { data: articles } = await useAsyncData('home-articles', () =>
   queryCollection('articles').order('date', 'DESC').all(),
 );
 
-const homeArticles = computed(() => (articles.value ?? []).slice(0, 4));
+const homeArticles = computed(() => (articles.value ?? []).slice(0, 3));
 
 // Intrinsic dimensions are declared so the rendered size never depends on which srcset candidate
 // the browser happens to pick — the template sets width/height on every image for the same reason.
