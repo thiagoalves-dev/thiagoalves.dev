@@ -1,58 +1,149 @@
 ---
-title: 'Being a developer is frustrating'
-description: 'A day inside a developer’s head: the four-hour bug that was a restart, the production ticket at 5:50pm on a Friday, and the coffee that ran out.'
+title: 'Coffee is over'
+description: 'One working day, hour by hour, with the internet talking over it.'
 date: '2026-08-12'
 author: 'Thiago Alves'
 ---
 
-I've been struggling with this damn error for four hours. Why did I have to say this task was simple!? Dude, but the
-code is right, this error doesn't make sense. Putz! I needed to restart the service. It worked!
+**09:00**
 
-\- Thiago, we have an error in production, our customer says he can't update his password.
+Standup. Fifteen minutes.
 
-I wonder: what kind of person bothers changing their shopping website password on Friday at 5:50pm?
+**09:40**
 
-It's working for me! I'll have to check the logs and see what happened. There is nothing there. That's weird! It looks
-like it's not loading. Internet dropped.
+Standup ends.
 
-\- The client sent a print via chat, I'll send it to you.
+**09:45**
 
-![Screenshot of the error](/images/articles/being-a-developer-is-frustrating-error.png){width="511" height="308"}
+`feat: add password reset`
 
-I code in PHP, but I want to learn Python. Python nothing, everyone wants Javascript devs, it's the future. Should I
-start with Angular, Vue or React? Angular is from Google, React from Facebook. Vue is easier. I give up, I'm going to
-learn Java and develop mobiles apps for Andoird, but now this is made with Kotlin. Oh, PHP 8 is coming out!
+The ticket says “simple.” I said it was simple too. Out loud. Where people could hear.
 
-\- So, to do this, you need to trigger an event and create a Listener that will place a Job in the Redis queue.
+**10:40**
 
-Got it! But what is a Listener? And Job? And this Redis guy?
+Quick call.
 
-Man, how I hate working with templates. What a boring task.
+— So for this you’ll want to fire an event and add a Listener that puts a Job on the Redis queue.
 
-The bad thing about working with products is that it seems like we're always doing the same thing, there isn't that
-diversity of tasks. On the other hand, I don't like jumping from project to project, the code becomes a mess because
-there isn't enough time to do things the best way.
+— Wait! What’s a Listener? And a Job? And who is this Redis guy?
 
-\- Did you see that there is a vacancy paying a lot of money for COBOL programmers?
+**11:05**
 
-I need to refactor this here. This class depends on this one here, which depends on that one there. I think if I touch
-this now I will waste a lot of time. Today I would do this in a completely different way. I'll refactor it.
+The first eighty percent took twenty minutes. I said two days.
 
-Slack notification. I'm not going to see that now, I need to finish this task soon.
+> *“If you’re still writing code by hand in 2026, you’re already behind.”* — 8,400 likes
+
+**11:40**
+
+Four PRs waiting on my review. Mine can wait.
+
+> *“I haven’t read code in months. Why would I?”* — 12,000 likes
+
+**12:30**
+
+`fix: password reset`\
+`fix: password reset (actually)`
+
+**12:55**
+
+I’ll eat after this.
+
+**13:52**
+
+Four hours. The code was right the entire time. I restarted the service.
+
+`fix: restart the service`
+
+> *“AI has made debugging a solved problem.”* — 4,000 likes
+
+**14:03**
+
+I will not be investigating why.
+
+**14:20**
+
+— Hey, when do you think this will be ready?
+
+I said two days. It has been two days.
+
+**14:40**
+
+The agent opened a PR. Small, well described, clean diff. It fixes a bug we don’t have.
+
+> *“We shipped our whole Q3 roadmap with three engineers and an agent.”* — 11,000 likes
+
+**15:20**
+
+The test failed in CI. I ran it again. It passed. I moved on.
+
+**15:45**
+
+— The startup down the road raised eight million. I looked at their website. It’s a form.
+
+**16:10**
+
+This class depends on that one, which depends on another one over there. Today I’d build it completely differently.
+If I touch it now I lose the afternoon.
+
+`wip`\
+`wip 2`\
+`revert: wip 2`
+
+**16:35**
+
+Slack notification. Not now.
 
 Phone rings.
 
-\- Thiago, can you take a look at slack, I need help solving a problem here.
+— Thiago, can you look at Slack, I’m stuck.
 
 OK.
 
-\- I think I got it, I don't need it anymore.
+— Never mind, got it.
 
-I should do something else with my life, try a less stressful profession where I don't have to stay in front of the
-computer all day, talk to people. Although I don't like people that much and here I can do my job quietly, listening to
-music.
+**16:50**
 
-\- Wow, it's already late!
+I did not eat.
 
-I finally managed to finish this task, I can't believe it, I spent too much time on it. I knew I had forgotten
-something, I haven't written the tests yet. Well they say to do that first. I need a coffee. Coffee is over.
+**17:50**
+
+— A customer says he can’t update his password.
+
+What kind of person changes their password on a shopping site at 5:50pm on a Friday.
+
+**17:52**
+
+Works on my computer.
+
+**18:04**
+
+The logs say everything is fine. Either the logs are lying or I am.
+
+**18:10**
+
+— He sent a screenshot in the chat.
+
+![Screenshot of the error](/images/articles/being-a-developer-is-frustrating-error.png){width="511" height="308"}
+
+**18:11**
+
+Oh.
+
+**19:30**
+
+I should do something else for a living. Something less stressful, away from a screen, talking to people. Although I
+don’t like people that much, and here I can work quietly with music on.
+
+I haven’t left this room since this morning. I’m not complaining.
+
+**20:05**
+
+`test: add the tests I said I’d written`
+
+> *“The model writes your tests now. Stop typing.”* — 6,200 likes
+
+**20:15**
+
+I need a coffee.
+
+Coffee is over!
