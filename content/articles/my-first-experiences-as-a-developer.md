@@ -1,66 +1,77 @@
 ---
 title: 'My first experiences as a Developer'
-description: 'Telling a little about the beginning of my programming story and demystifying some beliefs.'
+description: 'I had no computer until I was 18 and picked IT because it looked like it would pay. What the first years actually taught me.'
 date: '2026-07-08'
 author: 'Thiago Alves'
 ---
 
-A layman on the subject, when talking to an experienced developer, may get the (wrong) impression that
-is talking to a NASA engineer (lol). And generally this hides a beginning of a career full of ups and downs,
-uncertainties and difficulties.
+Most developers start this story the same way. A computer at home, a game they wanted to change, a parent who worked
+with technology. Mine doesn’t go like that.
 
-The fact is that every profession has their learning journey: you start from scratch, start learning, move up a level,
-your head explodes and becomes a master at it.
+Until I was 18 the only piece of technology I owned was a phone without a camera. I wasn’t interested in computers.
+I didn’t dislike them either. They were just not part of my life in any direction.
 
-To illustrate that, I am going to share a little about the beginning of my journey with you.
+When I finished high school I had no idea what to do, so I took a technical course in IT. Not because I felt called to
+it. Because I understood there would be more job offers.
 
-## Start of studies
+That was the whole reason. I picked the thing that looked most likely to pay.
 
-I kind of parachuted into the area. I was never very interested in technology. Until I was 18, the only technological
-thing I had was a cell phone without camera.
+## The course
 
-When I finished high school, I still didn't know what career to pursue. So I decided to take a technical course in
-IT, simply because I understood that there would be more job offers.
+First semester: maintenance, networking, programming. I don’t think I need to say which one held my attention.
 
-In the first semester, maintenance, networking and programming classes began. I don’t need to say which one caught
-my attention the most, right? I'm good at mathematics, and I've always had reasonable logical reasoning, which helped me
-a lot.
+I was good at mathematics and my logical reasoning was reasonable, and for the first time that was useful for something
+other than a test. At the end of the semester I applied for the degree in Systems Analysis and Development. I passed,
+and for a year I did both courses at the same time.
 
-At the end of the first semester I decided that I would apply for the degree course in Systems Analysis and
-Development. I passed and, for one year, I did the two courses at the same time.
+## The internship
 
-## First work experiences
+After the technical course I got an internship at the institution where I studied. First contact with programming
+outside a classroom. First reality check.
 
-After finishing my technical course, I got an internship at the institution I was studying at. It was my first contact
-with programming outside the classroom. The first reality check.
+It was horrible.
 
-Seriously, it was horrible. I simply had no idea what I was doing. It was a lot of new information at the same time.
-And, to make it matters worse, my main task was to maintain a system made by a much more experienced professional than
-me.
+I had no idea what I was doing. Too much new information at once, and my main task was maintaining a system built by
+someone far more experienced than me.
 
-Guess what? It was the best thing that could have ever happened to me. Two and a half years of internship have passed,
-but in just a few months I was already doing everything by myself. It didn't take long for the course classes to
-look "useless" compared to what I was doing out of it. Even so, I chose to complete the course.
+It was the best thing that could have happened.
 
-## Entering the job market
+Nobody explained the codebase to me. I read it. I broke something small and put it back. I found the function that got
+called from everywhere and suddenly understood why the whole thing was shaped the way it was. Within a few months I was
+working on my own. The classes started to look useless next to what I was doing outside them. I finished the course
+anyway.
 
-At the beginning of 2011 I officially entered the job market to work as a developer. The most interesting thing is that
-on my first day at work I received the news that I would work in a different position than the one I applied for and
-with a technology I had never seen in my life.
+It lasted two and a half years. By the end of it I had built real software in several different technologies, and I had
+not yet officially worked a day in the industry. I arrived at my first job already knowing what a real system looks
+like.
 
-I chose to stay and face the challenge. Once again I was very lost, but previous experience, however small it was,
-guaranteed me a very quick evolution.
+## Day one
 
-Since then, a lot has happened. Different companies, projects, technologies, learning. It has been a great journey.
+At the beginning of 2011 I entered the job market properly. On my first day I was told I would be working in a
+different position from the one I had applied for, with a technology I had never seen.
 
-## Then
+I stayed.
 
-The biggest lesson I learned from my career is that we should always try to be involved in projects that take us out of
-our comfort zone. This way we can keep the evolution happening.
+Lost for the second time in two years, and the second time went faster — not because I knew the technology, but
+because I had already survived not knowing something. That’s what the internship actually taught me. Not the
+language. The tolerance.
 
-The intention with this text is to bring a closer view of reality to people who do not understand our work very well.
+## The first years
 
-If you are interested in the area or are starting out, understand that it is very normal for things to not make sense at
-first, but that feeling passes.
+From there it was websites and small apps, one after another, and I was learning new technologies constantly because
+the work kept requiring them.
 
-See you later!
+I was usually the least experienced person in the room, working next to people who had been doing it far longer than
+me. Almost nothing I learned in that period came from a classroom. It came from building something that shipped,
+watching it break in a way nobody had predicted, and fixing it while someone more senior explained what I should have
+seen coming.
+
+That’s the phase that prepared me for the next step in my career.
+
+## If I could talk to that intern
+
+Things don’t always make sense at first, and that isn’t a signal about you. The first years are for learning,
+and for building the resilience to keep going while you’re still confused. The resilience is the part that lasts.
+
+He wouldn’t have believed me. He’d have gone and found out the hard way, which sometimes is the only way it
+works.
