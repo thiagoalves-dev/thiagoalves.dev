@@ -59,6 +59,11 @@ Items marked **MISSING** are gaps in the site today, not things that were checke
 - [ ] `npm run build` clean — the content schema fails loudly on bad frontmatter.
 - [ ] Every page's rendered `<title>` and `<meta name="description">` checked in the browser, not
       assumed from the source.
+- [ ] **Review every article description as a set, not one at a time.** Print them together with
+      their character counts and read them as a search-results page, because that is where they
+      appear. Each one must be 120-160 characters, say something the title does not, and not be a
+      sentence lifted out of the body. A description under 120 characters wastes the space Google
+      gives you; one over 160 is truncated mid-thought.
 - [ ] No placeholder content left. The Spotlight template ships with Planetaria and Spencer Sharp
       text on several pages.
 - [ ] `robots.txt` still permits crawling — a staging-era `Disallow: /` shipped to production is
