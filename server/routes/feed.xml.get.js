@@ -70,18 +70,19 @@ export default defineEventHandler(async (event) => {
   );
 
   const author = {
-    name: 'Spencer Sharp',
-    email: 'spencer@planetaria.tech',
+    name: 'Thiago Alves',
+    email: 'me@thiagoalves.dev',
   };
 
   const feed = new Feed({
     title: author.name,
-    description: 'Your blog description',
+    description:
+      'I’m Thiago, a Brazilian software engineer based in Austin, Texas. I’ve been building software since 2008, and for many years I’ve split my time between leading teams and keeping my hands on the code.',
     author,
     id: siteUrl,
     link: siteUrl,
-    image: `${siteUrl}/favicon.ico`,
-    favicon: `${siteUrl}/favicon.ico`,
+    image: `${siteUrl}/favicon.png`,
+    favicon: `${siteUrl}/favicon.png`,
     copyright: `All rights reserved ${new Date().getFullYear()}`,
     feedLinks: {
       // `feed` v6 reads `feedLinks.rss` when generating the RSS self-link; `rss2` is kept
@@ -91,7 +92,7 @@ export default defineEventHandler(async (event) => {
     },
   });
 
-  const articles = await queryCollection(event, 'articles').order('date', 'DESC').all();
+  const articles = await queryCollection(event, 'journal').order('date', 'DESC').all();
 
   for (const article of articles) {
     const publicUrl = `${siteUrl}${article.path}`;

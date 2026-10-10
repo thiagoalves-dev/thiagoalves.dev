@@ -135,8 +135,8 @@ const socialLinks = [
   { label: 'X', href: 'https://x.com/thiagoalves_dev', icon: resolveComponent('IconX') },
 ];
 
-const { data: articles } = await useAsyncData('home-articles', () =>
-  queryCollection('articles').order('date', 'DESC').all(),
+const { data: articles } = await useAsyncData('home-journal', () =>
+  queryCollection('journal').order('date', 'DESC').all(),
 );
 
 const homeArticles = computed(() => (articles.value ?? []).slice(0, 3));
@@ -152,7 +152,7 @@ const photos = [
 ];
 
 // Drive's /view URL opens the preview page; /uc?export=download starts the download directly.
-const cvUrl = 'https://drive.google.com/uc?export=download&id=1vZ2xtsWwHJ9DRFICN9XbIkUZ88kC2uj6';
+const cvUrl = 'https://drive.google.com/uc?export=download&id=1rSQC8PJKNQvLmxBGmzOSrqVDv0fW6ged';
 
 const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
 

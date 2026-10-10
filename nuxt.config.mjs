@@ -21,6 +21,13 @@ export default defineNuxtConfig({
 
   modules: ['@nuxt/eslint', '@nuxtjs/color-mode', '@nuxt/content', '@nuxt/image'],
 
+  runtimeConfig: {
+    public: {
+      // Canonical origin. Drives absolute URLs for canonicals, OG images, the sitemap and the feed.
+      siteUrl: 'https://thiagoalves.dev',
+    },
+  },
+
   colorMode: {
     classSuffix: '',
   },
@@ -45,7 +52,7 @@ export default defineNuxtConfig({
           // Must be a colour-mode map; a non-string value is used as a raw Shiki theme object.
           // Code blocks are dark in both schemes, so `default` alone covers it.
           theme: { default: spotlightPrism },
-          langs: ['js', 'jsx', 'ts', 'tsx', 'c', 'rust', 'php', 'css', 'html', 'json', 'bash', 'shell', 'diff', 'md'],
+          langs: ['js', 'jsx', 'ts', 'tsx', 'c', 'rust', 'php', 'python', 'css', 'html', 'json', 'bash', 'shell', 'diff', 'md'],
         },
       },
     },

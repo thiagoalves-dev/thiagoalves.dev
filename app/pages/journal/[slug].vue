@@ -12,14 +12,17 @@
 <script setup>
 const route = useRoute();
 
-const { data: article } = await useAsyncData(route.path, () => queryCollection('articles').path(route.path).first());
+const { data: article } = await useAsyncData(route.path, () => queryCollection('journal').path(route.path).first());
 
 if (!article.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Article not found', fatal: true });
+  throw createError({ statusCode: 404, statusMessage: 'Entry not found', fatal: true });
 }
 
 useSeoMeta({
   title: () => article.value?.title,
   description: () => article.value?.description,
+  ogTitle: () => article.value?.title,
+  ogDescription: () => article.value?.description,
+  ogType: 'article',
 });
 </script>

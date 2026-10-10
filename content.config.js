@@ -2,9 +2,9 @@ import { defineCollection, defineContentConfig, z } from '@nuxt/content';
 
 export default defineContentConfig({
   collections: {
-    articles: defineCollection({
+    journal: defineCollection({
       type: 'page',
-      source: 'articles/*.md',
+      source: 'journal/*.md',
       schema: z.object({
         title: z.string(),
         description: z.string(),

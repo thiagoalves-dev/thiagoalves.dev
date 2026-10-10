@@ -1,7 +1,7 @@
 <template>
   <SimpleLayout
-    title="Writing on software design, company building, and the aerospace industry."
-    intro="All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order."
+    title="A journal on software engineering, leading teams, and whatever else is on my mind."
+    intro="Thoughts, lessons, and observations across work and life, in chronological order."
   >
     <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
       <div class="flex max-w-3xl flex-col space-y-16">
@@ -26,13 +26,17 @@
 </template>
 
 <script setup>
-const { data: articles } = await useAsyncData('articles', () =>
-  queryCollection('articles').order('date', 'DESC').all(),
+const { data: articles } = await useAsyncData('journal', () =>
+  queryCollection('journal').order('date', 'DESC').all(),
 );
 
+const journalDescription =
+  'Thoughts, lessons, and observations across work and life, in chronological order.';
+
 useSeoMeta({
-  title: 'Articles',
-  description:
-    'All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order.',
+  title: 'Journal',
+  description: journalDescription,
+  ogTitle: 'Journal',
+  ogDescription: journalDescription,
 });
 </script>

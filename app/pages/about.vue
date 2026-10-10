@@ -83,9 +83,14 @@ const socialLinks = [
 
 const email = 'me@thiagoalves.dev';
 
+const aboutDescription =
+  'I’m Thiago Alves, a software engineer and engineering lead in Austin, Texas. I started out in a small town in southern Brazil and have been building software ever since.';
+
 useSeoMeta({
   title: 'About',
-  description:
-    'I’m Thiago Alves, a software engineer and engineering lead in Austin, Texas. I started out in a small town in southern Brazil and have been building software ever since.',
+  description: aboutDescription,
+  ogTitle: 'About',
+  ogDescription: aboutDescription,
+  ogType: 'profile',
 });
 </script>

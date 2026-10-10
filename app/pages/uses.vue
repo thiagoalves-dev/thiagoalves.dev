@@ -120,5 +120,7 @@
 useSeoMeta({
   title: 'Uses',
   description: 'Software I use, gadgets I love, and other things I recommend.',
+  ogTitle: 'Uses',
+  ogDescription: 'Software I use, gadgets I love, and other things I recommend.',
 });
 </script>
