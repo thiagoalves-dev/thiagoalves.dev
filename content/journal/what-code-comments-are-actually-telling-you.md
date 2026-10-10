@@ -1,7 +1,7 @@
 ---
 title: 'What code comments are actually telling you'
 description: 'A comment explaining what code does is usually an apology for not writing it clearly. The three comments actually worth keeping, and why the rest lie.'
-date: '2026-04-15'
+date: '2026-05-27'
 author: 'Thiago Alves'
 ---
 
