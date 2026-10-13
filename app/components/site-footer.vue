@@ -28,7 +28,7 @@
 const navLinks = [
   { href: '/about', label: 'About' },
   { href: '/journal', label: 'Journal' },
-  { href: '/uses', label: 'Uses' },
+  { href: '/setup', label: 'Setup' },
 ];
 
 const year = new Date().getFullYear();

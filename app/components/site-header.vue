@@ -169,7 +169,7 @@ import { Popover, PopoverButton, PopoverOverlay, PopoverPanel, TransitionRoot } 
 const navigation = [
   { href: '/about', label: 'About' },
   { href: '/journal', label: 'Journal' },
-  { href: '/uses', label: 'Uses' },
+  { href: '/setup', label: 'Setup' },
 ];
 
 const route = useRoute();

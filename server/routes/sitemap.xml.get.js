@@ -1,7 +1,7 @@
 import { queryCollection } from '@nuxt/content/server';
 
 // Static routes that carry no content collection. Post URLs come from the `journal` collection.
-const STATIC_PATHS = ['/', '/about', '/uses', '/journal'];
+const STATIC_PATHS = ['/', '/about', '/setup', '/journal'];
 
 const escapeXml = (value) =>
   String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
