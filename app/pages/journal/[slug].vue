@@ -25,4 +25,10 @@ useSeoMeta({
   ogDescription: () => article.value?.description,
   ogType: 'article',
 });
+
+const siteUrl = String(useRuntimeConfig().public?.siteUrl ?? '').replace(/\/+$/, '');
+
+useHead({
+  script: [jsonLdScript([blogPostingSchema(siteUrl, article.value), personSchema(siteUrl)])],
+});
 </script>

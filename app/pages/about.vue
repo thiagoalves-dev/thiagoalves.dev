@@ -93,4 +93,10 @@ useSeoMeta({
   ogDescription: aboutDescription,
   ogType: 'profile',
 });
+
+const siteUrl = String(useRuntimeConfig().public?.siteUrl ?? '').replace(/\/+$/, '');
+
+useHead({
+  script: [jsonLdScript([personSchema(siteUrl)])],
+});
 </script>
