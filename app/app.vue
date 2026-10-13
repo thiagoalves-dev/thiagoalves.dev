@@ -14,8 +14,8 @@ const siteDescription =
   'I\u2019m Thiago, a Brazilian software engineer based in Austin, Texas. I\u2019ve been building software since 2008, and for many years I\u2019ve split my time between leading teams and keeping my hands on the code.';
 
 const canonicalUrl = computed(() => `${siteUrl}${route.path}`);
-// Placeholder until a 1200x630 sharing image exists — see projects/thiagoalves.dev/launch-checklist.md.
-const ogImage = `${siteUrl}/images/portrait.jpg`;
+// 1200x630 sharing card (avatar + name + tagline), used on every page.
+const ogImage = `${siteUrl}/images/og-image.png`;
 
 useHead({
   titleTemplate: (title) => (title ? `${title} - Thiago Alves` : siteTitle),
@@ -48,6 +48,9 @@ useSeoMeta({
   ogSiteName: 'Thiago Alves',
   ogUrl: canonicalUrl,
   ogImage,
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageAlt: 'Thiago Alves — Software engineer, tech lead, and amateur pitmaster.',
   twitterCard: 'summary_large_image',
   twitterImage: ogImage,
 });
