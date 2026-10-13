@@ -1,6 +1,6 @@
 ---
 title: 'Coffee is over'
-description: 'One working day, hour by hour, with the internet talking over it.'
+description: 'One working day, hour by hour, with the internet talking over it. What being a software engineer actually feels like when nothing goes according to plan.'
 date: '2026-08-12'
 author: 'Thiago Alves'
 ---

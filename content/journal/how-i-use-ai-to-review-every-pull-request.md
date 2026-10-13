@@ -1,6 +1,6 @@
 ---
 title: 'How I use AI to review every pull request'
-description: 'An agent reviews every pull request before a person does. What it looks for, what it refuses to say, and why a false blocking finding costs more than a missed bug.'
+description: 'An agent reviews every pull request before a person does. What it checks, what it refuses to say, and why a false blocking finding costs more than a bug.'
 date: '2026-09-09'
 author: 'Thiago Alves'
 ---
