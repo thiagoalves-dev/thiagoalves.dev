@@ -1,13 +1,10 @@
-version: '3.7'
-
 services:
-
     node:
         container_name: 'thiagoalves.dev'
         build: .docker/node
         volumes:
             - '.:/var/www/html/thiagoalves.dev'
         ports:
-            - '3000:3000'
+            - '1000:1000'
         command: >
-            bash -c "yarn install && yarn dev"
+            bash -c "npm install && npm run dev -- --host --port 1000"
