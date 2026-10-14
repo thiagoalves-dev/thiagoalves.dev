@@ -9,9 +9,9 @@ const route = useRoute();
 const config = useRuntimeConfig();
 const siteUrl = String(config.public?.siteUrl ?? '').replace(/\/+$/, '');
 
-const siteTitle = 'Thiago Alves - Software engineer, tech lead, and amateur pitmaster';
+const siteTitle = 'Thiago Alves - Software engineer, tech lead, pitmaster';
 const siteDescription =
-  'I\u2019m Thiago, a Brazilian software engineer based in Austin, Texas. I\u2019ve been building software since 2008, and for many years I\u2019ve split my time between leading teams and keeping my hands on the code.';
+  'Thiago Alves is a Brazilian software engineer and tech lead in Austin, Texas, writing about building software, leading teams, and working with AI.';
 
 const canonicalUrl = computed(() => `${siteUrl}${route.path}`);
 // 1200x630 sharing card (avatar + name + tagline), used on every page.

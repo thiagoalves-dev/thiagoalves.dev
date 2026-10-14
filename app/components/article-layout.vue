@@ -20,7 +20,7 @@
             </h1>
             <time
               :datetime="article.date"
-              class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500"
+              class="order-first flex items-center text-base text-zinc-500 dark:text-zinc-400"
             >
               <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" />
               <span class="ml-3">{{ formatDate(article.date) }}</span>

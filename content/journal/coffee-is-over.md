@@ -35,7 +35,7 @@ The first eighty percent took twenty minutes. I said two days.
 
 **11:40**
 
-Four PRs waiting on my review. Mine can wait.
+Four PRs waiting on [my review](/journal/how-i-use-ai-to-review-every-pull-request). Mine can wait.
 
 > *“I haven’t read code in months. Why would I?”* — 12,000 likes
 
@@ -109,11 +109,11 @@ I did not eat.
 
 — A customer says he can’t update his password.
 
-What kind of person changes their password on a shopping site at 5:50pm on a Friday.
+What kind of person changes their password on a shopping site at 5:50pm on a Friday?
 
 **17:52**
 
-Works on my computer.
+Works on my machine.
 
 **18:04**
 

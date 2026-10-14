@@ -9,10 +9,10 @@ Every developer has inherited code decorated with comments like "do not touch th
 They are funny right up until you have to fix a production incident at 2 AM, and the comment is the only thing
 slowing you down.
 
-Behind most comments is a good intention and a bad habit. In nearly twenty years of reading and reviewing code—and
-more recently, setting up [automated review passes](/journal/how-i-use-ai-to-review-every-pull-request)—I have almost
+Behind most comments is a good intention and a bad habit. In nearly twenty years of reading and reviewing code — and
+more recently, setting up [automated review passes](/journal/how-i-use-ai-to-review-every-pull-request) — I have almost
 never been saved by a comment that explained *what* a method was doing. Most of the time, the comment was an
-apology for writing code that couldn't explain itself—or worse, a quiet lie.
+apology for writing code that couldn't explain itself — or worse, a quiet lie.
 
 ## The comment that tells you what the code already says
 
@@ -53,7 +53,7 @@ public function getCurrentDate(): string {
 }
 ```
 
-This starts as a small refactor: someone changed `getCurrentMonth()` to return a full date, updated the format string,
+This started as a small refactor: someone changed `getCurrentMonth()` to return a full date, updated the format string,
 ran the tests, opened the pull request, and merged it. Nobody updated the comment.
 
 Six months later, an engineer fixing a billing bug reads the comment, trusts it, and spends two hours tracing why
@@ -89,7 +89,7 @@ Use the comment to mark the hack and tie it to a tracked ticket. Then delete bot
 
 ### 3. Framework configuration files
 
-Configuration files that ship with frameworks—like Laravel's `config/` directory—are settings dashboards, not
+Configuration files that ship with frameworks — like Laravel's `config/` directory — are settings dashboards, not
 domain logic. Comments that explain valid options and their trade-offs make sense because nobody reads a config
 file to understand an algorithm:
 
@@ -110,5 +110,5 @@ you the code is dense, the naming is ambiguous, or the function is doing three t
 
 Extract the private method. Name the boolean variable. Give the parameter a real type.
 
-If after doing all of that, someone reading the code would still ask "why would anyone do this?", write the comment.
+If, after doing all of that, someone reading the code would still ask "why would anyone do this?", write the comment.
 Otherwise, let the code speak for itself.

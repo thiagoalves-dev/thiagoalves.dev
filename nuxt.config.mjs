@@ -19,13 +19,19 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
-  modules: ['@nuxt/eslint', '@nuxtjs/color-mode', '@nuxt/content', '@nuxt/image'],
+  modules: ['@nuxt/eslint', '@nuxtjs/color-mode', '@nuxt/content', '@nuxt/image', 'nuxt-gtag'],
 
   runtimeConfig: {
     public: {
       // Canonical origin. Drives absolute URLs for canonicals, OG images, the sitemap and the feed.
       siteUrl: 'https://thiagoalves.dev',
     },
+  },
+
+  gtag: {
+    // Google Analytics. The ID is a Netlify env var, so local builds (no ID) send nothing.
+    enabled: Boolean(process.env.GOOGLE_ANALYTICS_ID),
+    id: process.env.GOOGLE_ANALYTICS_ID,
   },
 
   colorMode: {

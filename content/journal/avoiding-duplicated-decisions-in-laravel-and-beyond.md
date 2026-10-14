@@ -5,7 +5,7 @@ date: '2026-06-10'
 author: 'Thiago Alves'
 ---
 
-The duplication that hurts a growing codebase isn't copy-pasted functions. Those are easy to see and easy to delete.
+The duplication that hurts a growing codebase isn't copy-pasted functions. Those are [easy to see](/journal/how-i-use-ai-to-review-every-pull-request) and easy to delete.
 The expensive kind is the same *decision* made in four different places — what counts as a visible record, what a
 status means to the person looking at it, which fields an endpoint returns. Nobody copied anything. Four people
 independently wrote code that agreed on the day it was written and stopped agreeing in March.
@@ -13,8 +13,8 @@ independently wrote code that agreed on the day it was written and stopped agree
 The examples below use a support desk API — tickets, accounts, agents, customers — because the shape is easier to
 follow than whatever domain you happen to be in.
 
-The code is PHP and Laravel because that’s what I work in. The ideas aren’t. A template method and a strategy are
-the same shape in any language with classes, and you’ll have your own version of a resource and a validation rule.
+The code is PHP and Laravel because that's what I work in. The ideas aren't. A template method and a strategy are
+the same shape in any language with classes, and you'll have your own version of a resource and a validation rule.
 
 ## Breaking the repository layer into view classes
 
@@ -149,7 +149,7 @@ more, filtered against a blocklist so nobody can ask for `password` or `token`.
 
 One resource per model. Every variation is a query parameter instead of a class.
 
-## Enums with behaviour
+## Enums with behavior
 
 The third place is the smallest and does the most damage. A ticket has a status. What does the status *mean*?
 
@@ -165,6 +165,13 @@ enum TicketStatus: string
     case AWAITING_CUSTOMER = 'awaiting_customer';
     case AWAITING_AGENT    = 'awaiting_agent';
     case PENDING_REVIEW    = 'pending_review';
+    case PENDING_SIGNATURE = 'pending_signature';
+    case PENDING_UPLOAD    = 'pending_upload';
+
+    private const NOTHING_TO_DO    = 'Nothing to do';
+    private const WAITING_ON_THEM  = 'Waiting on the customer';
+    private const REPLY_NOW        = 'Reply now';
+    private const REVIEW_AND_CLOSE = 'Review and close';
 
     public function callToAction(Ticket $ticket, User $user): string
     {
@@ -180,7 +187,9 @@ enum TicketStatus: string
     private function agentAction(): string
     {
         return match ($this) {
-            self::AWAITING_CUSTOMER => self::WAITING_ON_THEM,
+            self::AWAITING_CUSTOMER,
+            self::PENDING_SIGNATURE,
+            self::PENDING_UPLOAD    => self::WAITING_ON_THEM,
             self::AWAITING_AGENT    => self::REPLY_NOW,
             self::PENDING_REVIEW    => self::REVIEW_AND_CLOSE,
         };
@@ -215,7 +224,7 @@ duplication I've removed in recent years came from remembering that.
 
 ## Four smaller ones
 
-**Model traits.** Behaviour shared by several models, without a base class that accumulates everything forever. The
+**Model traits.** Behavior shared by several models, without a base class that accumulates everything forever. The
 models that have children use this one; the rest never see it.
 
 ```php
@@ -297,7 +306,7 @@ The view base runs the scoping, so a new view can't forget it. The resource decl
 endpoint can't quietly invent its own. The enum answers what a status means, so a new consumer can't disagree with the
 old ones.
 
-None of them stop you writing duplicated code. They make the duplicated version harder to write than the correct one,
+None of them stop you from writing duplicated code. They make the duplicated version harder to write than the correct one,
 which is the only mechanism I've seen survive a team, a deadline and a developer who joined last week.
 
 Duplication isn't repeated lines. It's repeated decisions. Find the decision that must never be made twice, and move

@@ -16,7 +16,7 @@
                 {{ link.label }}
               </NuxtLink>
             </div>
-            <p class="text-sm text-zinc-400 dark:text-zinc-500">&copy; {{ year }} Thiago Alves. All rights reserved.</p>
+            <p class="text-sm text-zinc-500 dark:text-zinc-400">&copy; {{ year }} Thiago Alves. All rights reserved.</p>
           </div>
         </ContainerInner>
       </div>

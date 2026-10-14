@@ -1,5 +1,5 @@
 ---
-title: 'My first experiences as a Developer'
+title: 'My first experiences as a developer'
 description: 'I had no computer until I was 18 and picked IT because it looked like it would pay. What the first years actually taught me.'
 date: '2026-07-08'
 author: 'Thiago Alves'
@@ -8,7 +8,7 @@ author: 'Thiago Alves'
 Most developers start this story the same way. A computer at home, a game they wanted to change, a parent who worked
 with technology. Mine doesn’t go like that.
 
-Until I was 18 the only piece of technology I owned was a phone without a camera. I wasn’t interested in computers.
+Until I was eighteen the only piece of technology I owned was a phone without a camera. I wasn’t interested in computers.
 I didn’t dislike them either. They were just not part of my life in any direction.
 
 When I finished high school I had no idea what to do, so I took a technical course in IT. Not because I felt called to
@@ -20,8 +20,8 @@ That was the whole reason. I picked the thing that looked most likely to pay.
 
 First semester: maintenance, networking, programming. I don’t think I need to say which one held my attention.
 
-I was good at mathematics and my logical reasoning was reasonable, and for the first time that was useful for something
-other than a test. At the end of the semester I applied for the degree in Systems Analysis and Development. I passed,
+I was good at mathematics and my logical reasoning was decent, and for the first time that was useful for something
+other than a test. At the end of the semester I applied for [the degree in Systems Analysis and Development](/journal/is-a-programming-degree-still-worth-it-in-the-age-of-ai). I passed,
 and for a year I did both courses at the same time.
 
 ## The internship

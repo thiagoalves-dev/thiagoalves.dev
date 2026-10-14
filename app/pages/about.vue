@@ -31,7 +31,7 @@
           <p>
             As the projects got bigger and more complicated, I got more interested in how software gets built well.
             Better practices, testing, code review, cloud infrastructure, the methodologies modern teams run on. That
-            interest is what moved me into leadership, and I’ve been a tech lead in one form or another.
+            interest is what moved me into leadership, and I’ve been a tech lead in one form or another ever since.
           </p>
           <p>
             In 2023 I came to the US to work on my English. My wife and our two cats came with me. What started as
@@ -84,7 +84,7 @@ const socialLinks = [
 const email = 'me@thiagoalves.dev';
 
 const aboutDescription =
-  'I’m Thiago Alves, a software engineer and engineering lead in Austin, Texas. I started out in a small town in southern Brazil and have been building software ever since.';
+  'Thiago Alves is a software engineer and engineering lead in Austin, Texas, who started out in a small town in southern Brazil and never stopped building.';
 
 useSeoMeta({
   title: 'About',

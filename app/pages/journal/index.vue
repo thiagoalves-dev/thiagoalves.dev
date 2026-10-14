@@ -1,7 +1,7 @@
 <template>
   <SimpleLayout
     title="A journal on software engineering, leading teams, and whatever else is on my mind."
-    intro="Thoughts, lessons, and observations across work and life, in chronological order."
+    intro="Thoughts, lessons, and observations across work and life, newest first."
   >
     <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
       <div class="flex max-w-3xl flex-col space-y-16">
@@ -31,7 +31,7 @@ const { data: articles } = await useAsyncData('journal', () =>
 );
 
 const journalDescription =
-  'Thoughts, lessons, and observations across work and life, in chronological order.';
+  'Notes on software engineering, leading teams, and working with AI, plus whatever else is on my mind. Lessons from work and life, newest first.';
 
 useSeoMeta({
   title: 'Journal',

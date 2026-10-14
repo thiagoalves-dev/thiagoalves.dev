@@ -9,8 +9,8 @@ When I decided to become a programmer eighteen years ago, college felt like the 
 I didn't own a computer until I was eighteen, and the industry seemed like an exclusive club where the
 rules were only handed out in lecture halls.
 
-I did the whole academic run: a technical diploma followed by a three-year associate degree in systems analysis
-and development. Over 3,000 hours sitting in classrooms.
+I did the whole academic run: a technical diploma followed by a three-year associate degree in Systems Analysis
+and Development. Over 3,000 hours sitting in classrooms.
 
 Even before AI, my takeaway was that universities moved too slowly, spent too much time on filler curriculum,
 and taught almost nothing about how real software gets built and maintained in production.
@@ -50,8 +50,8 @@ whiteboard. I look for:
    know where the tenant boundaries are, and how authentication actually flows between services?
 2. **Skeptical review:** AI generates confident, plausible code that is frequently insecure, inefficient, or subtly
    broken. Can you audit that code, catch the hidden trap, and push back? As I wrote in [how I use AI to review every
-   pull request](/journal/how-i-use-ai-to-review-every-pull-request), a false sense of security in automated code
-   is far more dangerous than an obvious syntax error.
+   pull request](/journal/how-i-use-ai-to-review-every-pull-request), even an automated reviewer has to prove its
+   findings before anyone should trust them.
 3. **Execution under real constraints:** What happens when an external API times out? How do you migrate a database
    table with millions of rows without downtime? How do you trace a production bug when the logs are silent?
 
@@ -65,8 +65,8 @@ terminal:
 
 ### 1. Build real products from day one
 
-Don't spend six months reading theory before writing your first line of code. Pick a concrete problem—a tool for
-a local business, an integration you wish existed, a SaaS prototype—and build it.
+Don't spend six months reading theory before writing your first line of code. Pick a concrete problem — a tool for
+a local business, an integration you wish existed, a SaaS prototype — and build it.
 
 Use AI to move fast, but never paste code you cannot explain. Make the model explain the trade-offs: *"Why did
 you choose this database schema over a normalized structure? What happens to this queue if the worker crashes

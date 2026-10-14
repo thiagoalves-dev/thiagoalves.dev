@@ -29,6 +29,8 @@ useSeoMeta({
 const siteUrl = String(useRuntimeConfig().public?.siteUrl ?? '').replace(/\/+$/, '');
 
 useHead({
+  // Long titles drop the " - Thiago Alves" suffix so search results don't truncate them (~60 chars).
+  titleTemplate: (title) => (title && title.length + ' - Thiago Alves'.length > 60 ? title : `${title} - Thiago Alves`),
   script: [jsonLdScript([blogPostingSchema(siteUrl, article.value), personSchema(siteUrl)])],
 });
 </script>

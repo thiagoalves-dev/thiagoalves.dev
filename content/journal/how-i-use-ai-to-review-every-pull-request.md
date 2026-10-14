@@ -25,7 +25,7 @@ argue in.
 written down somewhere — and if they are not written down, the agent is the forcing function that makes you write
 them.
 
-**Intent** is the human. Should this exist? Is this the right trade? Does the product actually want this behaviour?
+**Intent** is the human. Should this exist? Is this the right trade? Does the product actually want this behavior?
 No model has the context to answer that, and pretending otherwise is how you end up with a rubber stamp.
 
 The ordering matters. If the design is wrong, a comment about a variable name is worse than useless — it implies the
@@ -50,7 +50,7 @@ preference. That conversation was overdue on my team by about four years.
 the things that have bitten you.
 
 Mine are specific: data crossing a tenant boundary, a new structure built parallel to an entity that already exists,
-authorization checked at one of the two levels it needs, a method or table duplicating one already in the codebase,
+authorization checked at one of the two levels it needs, a method or table [duplicating one already in the codebase](/journal/avoiding-duplicated-decisions-in-laravel-and-beyond),
 and anything on the repository's list of banned patterns.
 
 That list came from production incidents and from review comments I found myself writing repeatedly. It is not a
@@ -113,8 +113,8 @@ is still in the diff, the verdict still reflects it.
 
 A reviewer nobody can overrule is a tyrant, and one anybody can overrule is decoration.
 
-So dismissals are honoured: if a maintainer says a finding is wrong, the re-review lists it under dismissed and does
-not raise it again. That single behaviour did more for adoption than any improvement to review quality, because it
+So dismissals are honored: if a maintainer says a finding is wrong, the re-review lists it under dismissed and does
+not raise it again. That single behavior did more for adoption than any improvement to review quality, because it
 turned the bot from something that happens to you into something you can answer.
 
 The list of people who can dismiss is built in code, not decided by the model, and it excludes two groups: other
