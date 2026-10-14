@@ -15,8 +15,9 @@ Before editing, read:
 
 1. **Keep `nuxt` pinned to exactly `4.5.2`.** 4.6.1 returns a 500 on `/` in production builds. Don't
    loosen the version or let an update bump it without building and loading every page first.
-2. **Keep `content.experimental.sqliteConnector: 'native'`.** Without it Nuxt Content uses
-   `better-sqlite3`, whose native binary goes stale in Netlify's build cache and fails the build.
+2. **Keep `content.experimental.sqliteConnector: 'native'`.** Without it Nuxt Content falls back
+   to `better-sqlite3`, which is not installed (its native binary went stale in Netlify's build cache
+   and failed the build).
 3. **The template is the reference for layout and styling.** A visual change matches what Spotlight
    does unless the change is deliberately a departure from it. Compare the two side by side (see
    context.md).

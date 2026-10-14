@@ -7,17 +7,12 @@ Built with Nuxt 4, Vue 3, Tailwind CSS 4 and Nuxt Content 3. The design is the
 
 ## Running it locally
 
-Requires Node 24 (what production builds with).
+Requires Node 24, what production builds with. `.nvmrc` pins it for [nvm](https://github.com/nvm-sh/nvm).
 
 ```bash
+nvm use
 npm install
 npm run dev        # http://localhost:1001
-```
-
-Or with Docker, which needs nothing installed but Docker itself:
-
-```bash
-docker compose up  # http://localhost:1000
 ```
 
 Other scripts:
