@@ -29,13 +29,13 @@
 
   <!--
     Departure from the template: its strip is a fixed, centred row clipped at both edges, so on a
-    phone only one photo is fully visible and nothing can be scrolled. This one swipes, opening on
-    the middle photo, and stops once the first or last photo is fully in view. The auto margins on
-    the end photos centre the row when it fits the screen without scrolling.
+    phone only one photo is fully visible and nothing can be scrolled. This one swipes, opens on the
+    middle photo, and stops once the first or last photo is fully in view. The auto margins on the
+    end photos centre the row when it fits the screen without scrolling.
   -->
   <div class="mt-16 sm:mt-20">
     <div
-      ref="photoStrip"
+      data-photo-strip
       tabindex="0"
       aria-label="Photos"
       class="relative -my-4 flex snap-x snap-mandatory gap-5 overflow-x-auto px-4 py-4 [scrollbar-width:none] focus:outline-none sm:gap-8 sm:px-8 [&::-webkit-scrollbar]:hidden"
@@ -168,19 +168,21 @@ const cvUrl = 'https://drive.google.com/uc?export=download&id=1rSQC8PJKNQvLmxBGm
 
 const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
 
-const photoStrip = ref(null);
+// Scrolls the photo strip so its middle photo is centred. Plain text, not a function's source,
+// because it also ships as an inline script and the server build rewrites `document` in compiled
+// code (to `void 0`), which would leave the inline copy inert.
+const centrePhotoStrip = `(function () {
+  var strip = document.querySelector('[data-photo-strip]');
+  var photo = strip && strip.children[Math.floor(strip.children.length / 2)];
+  if (photo) strip.scrollLeft = photo.offsetLeft - (strip.clientWidth - photo.clientWidth) / 2;
+})();`;
 
-// Opens the strip on the middle photo, as the template's centred row shows it.
-function centrePhoto(index) {
-  const strip = photoStrip.value;
-  const photo = strip?.children[index];
-  if (!photo) return;
-  strip.scrollTo({ left: photo.offsetLeft - (strip.clientWidth - photo.clientWidth) / 2, behavior: 'instant' });
-}
+// On a full page load the server-rendered strip is painted long before Vue hydrates, so centring it
+// from onMounted alone makes it visibly jump. The inline script at the end of <body> runs before the
+// first paint instead. On in-app navigation onMounted covers it, also before the browser paints.
+useHead({ script: [{ key: 'centre-photo-strip', innerHTML: centrePhotoStrip, tagPosition: 'bodyClose' }] });
 
-onMounted(() => {
-  centrePhoto(Math.floor(photos.length / 2));
-});
+onMounted(() => new Function(centrePhotoStrip)());
 
 const resume = [
   {
