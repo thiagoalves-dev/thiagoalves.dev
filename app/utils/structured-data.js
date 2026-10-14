@@ -28,6 +28,8 @@ export function blogPostingSchema(siteUrl, article) {
     headline: article.title,
     description: article.description,
     datePublished: article.date,
+    // Recommended by Google. Articles carry no separate "updated" date, so it matches datePublished.
+    dateModified: article.date,
     url,
     mainEntityOfPage: url,
     image: `${siteUrl}/images/og-image.png`,
