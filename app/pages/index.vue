@@ -27,13 +27,24 @@
     </div>
   </Container>
 
+  <!--
+    Departure from the template: its strip is a fixed, centred row clipped at both edges, so on a
+    phone only one photo is fully visible and nothing can be scrolled. This one swipes, opening on
+    the middle photo, and stops once the first or last photo is fully in view. The auto margins on
+    the end photos centre the row when it fits the screen without scrolling.
+  -->
   <div class="mt-16 sm:mt-20">
-    <div class="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+    <div
+      ref="photoStrip"
+      tabindex="0"
+      aria-label="Photos"
+      class="relative -my-4 flex snap-x snap-mandatory gap-5 overflow-x-auto px-4 py-4 [scrollbar-width:none] focus:outline-none sm:gap-8 sm:px-8 [&::-webkit-scrollbar]:hidden"
+    >
       <div
         v-for="(image, imageIndex) in photos"
         :key="image.src"
         :class="[
-          'group relative w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
+          'group relative w-64 flex-none snap-center overflow-hidden rounded-xl bg-zinc-100 first:ml-auto last:mr-auto sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
           rotations[imageIndex % rotations.length],
         ]"
       >
@@ -43,17 +54,18 @@
             :width="image.width"
             :height="image.height"
             alt=""
-            sizes="176px sm:288px"
+            sizes="256px sm:288px"
             class="absolute inset-0 h-full w-full object-cover saturate-[0.7] sepia-[0.25] contrast-[1.05]"
           />
         </div>
 
         <!--
-          Custom hover caption. It lives INSIDE the photo because the strip wrapper is
-          overflow-hidden — a tooltip positioned outside the image would be clipped.
+          Caption. It lives INSIDE the photo because the strip clips its overflow — a tooltip
+          positioned outside the image would be cut off. Shown on hover with a mouse; always shown on
+          touch screens, which have no hover.
         -->
         <div
-          class="pointer-events-none absolute inset-x-0 bottom-0 translate-y-2 bg-gradient-to-t from-zinc-900/80 to-transparent px-3 pt-8 pb-3 opacity-0 transition duration-200 ease-out group-hover:translate-y-0 group-hover:opacity-100 sm:px-4 sm:pb-4"
+          class="pointer-events-none absolute inset-x-0 bottom-0 translate-y-2 bg-gradient-to-t from-zinc-900/80 to-transparent px-3 pt-8 pb-3 opacity-0 transition duration-200 ease-out group-hover:translate-y-0 group-hover:opacity-100 pointer-coarse:translate-y-0 pointer-coarse:opacity-100 sm:px-4 sm:pb-4"
         >
           <p class="text-xs font-medium text-white sm:text-sm">{{ image.caption }}</p>
         </div>
@@ -155,6 +167,20 @@ const photos = [
 const cvUrl = 'https://drive.google.com/uc?export=download&id=1rSQC8PJKNQvLmxBGmzOSrqVDv0fW6ged';
 
 const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
+
+const photoStrip = ref(null);
+
+// Opens the strip on the middle photo, as the template's centred row shows it.
+function centrePhoto(index) {
+  const strip = photoStrip.value;
+  const photo = strip?.children[index];
+  if (!photo) return;
+  strip.scrollTo({ left: photo.offsetLeft - (strip.clientWidth - photo.clientWidth) / 2, behavior: 'instant' });
+}
+
+onMounted(() => {
+  centrePhoto(Math.floor(photos.length / 2));
+});
 
 const resume = [
   {
