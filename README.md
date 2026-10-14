@@ -1,75 +1,92 @@
-# Nuxt Minimal Starter
+# thiagoalves.dev
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Source for [thiagoalves.dev](https://thiagoalves.dev), the personal site and journal of Thiago Alves.
 
-## Setup
+Built with Nuxt 4, Vue 3, Tailwind CSS 4 and Nuxt Content 3. The design is the
+[Tailwind Plus](https://tailwindcss.com/plus) **Spotlight** template, ported from Next.js to Nuxt.
 
-Make sure to install dependencies:
+## Running it locally
+
+Requires Node 24 (what production builds with).
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+npm run dev        # http://localhost:1001
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Or with Docker, which needs nothing installed but Docker itself:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+docker compose up  # http://localhost:1000
 ```
 
-## Production
+Other scripts:
 
-Build the application for production:
+| Command           | What it does                        |
+| ----------------- | ----------------------------------- |
+| `npm run build`   | Production build                    |
+| `npm run preview` | Serves the production build locally |
 
-```bash
-# npm
-npm run build
+## Project layout
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+```
+app/
+  app.vue            site-wide <head>: title template, default description, Open Graph, canonical
+  pages/             one file per route: /, /about, /setup, /journal, /journal/[slug]
+  components/        UI pieces ported from the template (cards, containers, header, footer, icons)
+  layouts/           the single default layout
+  plugins/           client-only behaviour: theme sync, previous-route tracking
+  utils/             date formatting, JSON-LD structured data
+content/journal/     the articles, one Markdown file each
+server/routes/       /feed.xml (RSS) and /sitemap.xml
+public/              static files: favicon, robots.txt, images
+typography.js        prose styles, copied from the template
+shiki-theme.js       code-highlighting theme that matches the template's Prism colours
 ```
 
-Locally preview production build:
+## Writing an article
 
-```bash
-# npm
-npm run preview
+Add a Markdown file to `content/journal/`. The file name is the URL slug:
+`content/journal/my-post.md` → `/journal/my-post`.
 
-# pnpm
-pnpm preview
+Every article needs this frontmatter, and the build fails if any field is missing:
 
-# yarn
-yarn preview
-
-# bun
-bun run preview
+```yaml
+---
+title: 'My post'
+description: 'A 120–160 character summary written for a search result.'
+date: '2026-10-14'
+author: 'Thiago Alves'
+---
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Images live in `public/images/articles/` and take explicit dimensions:
+
+```md
+![What the image shows](/images/articles/my-image.png){width="800" height="450"}
+```
+
+Code blocks are highlighted only for languages listed in `content.build.markdown.highlight.langs` in
+`nuxt.config.mjs`. Anything else renders as plain text.
+
+The sitemap and the RSS feed pick new articles up automatically.
+
+## Deployment
+
+Netlify deploys `master` on every push, and builds a preview for each pull request.
+
+| Setting               | Value                                                 |
+| --------------------- | ----------------------------------------------------- |
+| Build command         | `npm run build`                                       |
+| Publish directory     | `dist`                                                |
+| `NODE_VERSION`        | `24`                                                  |
+| `GOOGLE_ANALYTICS_ID` | GA4 measurement ID; analytics are off when it's unset |
+
+After changing `NODE_VERSION`, trigger **Clear cache and deploy**. A cached build can carry native
+modules compiled for the old Node version.
+
+## License
+
+The articles and personal content are © Thiago Alves. The design and components derive from Tailwind
+Plus, which is licensed per purchaser. This repository is a finished site, not a template, and its
+code may not be reused as a starter or theme.
