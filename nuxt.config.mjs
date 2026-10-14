@@ -39,6 +39,13 @@ export default defineNuxtConfig({
   },
 
   content: {
+    experimental: {
+      // Node's built-in SQLite instead of the native better-sqlite3 module. npm 11 skips install
+      // scripts by default, so better-sqlite3 never gets rebuilt for the build's Node version on
+      // Netlify (cached binary → "Module did not self-register").
+      sqliteConnector: 'native',
+    },
+
     renderer: {
       // The template renders bare <h2>/<h3>. Nuxt Content wraps headings in an <a href="#slug">,
       // which then picks up the teal prose link colour. Turn the anchors off to match.
