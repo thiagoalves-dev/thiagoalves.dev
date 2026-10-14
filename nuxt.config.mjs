@@ -7,6 +7,13 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   devtools: { enabled: true },
 
+  devServer: {
+    // The 1000 block keeps clear of the Contracts Connected worktree ports. macOS only lets an
+    // unprivileged process bind below 1024 on all interfaces; on localhost Nuxt falls back to 3000.
+    host: '0.0.0.0',
+    port: 1001,
+  },
+
   app: {
     // Mirrors the template's <div className="flex w-full"> wrapper that sits
     // between <body class="flex h-full"> and <Layout />.
