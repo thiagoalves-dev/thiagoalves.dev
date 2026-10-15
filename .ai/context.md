@@ -20,7 +20,6 @@ Run both and compare the same page in two tabs:
 | -------- | ------------------------------------------------------------------- | --------------------- |
 | Site     | `npm run dev`                                                       | http://localhost:1001 |
 | Template | `npm run build && npx next start --port 1002` (in the template dir) | http://localhost:1002 |
-| Docker   | `docker compose up`                                                 | http://localhost:1000 |
 
 - Serve the template as a production build. Its `next dev` server 404s every route on Next 16.2.6.
 - The 1000 block is used so these never collide with the Contracts Connected worktree ports
@@ -74,8 +73,11 @@ the same collection.
 ## Known constraints
 
 - **`nuxt` is pinned to `4.5.2`.** 4.6.1 returns a 500 on `/` in production builds.
-- **`sqliteConnector: 'native'` must stay.** npm 11 skips install scripts, so `better-sqlite3` is
-  never rebuilt for the build's Node version; a cached binary fails with "Module did not
+- **`sqliteConnector: 'native'` must stay.** Without it Nuxt Content falls back to `better-sqlite3`,
+  which is not installed. It was removed because npm 11 skips install scripts, so its native binary
+  was never rebuilt for the build's Node version and a cached copy failed with "Module did not
   self-register".
+- **`postcss-selector-parser` is overridden to `^7.1.6`** in `package.json`. `@tailwindcss/typography`
+  pins 6.0.10, which has a security advisory; the built CSS is identical with 7.x.
 - **Local Markdown plugins are passed as instances.** Nuxt Content imports rehype plugins by name, so
   `rehype-unwrap-images.js` is registered with `instance:` in `nuxt.config.mjs`, not by path.
